@@ -1,0 +1,39 @@
+/*----------------------------------------*/
+/*  01. Variable Implementation
+/*----------------------------------------*/
+
+/* ======== Font Includes ======== */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  /* ======== Color scheme ======== */
+  --primary_color: #002147;
+  --theme_color: #f16126;
+  --heading_color: #000000;
+  --text_color: #77838f;
+  --bg_color: #f7f9fb;
+  --border_color: #e9ecef;
+
+  /* ======== Social icon colors ======== */
+  --facebook: #3b5997;
+  --twitter: #1ba1f2;
+  --youtube: #ed4141;
+  --linkedin: #0077b5;
+  --pinterest: #e60022;
+  --instagram: #c231a1;
+  --vimeo: #00adef;
+  --twitch: #6441a3;
+}
+
+// Responsive Variables
+$xxxl: "only screen and (min-width: 1601px) and (max-width: 1700px)";
+$xxl: "only screen and (min-width: 1400px) and (max-width: 1600px)";
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$xs: "(max-width: 575px)";
+
+// responsive variable for wordpress admin bar
+$wp-sm: "@media (max-width: 782px)";
+$wp-xs: "@media (max-width: 600px)";
