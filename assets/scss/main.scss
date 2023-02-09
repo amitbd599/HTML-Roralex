@@ -2,11 +2,12 @@
 
 @import "common/theme";
 @import "common/variable";
+@import "common/mixins";
 @import "common/reset";
 // @import "common/helper";
 
-@import "common/animation";
-@import "common/buttons";
-@import "common/page-title";
-@import "common/preloader";
 @import "components/header";
+// @import "common/animation";
+// @import "common/buttons";
+// @import "common/page-title";
+// @import "common/preloader";
