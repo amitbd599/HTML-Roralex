@@ -107,6 +107,7 @@
             width: 100%;
             display: block;
             & a {
+              position: relative;
               font-size: 16px;
               font-weight: 400;
               display: block;
@@ -468,8 +469,13 @@
       color: var(--theme_color);
     }
     .text {
-      color: var(--bg_white);
+      color: var(--text_color);
       font-size: 14px;
+    }
+    h5 {
+      color: var(--bg_white);
+      font-size: 15px;
+      font-weight: normal;
     }
   }
   &.mobile {

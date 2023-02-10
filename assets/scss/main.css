@@ -356,6 +356,7 @@ input[type=color] {
   display: block;
 }
 .menu-body .main-menu ul li .sub-menu li a {
+  position: relative;
   font-size: 16px;
   font-weight: 400;
   display: block;
@@ -721,8 +722,13 @@ input[type=color] {
   color: var(--theme_color);
 }
 .location-email-intro .inner-location-email-intro .text {
-  color: var(--bg_white);
+  color: var(--text_color);
   font-size: 14px;
+}
+.location-email-intro .inner-location-email-intro h5 {
+  color: var(--bg_white);
+  font-size: 15px;
+  font-weight: normal;
 }
 .location-email-intro.mobile {
   margin-top: 15px;
@@ -731,4 +737,131 @@ input[type=color] {
 .location-email-intro.mobile .text {
   color: var(--text_color);
   font-size: 16px;
+}
+
+/*----------------------------------------*/
+/*  02. Slider CSS START
+/*----------------------------------------*/
+/* Hero Slider Version One */
+.hero-slider-version-one {
+  overflow: hidden;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper {
+  position: relative;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item {
+  min-height: 550px;
+  position: relative;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .slide-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 10.5s cubic-bezier(0, 0, 0.2, 1);
+  mix-blend-mode: multiply;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .slide-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6235294118);
+  width: 100%;
+  height: 100%;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data {
+  position: relative;
+  z-index: 9 !important;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content {
+  padding: 120px 0;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .intro-box {
+  display: inline-block;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .intro-box span {
+  background: var(--theme_color);
+  display: flex;
+  padding: 8px 20px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg_white);
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text {
+  margin-top: 30px;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text h2 {
+  font-size: 65px;
+  color: var(--bg_white);
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--bg_white);
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content {
+  position: relative;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content .img-file {
+  position: absolute;
+  left: 0;
+  top: 170px;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content .img-file img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-slider-arrow {
+  position: relative;
+  top: -75px;
+}
+.hero-slider-arrow .hero-slider-nav .swiper-slide .inner-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-slider-arrow .hero-slider-nav .swiper-slide .inner-item .text-file span {
+  color: var(--bg_white);
+  font-weight: lighter;
+}
+.hero-slider-arrow .hero-slider-nav .swiper-slide .inner-item .text-file h4 {
+  color: var(--bg_white);
+  font-size: 16px;
+}
+.hero-slider-arrow .hero-slider-nav .swiper-slide::after {
+  content: "";
+  background: var(--theme_color);
+  width: 25px;
+  height: 22px;
+  left: 50%;
+  top: 53px;
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: translateX(-50%);
+  transition: all 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.hero-slider-arrow .hero-slider-nav .swiper-slide.swiper-slide-thumb-active::after {
+  visibility: visible;
+  opacity: 1;
+}
+.hero-slider-arrow .hero-slider-nav .swiper-slide:hover::after {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

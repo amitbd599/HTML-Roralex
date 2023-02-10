@@ -93,7 +93,7 @@
 
   ///////////////////////////////////////////////////
   // 13. main Slider Js
-  var swiper = new Swiper(".main-slider-nav", {
+  var heroSliderNav = new Swiper(".hero-slider-nav", {
     spaceBetween: 0,
     slidesPerView: 4,
     freeMode: true,
@@ -113,7 +113,7 @@
       },
     },
   });
-  var swiper2 = new Swiper(".main-slider", {
+  var heroSlider = new Swiper(".hero-slider", {
     spaceBetween: 0,
     effect: "fade",
     loop: true,
@@ -125,7 +125,7 @@
       prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: swiper,
+      swiper: heroSliderNav,
     },
   });
 
