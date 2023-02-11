@@ -55,7 +55,7 @@
             .heading-text {
               margin-top: 30px;
               h2 {
-                font-size: 65px;
+                font-size: 60px;
                 color: var(--bg_white);
                 font-weight: 700;
                 line-height: 80px;
@@ -78,6 +78,32 @@
                 width: 100%;
                 object-fit: cover;
               }
+            }
+          }
+        }
+
+        &.swiper-slide-active {
+          .slide-bg {
+            -webkit-animation: bg-animation 5s ease-out both;
+            animation: bg-animation 5s ease-out both;
+          }
+          .body-data {
+            .intro-box {
+              span {
+                animation: heroSliderAnimation 1.7s ease 0s 1 normal forwards;
+              }
+            }
+            .heading-text {
+              h2 {
+                animation: heroSliderAnimation 1.4s ease 0s 1 normal forwards;
+              }
+              p {
+                animation: heroSliderAnimation 1s ease 0s 1 normal forwards;
+              }
+            }
+            .img-file {
+              -webkit-animation: heroImg 1s ease 0s 1 normal forwards;
+              animation: heroImg 1s ease 0s 1 normal forwards;
             }
           }
         }

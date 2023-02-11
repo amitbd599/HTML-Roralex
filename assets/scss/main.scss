@@ -4,11 +4,10 @@
 @import "common/variable";
 @import "common/mixins";
 @import "common/reset";
-// @import "common/helper";
+@import "common/animation";
+@import "common/universal";
 
+// All Component Elements
 @import "components/header";
 @import "components/slider";
-// @import "common/animation";
-// @import "common/buttons";
-// @import "common/page-title";
-// @import "common/preloader";
+@import "components/about-section";
