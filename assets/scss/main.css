@@ -118,29 +118,6 @@ p {
   line-height: 25px;
 }
 
-a,
-.btn,
-button,
-span,
-p,
-i,
-input,
-select,
-textarea,
-li,
-img,
-svg path,
-*::after,
-*::before,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  transition: all 0.3s ease-out 0s;
-}
-
 a:focus,
 .button:focus {
   text-decoration: none;
@@ -406,7 +383,7 @@ input[type=color] {
 
 .menu-body .main-menu {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 .menu-body .main-menu ul li {
   display: inline-block;
@@ -849,7 +826,7 @@ input[type=color] {
 }
 .location-email-intro .inner-location-email-intro h5 {
   color: var(--bg_white);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
 }
 .location-email-intro.mobile {
@@ -872,7 +849,7 @@ input[type=color] {
   position: relative;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item {
-  min-height: 550px;
+  min-height: 608px;
   position: relative;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .slide-bg {
@@ -922,10 +899,10 @@ input[type=color] {
   margin-top: 30px;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text h2 {
-  font-size: 60px;
+  font-size: 55px;
   color: var(--bg_white);
   font-weight: 700;
-  line-height: 80px;
+  line-height: 70px;
   text-transform: capitalize;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text p {
@@ -1145,10 +1122,10 @@ input[type=color] {
 }
 .about-section-version-one .right-side .wrapper .inner-intro hr {
   color: var(--text_color);
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .about-section-version-one .right-side .wrapper .inner-intro .hub-show {
-  margin-top: 25px;
+  margin-top: 20px;
   display: flex;
   gap: 25px;
 }
@@ -1165,7 +1142,7 @@ input[type=color] {
   margin-top: 25px;
 }
 .about-section-version-one .right-side .wrapper .inner-intro .btn-section .btn-shape-normal-outline {
-  width: 200px;
+  width: 175px;
 }
 .about-section-version-one .overlay-shape-img {
   position: absolute;
@@ -1210,7 +1187,7 @@ input[type=color] {
 }
 .serviceList-section-version-one .inner-card-items .wrapper {
   background: var(--bg_white);
-  padding: 28px 20px;
+  padding: 28px 18px;
   border-radius: 8px;
 }
 .serviceList-section-version-one .inner-card-items .wrapper .icon-file {
@@ -1245,7 +1222,7 @@ input[type=color] {
   padding-top: 60px;
 }
 .serviceList-section-version-one .btn-section button {
-  width: 180px;
+  width: 165px;
 }
 
 /*----------------------------------------*/
@@ -1329,6 +1306,7 @@ input[type=color] {
   padding-top: 80px;
   padding-bottom: 180px;
   position: relative;
+  height: 450px;
   z-index: 0;
 }
 .projectBackgroundOverlay::after {
@@ -1338,7 +1316,7 @@ input[type=color] {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(51, 51, 51, 0.6901960784);
+  background: rgba(51, 51, 51, 0.75);
   z-index: -1;
 }
 .projectBackgroundOverlay .wrapper {
@@ -1360,22 +1338,23 @@ input[type=color] {
   letter-spacing: 5px;
 }
 .projectBackgroundOverlay .wrapper .main-text p {
+  padding-right: 100px;
   color: var(--bg_white);
 }
 .projectBackgroundOverlay .wrapper .shape-text {
   position: absolute;
-  left: -140px;
-  top: 67%;
+  left: -25px;
+  top: 40%;
   transform: rotate(-90deg);
 }
 .projectBackgroundOverlay .wrapper .shape-text h2 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--theme_color);
 }
 .projectBackgroundOverlay .box-text {
   position: absolute;
-  bottom: -105px;
+  bottom: -126px;
   left: 50%;
   display: flex;
   transform: translateX(-50%);
@@ -1467,4 +1446,76 @@ input[type=color] {
 }
 .ourTeam-section-version-one .header-intro .wrapper .inner-text p {
   margin-top: 10px;
+}
+.ourTeam-section-version-one .slider-card-team {
+  margin-top: 40px;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  background: var(--primary_color);
+  z-index: 0;
+  transform: translateY(100%);
+  transition: all 0.2s linear;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .icon-file {
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear !important;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .icon-file a {
+  padding: 2px 3px;
+  font-size: 24px;
+  color: var(--bg_white);
+  transition: all 0.3s ease-in !important;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .icon-file a:hover {
+  color: var(--theme_color);
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file:hover::after {
+  transform: translateY(0);
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file:hover .icon-file {
+  visibility: visible;
+  opacity: 1;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .text-file {
+  text-align: center;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .text-file h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--heading_color);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .text-file h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--theme_color);
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one-pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 38px;
+}
+.ourTeam-section-version-one .slider-card-team .team-version-one-pagination .swiper-pagination-bullet-active {
+  background: var(--theme_color);
 }/*# sourceMappingURL=main.css.map */

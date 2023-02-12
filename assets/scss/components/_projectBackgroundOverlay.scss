@@ -12,6 +12,7 @@
   padding-top: 80px;
   padding-bottom: 180px;
   position: relative;
+  height: 450px;
   z-index: 0;
   &::after {
     position: absolute;
@@ -20,7 +21,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: #333333b0;
+    background: rgb(51 51 51 / 75%);
     z-index: -1;
   }
 
@@ -41,16 +42,17 @@
         letter-spacing: 5px;
       }
       p {
+        padding-right: 100px;
         color: var(--bg_white);
       }
     }
     .shape-text {
       position: absolute;
-      left: -140px;
-      top: 67%;
+      left: -25px;
+      top: 40%;
       transform: rotate(-90deg);
       h2 {
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 700;
         color: var(--theme_color);
       }
@@ -58,7 +60,7 @@
   }
   .box-text {
     position: absolute;
-    bottom: -105px;
+    bottom: -126px;
     left: 50%;
     display: flex;
     transform: translateX(-50%);

@@ -11,13 +11,13 @@
 
   var windowOn = $(window);
   ////////////////////////////////////////////////////
-  // 01. PreLoader Js
+  // 01. PreLoader Js //
   windowOn.on("load", function () {
     $(".preloader").fadeOut(500);
   });
 
   ////////////////////////////////////////////////////
-  // 02. Mobile Menu Js
+  // 02. Mobile Menu Js //
   $("#mobile-menu").meanmenu({
     meanMenuContainer: ".mobile-menu",
     meanScreenWidth: "991",
@@ -33,7 +33,7 @@
   });
 
   ////////////////////////////////////////////////////
-  // 03. Sidebar Js
+  // 03. Sidebar Js //
   $(".sidebar-toggle-btn").on("click", function () {
     $(".mobile-sidebar-area").addClass("sidebar-opened");
     $(".body-overlay").addClass("opened");
@@ -44,7 +44,7 @@
   });
 
   ////////////////////////////////////////////////////
-  // 04. Body overlay Js
+  // 04. Body overlay Js //
   $(".body-overlay").on("click", function () {
     $(".mobile-sidebar-area").removeClass("sidebar-opened");
     $(".body-overlay").removeClass("opened");
@@ -92,7 +92,7 @@
   $("select").niceSelect();
 
   ///////////////////////////////////////////////////
-  // 13. main Slider Js
+  // 13. main Slider Js //
   var heroSliderNav = new Swiper(".hero-slider-nav", {
     spaceBetween: 0,
     slidesPerView: 4,
@@ -126,6 +126,28 @@
     },
     thumbs: {
       swiper: heroSliderNav,
+    },
+  });
+
+  ///////////////////////////////////////////////////
+  // 13. Team-version-one-slider Js //
+
+  var TeamVersionOne = new Swiper(".team-version-one", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+
+    // autoplay: {
+    //   delay: 6000,
+    // },
+    pagination: {
+      el: ".team-version-one-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 

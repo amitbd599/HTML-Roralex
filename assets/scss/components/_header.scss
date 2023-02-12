@@ -35,7 +35,7 @@
 .menu-body {
   .main-menu {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     & ul {
       & li {
         display: inline-block;
@@ -474,7 +474,7 @@
     }
     h5 {
       color: var(--bg_white);
-      font-size: 15px;
+      font-size: 14px;
       font-weight: normal;
     }
   }

@@ -71,29 +71,6 @@ p {
   line-height: 25px;
 }
 
-a,
-.btn,
-button,
-span,
-p,
-i,
-input,
-select,
-textarea,
-li,
-img,
-svg path,
-*::after,
-*::before,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include transition(0.3s);
-}
-
 a:focus,
 .button:focus {
   text-decoration: none;
