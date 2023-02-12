@@ -5,9 +5,14 @@
 @import "common/mixins";
 @import "common/reset";
 @import "common/animation";
+@import "common/buttons";
 @import "common/universal";
 
 // All Component Elements
 @import "components/header";
 @import "components/slider";
 @import "components/about-section";
+@import "components/serviceList-section";
+@import "components/whyChooseUs";
+@import "components/projectBackgroundOverlay";
+@import "components/ourTeam-section";

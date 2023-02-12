@@ -1,0 +1,79 @@
+/*----------------------------------------*/
+/*  02. Why Choose Us Section
+/*----------------------------------------*/
+
+/* Why Choose Us Section version one start */
+
+.whyChooseUs-section-version-one {
+  .header-intro {
+    .wrapper {
+      .pop-text {
+        position: relative;
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+          color: var(--primary_color);
+          z-index: 1;
+        }
+        .shape-img {
+          position: absolute;
+          top: -8px;
+          left: -18px;
+          z-index: 0;
+        }
+      }
+      .inner-text {
+        h2 {
+          padding-right: 130px;
+          margin-top: 15px;
+          font-size: 36px;
+          font-weight: 700;
+          color: var(--heading_color);
+          text-transform: capitalize;
+        }
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .inner-card-items {
+    margin-top: 40px;
+    .wrapper {
+      background: var(--bg_white);
+      padding: 30px 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 20px;
+        color: var(--heading_color);
+        text-transform: uppercase;
+      }
+      .icon-file {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      p {
+        margin-top: 20px;
+        text-align: center;
+      }
+      &:hover {
+        background: var(--primary_color);
+
+        h2 {
+          color: var(--bg_white);
+        }
+        p {
+          color: var(--bg_white);
+        }
+      }
+    }
+  }
+}

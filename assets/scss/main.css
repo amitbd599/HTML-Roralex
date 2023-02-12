@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
     Theme Name: Dustrilox - Construction & Industry HTML5 Template
@@ -248,11 +249,6 @@ input[type=color] {
   border-radius: 10px;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
 /*----------------------------------------*/
 /*  02. Custom Animation CSS START
 /*----------------------------------------*/
@@ -300,10 +296,82 @@ input[type=color] {
   }
 }
 /*----------------------------------------*/
+/*  02. Button Design START
+/*----------------------------------------*/
+.btn-shape-normal-outline {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--theme_color);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btn-shape-normal-outline span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn-shape-normal-outline span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+.btn-shape-normal-outline:hover span {
+  padding-right: 15px;
+}
+.btn-shape-normal-outline:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*----------------------------------------*/
 /*  02. universal CSS
 /*----------------------------------------*/
 .theme-color {
   color: var(--theme_color);
+}
+
+.bg-gray {
+  background: var(--bg_gray);
+}
+
+.bg-white {
+  background: var(--bg_white);
+}
+
+/* ---- Box shadow ---- */
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 /*----------------------------------------*/
@@ -850,6 +918,7 @@ input[type=color] {
   color: var(--bg_white);
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text {
+  position: relative;
   margin-top: 30px;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .heading-text h2 {
@@ -863,6 +932,12 @@ input[type=color] {
   margin-top: 20px;
   font-size: 16px;
   color: var(--bg_white);
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .left-content .shape-hip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content {
   position: relative;
@@ -888,6 +963,9 @@ input[type=color] {
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item.swiper-slide-active .body-data .heading-text p {
   animation: heroSliderAnimation 1s ease 0s 1 normal forwards;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item.swiper-slide-active .body-data .heading-text .shape-hip {
+  animation: heroSliderAnimation 1.4s ease 0s 1 normal forwards;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item.swiper-slide-active .body-data .img-file {
   animation: heroImg 1s ease 0s 1 normal forwards;
@@ -952,7 +1030,7 @@ input[type=color] {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -110px;
+  bottom: -119px;
   border: 15px solid #fff;
   border-radius: 10px;
 }
@@ -1078,10 +1156,310 @@ input[type=color] {
   font-weight: 600;
   text-transform: capitalize;
 }
+.about-section-version-one .right-side .wrapper .inner-intro .btn-section {
+  margin-top: 25px;
+}
+.about-section-version-one .right-side .wrapper .inner-intro .btn-section .btn-shape-normal-outline {
+  width: 200px;
+}
 .about-section-version-one .overlay-shape-img {
   position: absolute;
   left: 0;
   top: -53px;
   z-index: -1;
   opacity: 0.5;
+}
+
+/*----------------------------------------*/
+/*  02. Service List Section
+/*----------------------------------------*/
+/* Service List Section version one */
+.serviceList-section-version-one .header-intro .wrapper .pop-text {
+  position: relative;
+}
+.serviceList-section-version-one .header-intro .wrapper .pop-text h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary_color);
+  z-index: 1;
+}
+.serviceList-section-version-one .header-intro .wrapper .pop-text .shape-img {
+  position: absolute;
+  top: -8px;
+  left: -27px;
+  z-index: 0;
+}
+.serviceList-section-version-one .header-intro .wrapper .inner-text h2 {
+  padding-right: 130px;
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.serviceList-section-version-one .header-intro .wrapper .inner-text p {
+  margin-top: 10px;
+}
+.serviceList-section-version-one .inner-card-items {
+  margin-top: 40px;
+}
+.serviceList-section-version-one .inner-card-items .wrapper {
+  background: var(--bg_white);
+  padding: 28px 20px;
+  border-radius: 8px;
+}
+.serviceList-section-version-one .inner-card-items .wrapper .icon-file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+.serviceList-section-version-one .inner-card-items .wrapper .text-file h3 {
+  color: var(--heading_color);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.serviceList-section-version-one .inner-card-items .wrapper .text-file p {
+  font-size: 15px;
+  margin-top: 12x;
+}
+.serviceList-section-version-one .inner-card-items .wrapper .btn-hold button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.serviceList-section-version-one .inner-card-items .wrapper .btn-hold button:hover {
+  color: var(--theme_color);
+}
+.serviceList-section-version-one .btn-section {
+  padding-top: 60px;
+}
+.serviceList-section-version-one .btn-section button {
+  width: 180px;
+}
+
+/*----------------------------------------*/
+/*  02. Why Choose Us Section
+/*----------------------------------------*/
+/* Why Choose Us Section version one start */
+.whyChooseUs-section-version-one .header-intro .wrapper .pop-text {
+  position: relative;
+}
+.whyChooseUs-section-version-one .header-intro .wrapper .pop-text h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary_color);
+  z-index: 1;
+}
+.whyChooseUs-section-version-one .header-intro .wrapper .pop-text .shape-img {
+  position: absolute;
+  top: -8px;
+  left: -18px;
+  z-index: 0;
+}
+.whyChooseUs-section-version-one .header-intro .wrapper .inner-text h2 {
+  padding-right: 130px;
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.whyChooseUs-section-version-one .header-intro .wrapper .inner-text p {
+  margin-top: 10px;
+}
+.whyChooseUs-section-version-one .inner-card-items {
+  margin-top: 40px;
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper {
+  background: var(--bg_white);
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--heading_color);
+  text-transform: uppercase;
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper .icon-file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper p {
+  margin-top: 20px;
+  text-align: center;
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper:hover {
+  background: var(--primary_color);
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper:hover h2 {
+  color: var(--bg_white);
+}
+.whyChooseUs-section-version-one .inner-card-items .wrapper:hover p {
+  color: var(--bg_white);
+}
+
+/*----------------------------------------*/
+/*  02. Project Background Overlay Section
+/*----------------------------------------*/
+/* Project Background Overlay Section version one */
+.projectBackgroundOverlay {
+  background: url("/assets/img/bg-overlay/bg-overlay-1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 180px;
+  position: relative;
+  z-index: 0;
+}
+.projectBackgroundOverlay::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.6901960784);
+  z-index: -1;
+}
+.projectBackgroundOverlay .wrapper {
+  position: relative;
+}
+.projectBackgroundOverlay .wrapper .main-text {
+  padding-left: 100px;
+}
+.projectBackgroundOverlay .wrapper .main-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bg_white);
+}
+.projectBackgroundOverlay .wrapper .main-text h2 {
+  margin-top: 15px;
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--bg_white);
+  letter-spacing: 5px;
+}
+.projectBackgroundOverlay .wrapper .main-text p {
+  color: var(--bg_white);
+}
+.projectBackgroundOverlay .wrapper .shape-text {
+  position: absolute;
+  left: -140px;
+  top: 67%;
+  transform: rotate(-90deg);
+}
+.projectBackgroundOverlay .wrapper .shape-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--theme_color);
+}
+.projectBackgroundOverlay .box-text {
+  position: absolute;
+  bottom: -105px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+.projectBackgroundOverlay .box-text .wrapper-left {
+  background: var(--primary_color);
+  padding: 30px 25px;
+  width: 380px;
+}
+.projectBackgroundOverlay .box-text .wrapper-middle {
+  position: relative;
+  background: var(--theme_color);
+  padding: 30px 25px;
+  width: 380px;
+}
+.projectBackgroundOverlay .box-text .wrapper-middle::after {
+  position: absolute;
+  content: "";
+  background: var(--primary_color);
+  width: 30px;
+  height: 30px;
+  left: -18px;
+  top: 50%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(90deg) translateY(-50%);
+}
+.projectBackgroundOverlay .box-text .wrapper-middle::before {
+  position: absolute;
+  content: "";
+  background: var(--primary_color);
+  width: 30px;
+  height: 30px;
+  right: -18px;
+  top: 50%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-90deg) translateY(-50%);
+}
+.projectBackgroundOverlay .box-text .wrapper-right {
+  background: var(--primary_color);
+  padding: 30px 25px;
+  width: 380px;
+}
+.projectBackgroundOverlay .box-text h2 {
+  font-size: 30px;
+  color: var(--bg_white);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.projectBackgroundOverlay .box-text .icon-file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.projectBackgroundOverlay .box-text p {
+  color: var(--bg_white);
+  text-align: center;
+}
+
+/*----------------------------------------*/
+/*  02. Project Background Overlay Section
+/*----------------------------------------*/
+/* Project Background Overlay Section version one */
+.ourTeam-section-version-one .header-intro .wrapper .pop-text {
+  position: relative;
+}
+.ourTeam-section-version-one .header-intro .wrapper .pop-text h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary_color);
+  z-index: 1;
+}
+.ourTeam-section-version-one .header-intro .wrapper .pop-text .shape-img {
+  position: absolute;
+  top: -8px;
+  left: -27px;
+  z-index: 0;
+}
+.ourTeam-section-version-one .header-intro .wrapper .inner-text h2 {
+  padding-right: 130px;
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.ourTeam-section-version-one .header-intro .wrapper .inner-text p {
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */
