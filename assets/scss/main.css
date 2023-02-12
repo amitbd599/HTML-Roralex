@@ -256,6 +256,7 @@ input[type=color] {
 /*----------------------------------------*/
 /*  02. Custom Animation CSS START
 /*----------------------------------------*/
+/*  ========= Hero Slider Animation animation ========== */
 @keyframes heroSliderAnimation {
   0% {
     opacity: 0;
@@ -266,6 +267,7 @@ input[type=color] {
     transform: translateY(0);
   }
 }
+/*  ========= Hero Slider BG Animation animation ========== */
 @keyframes bg-animation {
   0% {
     transform: scale(1) translateY(0);
@@ -276,6 +278,7 @@ input[type=color] {
     transform-origin: top;
   }
 }
+/*  ========= Hero Slider IMG Animation animation ========== */
 @keyframes heroImg {
   0% {
     opacity: 0;

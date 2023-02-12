@@ -2,6 +2,8 @@
 /*  02. Custom Animation CSS START
 /*----------------------------------------*/
 
+/*  ========= Hero Slider Animation animation ========== */
+
 @-webkit-keyframes heroSliderAnimation {
   0% {
     opacity: 0;
@@ -28,6 +30,8 @@
     transform: translateY(0);
   }
 }
+
+/*  ========= Hero Slider BG Animation animation ========== */
 
 @-webkit-keyframes bg-animation {
   0% {
@@ -57,6 +61,8 @@
     transform-origin: top;
   }
 }
+
+/*  ========= Hero Slider IMG Animation animation ========== */
 
 @-webkit-keyframes heroImg {
   0% {
