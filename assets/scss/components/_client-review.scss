@@ -1,0 +1,65 @@
+/*----------------------------------------*/
+/*  02. Latest Projects Section
+/*----------------------------------------*/
+
+/* Client Review Section version one */
+
+.client-review-version-one {
+  .header-intro {
+    .wrapper {
+      .pop-text {
+        position: relative;
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+          color: var(--primary_color);
+          z-index: 1;
+        }
+        .shape-img {
+          position: absolute;
+          top: -8px;
+          left: -27px;
+          z-index: 0;
+        }
+      }
+      .inner-text {
+        h2 {
+          padding-right: 130px;
+          margin-top: 15px;
+          font-size: 36px;
+          font-weight: 700;
+          color: var(--heading_color);
+          text-transform: capitalize;
+        }
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .slider-client-review {
+    margin-top: 40px;
+    .review-version-one {
+      padding: 60px 0;
+      .swiper-wrapper {
+        .swiper-slide {
+          .inner-wrapper {
+            position: relative;
+            border-radius: 10px;
+            padding: 20px;
+            background: var(--bg_white);
+            .img-file {
+              border-radius: 50%;
+              overflow: hidden;
+              border: 5px solid #fff;
+              position: absolute;
+              top: -60px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -137,11 +137,33 @@
     spaceBetween: 30,
     loop: true,
 
-    // autoplay: {
-    //   delay: 6000,
-    // },
+    autoplay: {
+      delay: 6000,
+    },
     pagination: {
       el: ".team-version-one-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  ///////////////////////////////////////////////////
+  // 13. Client-review-version-one-slider Js //
+
+  var ReviewVersionOne = new Swiper(".review-version-one", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".review-version-one-pagination",
       type: "bullets",
       clickable: true,
     },
@@ -266,7 +288,7 @@
   });
 
   ////////////////////////////////////////////////////
-  // 21. Counter Js
+  // 21. Counter Js //
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
@@ -910,19 +932,19 @@
   }
 
   ////////////////////////////////////////////////////
-  // 15. Portfolio Js
-  $(".grid").imagesLoaded(function () {
-    var $grid = $(".grid").isotope({
+  // 15. Project Js //
+  $(".projectHold").imagesLoaded(function () {
+    var $projectHold = $(".project-version-one").isotope({
       // options
     });
     // filter items on button click
-    $(".portfolio-filter").on("click", "button", function () {
+    $(".project-filter").on("click", "button", function () {
       var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
+      $projectHold.isotope({ filter: filterValue });
     });
 
     //for menu active class
-    $(".portfolio-filter button").on("click", function (event) {
+    $(".project-filter button").on("click", function (event) {
       $(this).siblings(".active").removeClass("active");
       $(this).addClass("active");
       event.preventDefault();
