@@ -101,9 +101,10 @@
             img {
               transition: all 0.3s linear;
               object-fit: cover;
+              width: 100%;
             }
             .text-overlay {
-              position: absolute;
+              position: absolute; 
               top: 0;
               left: 0;
               z-index: 9;

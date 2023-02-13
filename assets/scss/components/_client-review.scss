@@ -46,19 +46,62 @@
           .inner-wrapper {
             position: relative;
             border-radius: 10px;
-            padding: 20px;
+            padding: 25px 20px;
             background: var(--bg_white);
             .img-file {
               border-radius: 50%;
               overflow: hidden;
-              border: 5px solid #fff;
+              border: 6px solid #fff;
               position: absolute;
               top: -60px;
               left: 50%;
               transform: translateX(-50%);
             }
+            .quta-img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 35px;
+            }
+            .review-star {
+              display: flex;
+              justify-content: center;
+              gap: 3px;
+              i {
+                color: #f7941d;
+              }
+            }
+            .text-file {
+              text-align: center;
+              margin-top: 16px;
+              h2 {
+                font-size: 22px;
+                color: var(--theme_color);
+                font-weight: 700;
+                margin-bottom: 8px;
+                text-transform: capitalize;
+              }
+              h4 {
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--heading_color);
+                text-transform: capitalize;
+              }
+              p {
+                margin-top: 14px;
+              }
+            }
           }
         }
+      }
+    }
+    .review-version-one-pagination {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+      .swiper-pagination-bullet-active {
+        background: var(--theme_color);
       }
     }
   }

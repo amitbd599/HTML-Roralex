@@ -156,7 +156,7 @@
 
   var ReviewVersionOne = new Swiper(".review-version-one", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 45,
     loop: true,
 
     autoplay: {
