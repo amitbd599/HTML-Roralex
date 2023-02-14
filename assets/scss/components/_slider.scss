@@ -39,7 +39,7 @@
           position: relative;
           z-index: 9 !important;
           .left-content {
-            padding: 120px 0;
+            padding: 100px 0;
             .intro-box {
               display: inline-block;
               span {
@@ -59,7 +59,7 @@
                 font-size: 55px;
                 color: var(--bg_white);
                 font-weight: 700;
-                line-height: 70px;
+                line-height: 80px;
                 text-transform: capitalize;
               }
               p {
@@ -79,10 +79,11 @@
             position: relative;
             .img-file {
               position: absolute;
-              left: 0;
-              top: 170px;
+              left: -200px;
+              top: 10px;
+              z-index: -1;
               img {
-                width: 100%;
+                width: 700px;
                 object-fit: cover;
               }
             }
