@@ -4,38 +4,6 @@
 
 /* Service List Section version one */
 .serviceList-section-version-one {
-  .header-intro {
-    .wrapper {
-      .pop-text {
-        position: relative;
-        h3 {
-          font-weight: 700;
-          font-size: 18px;
-          color: var(--primary_color);
-          z-index: 1;
-        }
-        .shape-img {
-          position: absolute;
-          top: -8px;
-          left: -27px;
-          z-index: 0;
-        }
-      }
-      .inner-text {
-        h2 {
-          padding-right: 130px;
-          margin-top: 15px;
-          font-size: 36px;
-          font-weight: 700;
-          color: var(--heading_color);
-          text-transform: capitalize;
-        }
-        p {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
   .inner-card-items {
     margin-top: 40px;
     .wrapper {

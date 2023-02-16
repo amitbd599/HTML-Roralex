@@ -5,38 +5,7 @@
 /* Latest Projects Section version one */
 
 .latest-project-version-one {
-  .header-intro {
-    .wrapper {
-      .pop-text {
-        position: relative;
-        h3 {
-          font-weight: 700;
-          font-size: 18px;
-          color: var(--primary_color);
-          z-index: 1;
-        }
-        .shape-img {
-          position: absolute;
-          top: -8px;
-          left: -27px;
-          z-index: 0;
-        }
-      }
-      .inner-text {
-        h2 {
-          padding-right: 130px;
-          margin-top: 15px;
-          font-size: 36px;
-          font-weight: 700;
-          color: var(--heading_color);
-          text-transform: capitalize;
-        }
-        p {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
+ 
   .project-body {
     .project-filter {
       position: relative;
@@ -104,7 +73,7 @@
               width: 100%;
             }
             .text-overlay {
-              position: absolute; 
+              position: absolute;
               top: 0;
               left: 0;
               z-index: 9;
