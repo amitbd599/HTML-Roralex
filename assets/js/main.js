@@ -92,12 +92,13 @@
   $("select").niceSelect();
 
   ///////////////////////////////////////////////////
-  // 13. main Slider Js //
+  // 13. Hero  Slider Js //
   var heroSliderNav = new Swiper(".hero-slider-nav", {
     spaceBetween: 0,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+
     breakpoints: {
       550: {
         slidesPerView: 2,
@@ -126,6 +127,25 @@
     },
     thumbs: {
       swiper: heroSliderNav,
+    },
+  });
+
+  var heroSliderTwo = new Swiper(".hero-slider-two", {
+    spaceBetween: 0,
+    effect: "fade",
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".hero-slider-two-pagination",
+      type: "bullets",
+      clickable: true,
     },
   });
 
@@ -172,6 +192,10 @@
       prevEl: ".swiper-button-prev",
     },
   });
+
+  ///////////////////////////////////////////////////
+  //  jquery scrollbox //
+  $("#topHeader").scrollbox();
 
   ///////////////////////////////////////////////////
   // 13. Masonary Js
