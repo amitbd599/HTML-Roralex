@@ -63,7 +63,7 @@
         .swiper-slide {
           .inner-wrapper {
             border-radius: 8px;
-            padding: 20px 30px;
+            padding: 20px 20px;
             &.bg-theme {
               background: var(--theme_color);
             }
@@ -74,18 +74,17 @@
               padding: 15px;
               display: flex;
               justify-content: center;
-              margin-bottom: 16px;
             }
             .intro {
               h2 {
                 text-align: center;
-                font-size: 26px;
+                font-size: 22px;
                 font-weight: 700;
                 color: var(--bg_white);
               }
               p {
-                font-size: 16px;
-                margin-top: 16px;
+                font-size: 15px;
+                margin-top: 10px;
                 text-align: center;
                 color: var(--bg_white);
               }
@@ -93,13 +92,13 @@
             .btn-section {
               display: flex;
               justify-content: center;
-              padding: 10px 0;
+              margin-bottom: 5px;
               .btn-shape-normal-outline {
                 background: var(--bg_white);
                 color: var(--heading_color);
                 width: 135px;
-                padding: 12px 14px;
-                font-weight: 700;
+                padding: 10px 14px;
+                font-weight: 600;
               }
             }
           }
@@ -113,10 +112,10 @@
       justify-content: center;
       bottom: -50px;
       left: 0;
-      gap: 10px;
+      gap: 12px;
       & .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 0;
       }
       & .swiper-pagination-bullet-active {

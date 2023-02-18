@@ -156,7 +156,7 @@
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
-
+    speed: 1000,
     autoplay: {
       delay: 6000,
     },
@@ -173,7 +173,9 @@
 
   var TeamVersionTwo = new Swiper(".team-version-two", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 0,
+    slidesPerGroup: 2,
+    speed: 1000,
     loop: true,
 
     autoplay: {
@@ -197,7 +199,7 @@
     slidesPerGroup: 2,
     spaceBetween: 30,
     loop: true,
-
+    speed: 1000,
     autoplay: {
       delay: 6000,
     },

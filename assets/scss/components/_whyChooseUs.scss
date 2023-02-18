@@ -50,9 +50,6 @@
 
 .whyChooseUs-section-version-two {
   .inner-card-items {
-    .row {
-      --bs-gutter-x: 30px;
-    }
     margin-top: 50px;
     .wrapper {
       margin-bottom: 35px;
@@ -60,7 +57,7 @@
       z-index: 9;
       cursor: pointer;
       .inner {
-        padding: 30px 20px;
+        padding: 20px 20px;
         border-radius: 8px;
         border: 1px solid var(--border_color);
         position: relative;
@@ -75,14 +72,14 @@
           text-transform: uppercase;
         }
         .icon-file {
-          margin-top: 20px;
+          margin-top: 15px;
           display: flex;
           justify-content: center;
         }
         p {
           text-align: center;
-          font-size: 16px;
-          margin-top: 20px;
+          font-size: 15px;
+          margin-top: 15px;
         }
       }
       .overlay {

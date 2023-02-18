@@ -1810,7 +1810,7 @@ input[type=color] {
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper {
   border-radius: 8px;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper.bg-theme {
   background: var(--theme_color);
@@ -1822,31 +1822,30 @@ input[type=color] {
   padding: 15px;
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro h2 {
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--bg_white);
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro p {
-  font-size: 16px;
-  margin-top: 16px;
+  font-size: 15px;
+  margin-top: 10px;
   text-align: center;
   color: var(--bg_white);
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .btn-section {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  margin-bottom: 5px;
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .btn-section .btn-shape-normal-outline {
   background: var(--bg_white);
   color: var(--heading_color);
   width: 135px;
-  padding: 12px 14px;
-  font-weight: 700;
+  padding: 10px 14px;
+  font-weight: 600;
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-section-version-two-pagination {
   position: absolute;
@@ -1855,11 +1854,11 @@ input[type=color] {
   justify-content: center;
   bottom: -50px;
   left: 0;
-  gap: 10px;
+  gap: 12px;
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-section-version-two-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 0;
 }
 .serviceList-section-version-two .inner-card-items-slider .serviceList-section-version-two-pagination .swiper-pagination-bullet-active {
@@ -1914,9 +1913,6 @@ input[type=color] {
 .whyChooseUs-section-version-two .inner-card-items {
   margin-top: 50px;
 }
-.whyChooseUs-section-version-two .inner-card-items .row {
-  --bs-gutter-x: 30px;
-}
 .whyChooseUs-section-version-two .inner-card-items .wrapper {
   margin-bottom: 35px;
   position: relative;
@@ -1924,7 +1920,7 @@ input[type=color] {
   cursor: pointer;
 }
 .whyChooseUs-section-version-two .inner-card-items .wrapper .inner {
-  padding: 30px 20px;
+  padding: 20px 20px;
   border-radius: 8px;
   border: 1px solid var(--border_color);
   position: relative;
@@ -1940,14 +1936,14 @@ input[type=color] {
   text-transform: uppercase;
 }
 .whyChooseUs-section-version-two .inner-card-items .wrapper .inner .icon-file {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
 }
 .whyChooseUs-section-version-two .inner-card-items .wrapper .inner p {
   text-align: center;
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 .whyChooseUs-section-version-two .inner-card-items .wrapper .overlay {
   position: absolute;
@@ -2125,7 +2121,7 @@ input[type=color] {
 .projectBackgroundOverlay-version-two .wrapper p {
   margin-top: 15px;
   text-align: center;
-  padding: 0 200px;
+  padding: 0 150px;
   font-size: 16px;
   color: var(--bg_white);
 }
@@ -2217,11 +2213,79 @@ input[type=color] {
 
 /* Project Background Overlay Section version Two */
 .ourTeam-section-version-two .inner-card-items-slider {
-  margin-top: 50px;
+  position: relative;
+  margin-top: 40px;
 }
 .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper {
-  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 15px;
 }
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro {
+  padding: 18px 10px;
+  text-align: center;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .name {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--theme_color);
+  margin-bottom: 0;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .position {
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--heading_color);
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon {
+  margin-top: 8px;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li a {
+  font-size: 18px;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li i {
+  font-size: 18px;
+  transition: all 0.2s linear;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li:hover .fa-facebook-f {
+  color: var(--facebook);
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li:hover .fa-twitter {
+  color: var(--twitter);
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li:hover .fa-youtube {
+  color: var(--youtube);
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li:hover .fa-linkedin {
+  color: var(--linkedin);
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  left: 0;
+  bottom: -50px;
+  gap: 12px;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+}
+.ourTeam-section-version-two .inner-card-items-slider .team-version-two-pagination .swiper-pagination-bullet-active {
+  background: var(--theme_color);
+  opacity: 1;
+}
+
 /*----------------------------------------*/
 /*  02. Latest Projects Section
 /*----------------------------------------*/

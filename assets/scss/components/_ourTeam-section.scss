@@ -97,28 +97,89 @@
 
 .ourTeam-section-version-two {
   .inner-card-items-slider {
-    margin-top: 50px;
+    position: relative;
+    margin-top: 40px;
     .team-version-two {
       .swiper-wrapper {
         .swiper-slide {
           .inner-wrapper {
-            padding: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 15px;
             .img-file {
               img {
               }
             }
             .intro {
-              h2 {
+              padding: 18px 10px;
+              text-align: center;
+
+              .name {
+                margin-top: 0;
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--theme_color);
+                margin-bottom: 0;
               }
-              p {
+              .position {
+                margin: 0;
+                margin-top: 5px;
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--heading_color);
               }
-            }
-            .btn-section {
-              .btn-shape-normal-outline {
+
+              .social-icon {
+                margin-top: 8px;
+                ul {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  li {
+                    a {
+                      font-size: 18px;
+                    }
+                    i {
+                      font-size: 18px;
+                      transition: all 0.2s linear;
+                    }
+                    &:hover .fa-facebook-f {
+                      color: var(--facebook);
+                    }
+                    &:hover .fa-twitter {
+                      color: var(--twitter);
+                    }
+                    &:hover .fa-youtube {
+                      color: var(--youtube);
+                    }
+                    &:hover .fa-linkedin {
+                      color: var(--linkedin);
+                    }
+                  }
+                }
               }
             }
           }
         }
+      }
+    }
+    .team-version-two-pagination {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      z-index: 9;
+      left: 0;
+      bottom: -50px;
+      gap: 12px;
+      & .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+      }
+      & .swiper-pagination-bullet-active {
+        background: var(--theme_color);
+        opacity: 1;
       }
     }
   }
