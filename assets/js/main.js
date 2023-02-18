@@ -170,6 +170,24 @@
       prevEl: ".swiper-button-prev",
     },
   });
+  ///////////////////////////////////////////////////
+  // 13. Service List Section version two Js //
+
+  var ServiceListVersionTwo = new Swiper(".serviceList-version-two", {
+    slidesPerView: 4,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".serviceList-section-version-two-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
 
   ///////////////////////////////////////////////////
   // 13. Client-review-version-one-slider Js //

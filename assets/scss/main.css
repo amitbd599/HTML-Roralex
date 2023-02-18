@@ -392,6 +392,25 @@ input[type=color] {
   margin-top: 10px;
 }
 
+/* Header Intro Version One version Two */
+.header-intro-version-two .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header-intro-version-two .wrapper .pop-text {
+  text-align: center;
+}
+.header-intro-version-two .wrapper .pop-text h3 {
+  font-size: 18px;
+  color: var(--theme_color);
+}
+.header-intro-version-two .wrapper .pop-text h2 {
+  margin-top: 15px;
+  font-weight: 30;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+
 /*----------------------------------------*/
 /*  02. HEADER CSS START
 /*----------------------------------------*/
@@ -1677,6 +1696,65 @@ input[type=color] {
   opacity: 0.5;
 }
 
+/* About-section-version-two */
+.about-section-version-two .left-side {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.about-section-version-two .right-side {
+  padding-left: 10px;
+}
+.about-section-version-two .right-side .wrapper .intro h3 {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 55px;
+}
+.about-section-version-two .right-side .wrapper .intro h3::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 8px;
+  width: 50px;
+  height: 4px;
+  background: var(--theme_color);
+  border-radius: 5px;
+}
+.about-section-version-two .right-side .wrapper .intro h2 {
+  margin-top: 26px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.about-section-version-two .right-side .wrapper .intro p {
+  margin-top: 16px;
+}
+.about-section-version-two .right-side .wrapper .list-data {
+  margin-top: 16px;
+}
+.about-section-version-two .right-side .wrapper .list-data ul {
+  padding-left: 20px;
+}
+.about-section-version-two .right-side .wrapper .list-data ul li {
+  padding: 2px 0;
+}
+.about-section-version-two .right-side .wrapper .list-data ul li i {
+  color: var(--theme_color);
+}
+.about-section-version-two .right-side .wrapper .list-data ul li span {
+  padding-left: 6px;
+}
+.about-section-version-two .right-side .wrapper .list-data .btn-section {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+.about-section-version-two .right-side .wrapper .list-data .btn-section .btn-shape-normal-outline {
+  width: 152px;
+}
+
 /*----------------------------------------*/
 /*  02. Service List Section
 /*----------------------------------------*/
@@ -1722,6 +1800,70 @@ input[type=color] {
 }
 .serviceList-section-version-one .btn-section button {
   width: 165px;
+}
+
+/* Service List Section version Two */
+.serviceList-section-version-two .inner-card-items-slider {
+  margin-top: 50px;
+  position: relative;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper {
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper.bg-theme {
+  background: var(--theme_color);
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper.bg-dark {
+  background: var(--primary_color);
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .icon-file {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bg_white);
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro p {
+  font-size: 16px;
+  margin-top: 16px;
+  text-align: center;
+  color: var(--bg_white);
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .btn-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper .btn-section .btn-shape-normal-outline {
+  background: var(--bg_white);
+  color: var(--heading_color);
+  width: 135px;
+  padding: 12px 14px;
+  font-weight: 700;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-section-version-two-pagination {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  bottom: -50px;
+  left: 0;
+  gap: 10px;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-section-version-two-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 0;
+}
+.serviceList-section-version-two .inner-card-items-slider .serviceList-section-version-two-pagination .swiper-pagination-bullet-active {
+  background: var(--theme_color);
+  opacity: 1;
 }
 
 /*----------------------------------------*/

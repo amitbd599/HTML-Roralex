@@ -37,3 +37,24 @@
     }
   }
 }
+
+/* Header Intro Version One version Two */
+.header-intro-version-two {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    .pop-text {
+      text-align: center;
+      h3 {
+        font-size: 18px;
+        color: var(--theme_color);
+      }
+      h2 {
+        margin-top: 15px;
+        font-weight: 30;
+        font-weight: 700;
+        color: var(--heading_color);
+      }
+    }
+  }
+}
