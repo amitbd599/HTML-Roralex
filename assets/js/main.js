@@ -150,7 +150,7 @@
   });
 
   ///////////////////////////////////////////////////
-  // 13. Team-version-one-slider Js //
+  // 13. Team Slider Js //
 
   var TeamVersionOne = new Swiper(".team-version-one", {
     slidesPerView: 4,
@@ -170,8 +170,27 @@
       prevEl: ".swiper-button-prev",
     },
   });
+
+  var TeamVersionTwo = new Swiper(".team-version-two", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".team-version-two-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   ///////////////////////////////////////////////////
-  // 13. Service List Section version two Js //
+  // 13. Service Slider Js //
 
   var ServiceListVersionTwo = new Swiper(".serviceList-version-two", {
     slidesPerView: 4,
