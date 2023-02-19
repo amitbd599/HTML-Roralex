@@ -459,6 +459,7 @@ input[type=color] {
   font-weight: 30;
   font-weight: 700;
   color: var(--heading_color);
+  text-transform: uppercase;
 }
 
 /*----------------------------------------*/
@@ -3026,6 +3027,94 @@ input[type=color] {
   top: 6px;
 }
 
+/* Our Plan Price  version Two Start */
+.price-section-version-two .price-card-version-two .wrapper {
+  margin-top: 70px;
+  background: var(--bg_white);
+  padding: 30px 30px;
+  border-radius: 8px;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .heading-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .heading-intro .left {
+  margin-top: 20px;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .heading-intro .left h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .heading-intro .left h3 {
+  font-weight: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .heading-intro .left p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .heading-intro .right h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--theme_color);
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list {
+  margin-top: 10px;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list ul li {
+  padding: 7px 0;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list ul li i {
+  margin-right: 6px;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list ul li .fa-check {
+  color: #22c55e;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list ul li .fa-xmark {
+  color: #dc2626;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list .btn-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.price-section-version-two .price-card-version-two .wrapper .inner .inner-list .btn-section .btn-shape-normal-outline {
+  width: 200px;
+  padding: 14px;
+}
+.price-section-version-two .price-card-version-two .wrapper.theme {
+  margin-top: 40px;
+  background: var(--primary_color);
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .heading-intro .left h2 {
+  color: var(--bg_white);
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .heading-intro .left h3 {
+  color: var(--bg_white);
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .heading-intro .left p {
+  color: var(--bg_white);
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .inner-list {
+  margin-top: 10px;
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .inner-list ul li {
+  color: var(--bg_white);
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .inner-list .btn-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.price-section-version-two .price-card-version-two .wrapper.theme .inner .inner-list .btn-section .btn-shape-normal-outline {
+  width: 200px;
+  padding: 14px;
+}
+
 /*----------------------------------------*/
 /*  02. Our Plan Price START
 /*----------------------------------------*/
@@ -3087,6 +3176,69 @@ input[type=color] {
   width: 140px;
 }
 
+/* News Letter version Two Start */
+.newsletter-section-version-two {
+  position: relative;
+  z-index: 9;
+  background: url("/assets/img//bg-overlay/bg-overlay-4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.newsletter-section-version-two::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.4588235294);
+  z-index: -1;
+}
+.newsletter-section-version-two .wrapper h2 {
+  font-size: 46px;
+  color: var(--bg_white);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.newsletter-section-version-two .wrapper p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--bg_white);
+}
+.newsletter-section-version-two .wrapper .input-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.newsletter-section-version-two .wrapper .input-section input {
+  width: 330px;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.newsletter-section-version-two .wrapper .input-section .btn-shape-normal-outline {
+  padding: 12px;
+  width: 130px;
+}
+.newsletter-section-version-two .img-file {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.newsletter-section-version-two .img-file img {
+  position: absolute;
+  width: 400px;
+  bottom: -115px;
+}
+
 /*----------------------------------------*/
 /*  02. Our Client START
 /*----------------------------------------*/
@@ -3106,4 +3258,9 @@ input[type=color] {
 }
 .ourclient-section-version-one .data-inner {
   margin-top: 30px;
+}
+
+/* Our Client version two Start */
+.ourclient-section-version-two .data-inner-version-two {
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */

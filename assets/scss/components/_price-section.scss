@@ -79,3 +79,110 @@
     }
   }
 }
+
+/* Our Plan Price  version Two Start */
+
+.price-section-version-two {
+  .price-card-version-two {
+    .wrapper {
+      margin-top: 70px;
+      background: var(--bg_white);
+      padding: 30px 30px;
+      border-radius: 8px;
+      .inner {
+        .heading-intro {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .left {
+            margin-top: 20px;
+            h2 {
+              font-size: 16px;
+              font-weight: 700;
+            }
+            h3 {
+              font-weight: 22px;
+              font-weight: 700;
+              color: var(--heading_color);
+            }
+            p {
+              font-size: 15px;
+              margin-bottom: 5px;
+            }
+          }
+          .right {
+            h1 {
+              font-size: 48px;
+              font-weight: 700;
+              color: var(--theme_color);
+            }
+          }
+        }
+        .inner-list {
+          margin-top: 10px;
+          ul {
+            li {
+              padding: 7px 0;
+              i {
+                margin-right: 6px;
+              }
+              .fa-check {
+                color: #22c55e;
+              }
+              .fa-xmark {
+                color: #dc2626;
+              }
+            }
+          }
+          .btn-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            .btn-shape-normal-outline {
+              width: 200px;
+              padding: 14px;
+            }
+          }
+        }
+      }
+      &.theme {
+        margin-top: 40px;
+        background: var(--primary_color);
+        .inner {
+          .heading-intro {
+            .left {
+              h2 {
+                color: var(--bg_white);
+              }
+              h3 {
+                color: var(--bg_white);
+              }
+              p {
+                color: var(--bg_white);
+              }
+            }
+          }
+          .inner-list {
+            margin-top: 10px;
+            ul {
+              li {
+                color: var(--bg_white);
+              }
+            }
+            .btn-section {
+              display: flex;
+              justify-content: center;
+              margin-bottom: 10px;
+              margin-top: 20px;
+              .btn-shape-normal-outline {
+                width: 200px;
+                padding: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

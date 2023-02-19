@@ -63,3 +63,70 @@
     }
   }
 }
+
+/* News Letter version Two Start */
+
+.newsletter-section-version-two {
+  position: relative;
+  z-index: 9;
+  background: url("/assets/img//bg-overlay/bg-overlay-4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #33333375;
+    z-index: -1;
+  }
+  .wrapper {
+    h2 {
+      font-size: 46px;
+      color: var(--bg_white);
+      text-transform: capitalize;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: var(--bg_white);
+    }
+    .input-section {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      input {
+        width: 330px;
+        height: 50px;
+        padding: 0 10px;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        align-items: center;
+      }
+      .btn-shape-normal-outline {
+        padding: 12px;
+        width: 130px;
+      }
+    }
+  }
+  .img-file {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      position: absolute;
+      width: 400px;
+      bottom: -115px;
+    }
+  }
+}

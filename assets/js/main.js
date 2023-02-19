@@ -17,7 +17,7 @@
   });
 
   ////////////////////////////////////////////////////
-  // 02. Mobile Menu Js //
+  // ============= Mobile Menu Js =============
   $("#mobile-menu").meanmenu({
     meanMenuContainer: ".mobile-menu",
     meanScreenWidth: "991",
@@ -25,7 +25,7 @@
   });
 
   ///////////////////////////////////////////////////
-  // 02. Mobile Menu 2 Js
+  // ============= Mobile Menu 2 =============
   $("#mobile-menu-2").meanmenu({
     meanMenuContainer: ".mobile-menu-2",
     meanScreenWidth: "1199",
@@ -33,7 +33,7 @@
   });
 
   ////////////////////////////////////////////////////
-  // 03. Sidebar Js //
+  // ============= Sidebar Js  =============
   $(".sidebar-toggle-btn").on("click", function () {
     $(".mobile-sidebar-area").addClass("sidebar-opened");
     $(".body-overlay").addClass("opened");
@@ -43,8 +43,7 @@
     $(".body-overlay").removeClass("opened");
   });
 
-  ////////////////////////////////////////////////////
-  // 04. Body overlay Js //
+  // ============= Body overlay Js =============
   $(".body-overlay").on("click", function () {
     $(".mobile-sidebar-area").removeClass("sidebar-opened");
     $(".body-overlay").removeClass("opened");
@@ -59,8 +58,7 @@
     $(".search__area").removeClass("opened");
   });
 
-  ////////////////////////////////////////////////////
-  // 06. Sticky Header Js
+  // ============= Sticky Header Js =============
   windowOn.on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 100) {
@@ -70,7 +68,6 @@
     }
   });
 
-  ////////////////////////////////////////////////////
   // 07. Data CSS Js
   $("[data-background").each(function () {
     $(this).css(
@@ -92,7 +89,7 @@
   $("select").niceSelect();
 
   ///////////////////////////////////////////////////
-  // 13. Hero  Slider Js //
+  // ============= Hero  Slider Js =============
   var heroSliderNav = new Swiper(".hero-slider-nav", {
     spaceBetween: 0,
     slidesPerView: 4,
@@ -150,7 +147,7 @@
   });
 
   ///////////////////////////////////////////////////
-  // 13. Team Slider Js //
+  // ============= Team Slider Js =============
 
   var TeamVersionOne = new Swiper(".team-version-one", {
     slidesPerView: 4,
@@ -192,7 +189,7 @@
     },
   });
   ///////////////////////////////////////////////////
-  // 13. Service Slider Js //
+  // ============= Service Slider Js =============
 
   var ServiceListVersionTwo = new Swiper(".serviceList-version-two", {
     slidesPerView: 4,
@@ -255,8 +252,11 @@
 
   // =========== Client-Review Slider End =========== Js //
 
-  //  jquery scrollbox //
+  // =========== Marquee Slider=========== //
+  // Top Header
   $("#topHeader").scrollbox();
+  // Top Header
+  $("#clientBrand").scrollbox();
 
   ///////////////////////////////////////////////////
   // 13. Masonary Js
@@ -372,8 +372,7 @@
     $("#ship-box-info").slideToggle(1000);
   });
 
-  ////////////////////////////////////////////////////
-  // 21. Counter Js //
+  // ============= Counter Js =============
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
