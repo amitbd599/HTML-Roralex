@@ -5,7 +5,6 @@
 /* Latest Projects Section version one */
 
 .latest-project-version-one {
- 
   .project-body {
     .project-filter {
       position: relative;
@@ -106,6 +105,151 @@
               bottom: 8px;
               left: 10px;
               z-index: 9;
+              button {
+                padding: 10px 10px;
+                width: 130px;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: all 0.3s linear;
+              }
+            }
+            &::after {
+              position: absolute;
+              background: #343a40c1;
+              content: "";
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              z-index: 0;
+              visibility: hidden;
+              opacity: 0;
+              transition: all 0.3s linear;
+            }
+            &:hover {
+              img {
+                transform: scale(110%);
+              }
+              .text {
+                transform: translateY(0);
+                visibility: visible;
+                opacity: 1;
+              }
+              .btn-section button {
+                transform: translateY(0);
+                visibility: visible;
+                opacity: 1;
+              }
+              &::after {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Latest Projects Section version Two */
+
+.latest-project-version-two {
+  .project-body {
+    .project-filter {
+      position: relative;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      button {
+        padding: 8px 14px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: 1px solid var(--border_color);
+        transition: all 0.2s linear;
+        &:hover {
+          background: var(--theme_color);
+          color: var(--bg_white);
+          border: 1px solid var(--theme_color);
+        }
+        &.active {
+          background: var(--theme_color);
+          color: var(--bg_white);
+          border: 1px solid var(--theme_color);
+        }
+      }
+    }
+    .project-version-two {
+      .project-item {
+        margin-top: 40px;
+        .project-wrapper {
+          margin-bottom: 30px;
+          .img-file {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+              transition: all 0.3s linear;
+              object-fit: cover;
+              width: 100%;
+            }
+            .text-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 9;
+              padding: 10px 10px;
+              margin-top: 20px;
+              .text {
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: all 0.3s linear;
+                text-align: center;
+                span {
+                  color: var(--bg_white);
+                }
+                h2 {
+                  margin-top: 10px;
+                  font-size: 26px;
+                  font-weight: 700;
+                  color: var(--bg_white);
+                  text-transform: capitalize;
+                }
+                p {
+                  font-weight: 400;
+                  color: var(--bg_white);
+                  margin-top: 10px;
+                  text-transform: capitalize;
+                  font-size: 15px;
+                }
+                .location {
+                  margin-top: 10px;
+                  i {
+                    color: var(--theme_color);
+                  }
+                  span {
+                    padding-left: 6px;
+                    font-size: 20px;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+            .btn-section {
+              position: absolute;
+              bottom: 12px;
+              left: 50%;
+              z-index: 9;
+              transform: translateX(-50%);
               button {
                 padding: 10px 10px;
                 width: 130px;

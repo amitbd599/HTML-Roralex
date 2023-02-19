@@ -320,6 +320,55 @@ input[type=color] {
   right: 0;
 }
 
+/* ======= Button Shape Two ======= */
+.button-shape-two {
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--theme_color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: capitalize;
+  color: var(--text_color);
+}
+.button-shape-two::after, .button-shape-two::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 28%;
+  z-index: -1;
+  transition: 0.2s ease-out;
+  background-color: var(--theme_color);
+}
+.button-shape-two::before {
+  top: -50%;
+  left: -28%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+.button-shape-two:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+.button-shape-two:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+.button-shape-two:hover {
+  color: var(--bg_white);
+}
+.button-shape-two:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
 /*----------------------------------------*/
 /*  02. universal CSS
 /*----------------------------------------*/
@@ -2429,6 +2478,142 @@ input[type=color] {
   opacity: 1;
 }
 
+/* Latest Projects Section version Two */
+.latest-project-version-two .project-body .project-filter {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.latest-project-version-two .project-body .project-filter button {
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--border_color);
+  transition: all 0.2s linear;
+}
+.latest-project-version-two .project-body .project-filter button:hover {
+  background: var(--theme_color);
+  color: var(--bg_white);
+  border: 1px solid var(--theme_color);
+}
+.latest-project-version-two .project-body .project-filter button.active {
+  background: var(--theme_color);
+  color: var(--bg_white);
+  border: 1px solid var(--theme_color);
+}
+.latest-project-version-two .project-body .project-version-two .project-item {
+  margin-top: 40px;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper {
+  margin-bottom: 30px;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file img {
+  transition: all 0.3s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s linear;
+  text-align: center;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text span {
+  color: var(--bg_white);
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text h2 {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bg_white);
+  text-transform: capitalize;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text p {
+  font-weight: 400;
+  color: var(--bg_white);
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text .location {
+  margin-top: 10px;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text .location i {
+  color: var(--theme_color);
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .text-overlay .text .location span {
+  padding-left: 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .btn-section {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  z-index: 9;
+  transform: translateX(-50%);
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .btn-section button {
+  padding: 10px 10px;
+  width: 130px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s linear;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file::after {
+  position: absolute;
+  background: rgba(52, 58, 64, 0.7568627451);
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file:hover img {
+  transform: scale(110%);
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file:hover .text {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file:hover .btn-section button {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*----------------------------------------*/
 /*  02. Latest Projects Section
 /*----------------------------------------*/
@@ -2498,6 +2683,74 @@ input[type=color] {
   background: var(--theme_color);
 }
 
+/* Client Review Section version two */
+.client-review-version-two .slider-client-review {
+  margin-top: 40px;
+  position: relative;
+}
+.client-review-version-two .slider-client-review .review-version-two {
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper {
+  margin: 0 20px;
+  position: relative;
+  border-radius: 10px;
+  padding: 25px 25px;
+  background: var(--bg_white);
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .img-file {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #fff;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .quta-img {
+  margin-top: 40px;
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .text {
+  margin-top: 15px;
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .text p {
+  font-size: 16px;
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .name-pos {
+  margin-top: 10px;
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .name-pos h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--heading_color);
+  margin-bottom: 0;
+}
+.client-review-version-two .slider-client-review .review-version-two .swiper-wrapper .swiper-slide .inner-wrapper .name-pos h4 {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--theme_color);
+}
+.client-review-version-two .slider-client-review .review-version-two-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  left: 0;
+  bottom: -40px;
+  gap: 12px;
+}
+.client-review-version-two .slider-client-review .review-version-two-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+}
+.client-review-version-two .slider-client-review .review-version-two-pagination .swiper-pagination-bullet-active {
+  background: var(--theme_color);
+  opacity: 1;
+}
+
 /*----------------------------------------*/
 /*  02. Blog Section
 /*----------------------------------------*/
@@ -2526,7 +2779,6 @@ input[type=color] {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(51, 51, 51, 0.6862745098);
   z-index: 0;
 }
 .blog-section-version-one .blog-card-version-one .wrapper .img-file .overlay-date {
@@ -2543,6 +2795,7 @@ input[type=color] {
   gap: 8px;
   color: var(--bg_white);
   font-size: 14px;
+  font-weight: 600;
 }
 .blog-section-version-one .blog-card-version-one .wrapper .img-file .overlay-date .admin {
   display: flex;
@@ -2550,6 +2803,7 @@ input[type=color] {
   gap: 8px;
   color: var(--bg_white);
   font-size: 14px;
+  font-weight: 600;
 }
 .blog-section-version-one .blog-card-version-one .wrapper .img-file .badge-file {
   position: absolute;
@@ -2559,7 +2813,7 @@ input[type=color] {
 }
 .blog-section-version-one .blog-card-version-one .wrapper .img-file .badge-file span {
   padding: 6px 12px;
-  background: var(--theme_color);
+  background: var(--primary_color);
   border-radius: 5px;
   color: var(--bg_white);
   font-size: 14px;
@@ -2609,6 +2863,95 @@ input[type=color] {
 }
 .blog-section-version-one .blog-card-version-one .btn-section .btn-shape-normal-outline {
   width: 190px;
+}
+
+/* Blog Section version one Start */
+.blog-section-version-two .blog-card-version-two {
+  margin-top: 40px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper {
+  margin-bottom: 35px;
+  background: var(--bg_white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .img-file {
+  overflow: hidden;
+  position: relative;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .img-file img {
+  width: 100%;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .img-file::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file {
+  padding: 10px 20px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .date-admin {
+  margin-top: 10px;
+  display: flex;
+  gap: 18px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .date-admin .date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--theme_color);
+  font-size: 14px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .date-admin .admin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--theme_color);
+  font-size: 14px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+  margin: 0;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text p {
+  margin-top: 10px;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text a {
+  display: inline-block;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text a button {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--heading_color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s linear;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text a button i {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.2s linear;
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text a button:hover {
+  color: var(--theme_color);
+}
+.blog-section-version-two .blog-card-version-two .wrapper .inner-file .inner-text a button:hover i {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 /*----------------------------------------*/

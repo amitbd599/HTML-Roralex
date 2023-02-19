@@ -211,8 +211,9 @@
   });
 
   ///////////////////////////////////////////////////
-  // 13. Client-review-version-one-slider Js //
+  // =========== Client-Review Slider Start =========== Js //
 
+  // Client-review-version-one-slider
   var ReviewVersionOne = new Swiper(".review-version-one", {
     slidesPerView: 3,
     spaceBetween: 45,
@@ -232,7 +233,28 @@
     },
   });
 
-  ///////////////////////////////////////////////////
+  // Client-review-version-two-slider
+  var ReviewVersionTwo = new Swiper(".review-version-two", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".review-version-two-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // =========== Client-Review Slider End =========== Js //
+
   //  jquery scrollbox //
   $("#topHeader").scrollbox();
 
@@ -994,8 +1016,9 @@
     });
   }
 
-  ////////////////////////////////////////////////////
-  // 15. Project Js //
+  // ===================== 15. Project Js Start ==================== //
+
+  // project-version-one
   $(".projectHold").imagesLoaded(function () {
     var $projectHold = $(".project-version-one").isotope({
       // options
@@ -1014,6 +1037,27 @@
     });
   });
 
+  // project-version-two
+
+  $(".projectHoldTwo").imagesLoaded(function () {
+    var $projectHoldTwo = $(".project-version-two").isotope({
+      // options
+    });
+    // filter items on button click
+    $(".project-filter").on("click", "button", function () {
+      var filterValue = $(this).attr("data-filter");
+      $projectHoldTwo.isotope({ filter: filterValue });
+    });
+
+    //for menu active class
+    $(".project-filter button").on("click", function (event) {
+      $(this).siblings(".active").removeClass("active");
+      $(this).addClass("active");
+      event.preventDefault();
+    });
+  });
+
+  // ===================== 15. Project Js End ==================== //
   // colse button
   if (jQuery(".close-button").length > 0) {
     const closeBtn = document.querySelector(".close-button");
