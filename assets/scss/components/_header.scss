@@ -23,6 +23,27 @@
 .header-intro-version-two-area {
   background: var(--primary_color);
 }
+.header-intro-version-three-area {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  &.header__sticky {
+    background: var(--primary_color);
+  }
+  .menu-body {
+    .main-menu {
+      .mobile-menu {
+        ul {
+          li {
+            color: var(--bg_white);
+          }
+        }
+      }
+    }
+  }
+}
+
 //logo
 .logo {
   width: 100%;

@@ -146,6 +146,25 @@
     },
   });
 
+  var heroSliderThree = new Swiper(".hero-slider-three", {
+    spaceBetween: 0,
+    effect: "fade",
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".hero-slider-three-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
   ///////////////////////////////////////////////////
   // ============= Team Slider Js =============
 
