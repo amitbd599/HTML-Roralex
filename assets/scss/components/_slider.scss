@@ -428,8 +428,9 @@
 
 .hero-slider-version-three {
   position: relative;
-  overflow: hidden;
+
   .hero-slider-three {
+    overflow: hidden;
     .swiper-wrapper {
       position: relative;
       .inner-item {
@@ -595,6 +596,49 @@
       &:hover {
         right: 15px;
       }
+    }
+  }
+  .intro-lub {
+    position: absolute;
+    bottom: -132px;
+    z-index: 9;
+    width: 460px;
+    height: 270px;
+    background: var(--theme_color);
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--bg_white);
+    }
+    .clips {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+      i {
+        font-size: 50px;
+        color: var(--bg_white);
+      }
+      .phone {
+        font-size: 30px;
+        color: var(--bg_white);
+        font-weight: 600;
+      }
+    }
+    p {
+      margin: 0;
+      margin-top: 20px;
+      font-size: 16px;
+      color: var(--bg_white);
     }
   }
 }
