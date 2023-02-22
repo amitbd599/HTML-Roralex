@@ -207,6 +207,27 @@
       prevEl: ".swiper-button-prev",
     },
   });
+
+  var TeamVersionThree = new Swiper(".team-version-three", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerGroup: 2,
+    speed: 1000,
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".team-version-three-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   ///////////////////////////////////////////////////
   // ============= Service Slider Js =============
 

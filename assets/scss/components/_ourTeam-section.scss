@@ -184,3 +184,124 @@
     }
   }
 }
+
+/* Project Background Overlay Section version Three */
+
+.ourTeam-section-version-three {
+  .inner-card-items-slider {
+    position: relative;
+    margin-top: 40px;
+    .team-version-three {
+      .swiper-wrapper {
+        .swiper-slide {
+          .inner-wrapper {
+            position: relative;
+            border-radius: 8px;
+            margin: 20px 15px;
+            .img-file {
+              position: relative;
+              z-index: 9;
+              border-radius: 8px 8px 0 0;
+              overflow: hidden;
+            }
+            .intro {
+              position: relative;
+              z-index: 9;
+              padding: 18px 10px;
+              text-align: center;
+              border: 1px solid var(--border_color);
+              border-top: transparent;
+              border-radius: 0 0 8px 8px;
+              padding-bottom: 10px;
+              background: var(--bg_white);
+              transition: all 0.2s linear;
+
+              .name {
+                margin-top: 0;
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--heading_color);
+                margin-bottom: 0;
+              }
+              .position {
+                margin: 0;
+                margin-top: 5px;
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--theme_color);
+              }
+
+              .social-icon {
+                margin-top: 8px;
+                margin-bottom: 5px;
+                ul {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  li {
+                    a {
+                      font-size: 18px;
+                      padding: 2px;
+                      color: var(--primary_color);
+                      i {
+                        font-size: 18px;
+                        transition: all 0.2s linear;
+                      }
+                      &:hover {
+                        color: var(--theme_color);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .overlay {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              bottom: 0;
+              background: var(--theme_color);
+              z-index: 0;
+              border-radius: 8px;
+              transition: all 0.2s linear;
+              visibility: hidden;
+              opacity: 0;
+              padding: 0;
+            }
+            &:hover {
+              .intro {
+                border: 1px solid var(--theme_color);
+                border-top: transparent;
+              }
+              .overlay {
+                bottom: -7px;
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .team-version-three-pagination {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      z-index: 9;
+      left: 0;
+      bottom: -50px;
+      gap: 12px;
+      & .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+      }
+      & .swiper-pagination-bullet-active {
+        background: var(--theme_color);
+        opacity: 1;
+      }
+    }
+  }
+}
