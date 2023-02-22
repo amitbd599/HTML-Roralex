@@ -226,6 +226,23 @@
     },
   });
 
+  // ============= Hip Slider Js =============
+
+  var HipSliderOne = new Swiper(".hip-slider-one", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".hip-slider-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
   ///////////////////////////////////////////////////
   // =========== Client-Review Slider Start =========== Js //
 
