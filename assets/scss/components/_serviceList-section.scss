@@ -125,3 +125,120 @@
     }
   }
 }
+
+/* Service List Section version Two */
+
+.serviceList-section-version-three {
+  .inner-card-items {
+    margin-top: 40px;
+    .wrapper {
+      position: relative;
+      .inner {
+        margin-top: 40px;
+        border: 1px solid var(--border_color);
+        transition: all 0.2s linear;
+        padding: 28px 18px;
+        border-radius: 8px;
+        z-index: 1;
+        background: #f8f8f8;
+        position: relative;
+        .count-file {
+          position: absolute;
+          top: -44px;
+          left: 50%;
+          transform: translateX(-50%);
+          .hip {
+            width: 100px;
+            height: 100px;
+            background: var(--primary_color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s linear;
+            h2 {
+              color: var(--bg_white);
+              margin: 0;
+              padding: 0;
+              font-size: 45px;
+              font-weight: 700;
+            }
+          }
+        }
+        .text-file {
+          padding-top: 48px;
+          h3 {
+            color: var(--heading_color);
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+          }
+          p {
+            font-size: 15px;
+            margin-top: 12x;
+          }
+        }
+        .btn-hold {
+          button {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--theme_color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s linear;
+            i {
+              visibility: hidden;
+              opacity: 0;
+              transform: translateX(-8px);
+              transition: all 0.2s linear;
+            }
+            &:hover {
+              color: var(--theme_color);
+              i {
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(0px);
+              }
+            }
+          }
+        }
+      }
+      .overlay {
+        position: absolute;
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--theme_color);
+        z-index: 0;
+        transition: all 0.2s linear;
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:hover {
+        .inner {
+          border: 1px solid var(--theme_color);
+          .count-file {
+            .hip {
+              background: var(--theme_color);
+            }
+          }
+        }
+        .overlay {
+          visibility: visible;
+          opacity: 1;
+          top: 7px;
+        }
+      }
+    }
+  }
+  .btn-section {
+    padding-top: 60px;
+    button {
+      width: 165px;
+    }
+  }
+}
