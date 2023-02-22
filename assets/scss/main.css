@@ -476,6 +476,7 @@ input[type=color] {
   font-size: 16px;
   font-weight: 600;
   display: inline;
+  text-transform: uppercase;
 }
 .header-intro-version-three .wrapper .pop-text h3::after {
   position: absolute;
@@ -2741,6 +2742,65 @@ input[type=color] {
 .whyChooseUs-section-version-two .inner-card-items .wrapper:hover .overlay {
   left: -7px;
   top: -7px;
+}
+
+/* Why Choose Us Section version three start */
+.whyChooseUs-section-version-three .inner-card-items {
+  margin-top: 50px;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper {
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner {
+  padding: 20px 26px;
+  border-radius: 8px;
+  border: 1px solid var(--border_color);
+  position: relative;
+  z-index: 9;
+  background: var(--bg_white);
+  transition: all 0.3s linear;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner h2 {
+  margin-top: 22px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner .icon-file {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner .overlay-text {
+  position: absolute;
+  left: 18px;
+  top: 60px;
+  z-index: 0;
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner .overlay-text h2 {
+  font-size: 80px;
+  color: var(--border_color);
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner:hover {
+  background: var(--primary_color);
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner:hover h2,
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner:hover p {
+  color: var(--bg_white);
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner:hover .overlay-text h2 {
+  color: var(--border_color);
+  opacity: 0.1;
 }
 
 /*----------------------------------------*/
