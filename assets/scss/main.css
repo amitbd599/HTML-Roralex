@@ -3301,12 +3301,10 @@ input[type=color] {
   opacity: 1;
 }
 .ourTeam-section-version-three .inner-card-items-slider .team-version-three-pagination {
-  position: absolute;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   z-index: 9;
-  left: 0;
-  bottom: -50px;
   gap: 12px;
 }
 .ourTeam-section-version-three .inner-card-items-slider .team-version-three-pagination .swiper-pagination-bullet {
