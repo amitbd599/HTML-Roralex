@@ -265,7 +265,7 @@
   });
 
   ///////////////////////////////////////////////////
-  // =========== Client-Review Slider Start =========== Js //
+  // =========== Client-Review  Start =========== Js //
 
   // Client-review-version-one-slider
   var ReviewVersionOne = new Swiper(".review-version-one", {
@@ -305,6 +305,27 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+  // Client-review-version-three
+
+  $(".reviewHold").imagesLoaded(function () {
+    var $reviewHold = $(".review-version-three").isotope({
+      // options
+      filter: $(".pro1"),
+    });
+    // filter items on button click
+    $(".review-filter").on("click", ".img-file", function () {
+      var filterValue = $(this).attr("data-filter");
+      $reviewHold.isotope({ filter: filterValue });
+    });
+
+    //for menu active class
+    $(".review-filter .img-file").on("click", function (event) {
+      $(".active").removeClass("active");
+      $(this).addClass(" active");
+      event.preventDefault();
+    });
   });
 
   // =========== Client-Review Slider End =========== Js //

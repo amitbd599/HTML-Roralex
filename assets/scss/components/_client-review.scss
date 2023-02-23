@@ -149,3 +149,128 @@
     }
   }
 }
+
+/* Client Review Section version three */
+
+.client-review-version-three {
+  .container {
+    margin-top: 30px;
+  }
+  .left-side {
+    .review-filter {
+      .no-inner {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      .inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 22px;
+      }
+      .inner-two {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 22px;
+      }
+      .img-file {
+        display: block;
+        position: relative;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 9;
+        span {
+          position: relative;
+          z-index: 9;
+        }
+        &::after {
+          position: absolute;
+          left: -4px;
+          top: -4px;
+          background: var(--theme_color);
+          width: 0;
+          height: 0;
+          content: "";
+          border-radius: 5px 0 0 0;
+          z-index: 0;
+          transition: all 0.3s linear;
+          visibility: hidden;
+          opacity: 0;
+        }
+        &::before {
+          position: absolute;
+          right: -4px;
+          bottom: -4px;
+          background: var(--theme_color);
+          width: 0;
+          height: 0;
+          content: "";
+          border-radius: 0 0 5px 0;
+          z-index: 0;
+          transition: all 0.3s linear;
+          visibility: hidden;
+          opacity: 0;
+        }
+        &.active,
+        &:hover {
+          &::after {
+            visibility: visible;
+            opacity: 1;
+            width: 50px;
+            height: 50px;
+          }
+          &::before {
+            visibility: visible;
+            opacity: 1;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .right-side {
+    padding-left: 50px;
+    .intro-section {
+      margin-top: 20px;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      h2 {
+        margin-top: 15px;
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--heading_color);
+      }
+    }
+    .review-version-three {
+      margin-top: 10px;
+      .icon-file {
+        i {
+          font-size: 60px;
+          color: var(--border_color);
+        }
+      }
+      .text-file {
+        margin-top: 10px;
+      }
+      .button-intro {
+        margin-top: 10px;
+        h3 {
+          font-size: 26px;
+          font-weight: 700;
+          color: var(--theme_color);
+          margin: 0;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
