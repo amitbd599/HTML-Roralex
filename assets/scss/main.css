@@ -3773,6 +3773,14 @@ input[type=color] {
   visibility: visible;
   opacity: 1;
 }
+.latest-project-version-three .project-body .btn-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.latest-project-version-three .project-body .btn-section .btn-shape-normal-outline {
+  width: 182px;
+}
 
 /*----------------------------------------*/
 /*  02. Latest Projects Section

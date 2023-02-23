@@ -479,5 +479,13 @@
         }
       }
     }
+    .btn-section {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      .btn-shape-normal-outline {
+        width: 182px;
+      }
+    }
   }
 }
