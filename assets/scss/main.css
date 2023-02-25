@@ -5009,4 +5009,81 @@ input[type=color] {
 }
 .widget .widget-one .wrapper ul li span {
   text-transform: capitalize;
+}
+.widget .widget-one .wrapper .btn-shape-normal-outline {
+  width: 165px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.widget-two {
+  position: relative;
+}
+.widget-two .wrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.widget-two .wrapper .img-file {
+  position: relative;
+  margin-top: 15px;
+}
+.widget-two .wrapper .img-file .pop-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.widget-two .wrapper .img-file .pop-img .inner {
+  position: relative;
+}
+.widget-two .wrapper .img-file .pop-img .inner .vide-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.widget-two .wrapper .img-file .pop-img .inner .vide-button a {
+  width: 80px;
+  height: 80px;
+  background: var(--theme_color);
+  border-radius: 50%;
+  color: var(--bg_white);
+  transition: 0.3s;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+  line-height: 120px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.widget-two .wrapper .img-file .pop-img .inner .vide-button:hover a {
+  animation: pulse 2s infinite;
+}
+
+.widget-three {
+  position: relative;
+}
+.widget-three .wrapper {
+  padding: 25px 20px;
+  border-radius: 10px;
+  background: var(--primary_color);
+}
+.widget-three .wrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bg_white);
+}
+.widget-three .wrapper ul {
+  margin-top: 15px;
+}
+.widget-three .wrapper ul li {
+  color: var(--bg_white);
+  padding: 4px 0;
+}
+.widget-three .wrapper ul li span {
+  font-weight: 600;
+}
+.widget-three .wrapper ul li i {
+  margin-right: 8px;
+  color: var(--theme_color);
 }/*# sourceMappingURL=main.css.map */
