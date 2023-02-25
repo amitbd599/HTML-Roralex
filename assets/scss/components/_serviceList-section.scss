@@ -242,3 +242,28 @@
     }
   }
 }
+
+/* Service Details Inner Section version One start */
+
+.service-details-inner-section-one {
+  .left-side {
+    .wrapper {
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--heading_color);
+        text-transform: capitalize;
+      }
+      img {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--heading_color);
+        text-transform: capitalize;
+      }
+    }
+  }
+}

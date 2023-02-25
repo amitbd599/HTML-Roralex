@@ -2847,6 +2847,24 @@ input[type=color] {
   width: 165px;
 }
 
+/* Service Details Inner Section version One start */
+.service-details-inner-section-one .left-side .wrapper h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.service-details-inner-section-one .left-side .wrapper img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.service-details-inner-section-one .left-side .wrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+
 /*----------------------------------------*/
 /*  02. Why Choose Us Section
 /*----------------------------------------*/
@@ -4950,4 +4968,45 @@ input[type=color] {
 /* Our Client version two Start */
 .ourclient-section-version-three .data-inner-version-three {
   margin-top: 40px;
+}
+
+/*----------------------------------------*/
+/*  Widget Section
+/*----------------------------------------*/
+.widget {
+  padding-left: 30px;
+}
+.widget .widget-one .wrapper {
+  padding: 25px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--border_color);
+}
+.widget .widget-one .wrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.widget .widget-one .wrapper ul {
+  margin-top: 20px;
+}
+.widget .widget-one .wrapper ul li {
+  padding: 8px 0;
+  display: flex;
+  gap: 15px;
+}
+.widget .widget-one .wrapper ul li i {
+  font-size: 40px;
+  color: var(--theme_color);
+}
+.widget .widget-one .wrapper ul li span,
+.widget .widget-one .wrapper ul li button {
+  line-height: initial;
+  padding: 4px 0;
+}
+.widget .widget-one .wrapper ul li button {
+  font-weight: 600;
+  color: var(--theme_color);
+}
+.widget .widget-one .wrapper ul li span {
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

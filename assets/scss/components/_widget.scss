@@ -1,0 +1,43 @@
+/*----------------------------------------*/
+/*  Widget Section
+/*----------------------------------------*/
+
+.widget {
+  padding-left: 30px;
+  .widget-one {
+    .wrapper {
+      padding: 25px 20px;
+      border-radius: 10px;
+      border: 2px solid var(--border_color);
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--heading_color);
+      }
+      ul {
+        margin-top: 20px;
+        li {
+          padding: 8px 0;
+          display: flex;
+          gap: 15px;
+          i {
+            font-size: 40px;
+            color: var(--theme_color);
+          }
+          span,
+          button {
+            line-height: initial;
+            padding: 4px 0;
+          }
+          button {
+            font-weight: 600;
+            color: var(--theme_color);
+          }
+          span {
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
