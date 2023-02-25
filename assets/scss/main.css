@@ -3083,7 +3083,7 @@ input[type=color] {
 }
 .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .right h2 {
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--heading_color);
   text-transform: capitalize;
@@ -3105,18 +3105,18 @@ input[type=color] {
   padding-left: 40px;
 }
 .whyChooseUs-section-version-four .inner-card-items .right-side h2 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--heading_color);
   text-transform: capitalize;
-  line-height: 30px;
+  line-height: 38px;
 }
 .whyChooseUs-section-version-four .inner-card-items .right-side h3 {
   position: absolute;
   transform: rotate(-90deg);
-  left: -46px;
-  bottom: -2px;
-  font-size: 22px;
+  left: -34px;
+  bottom: 33px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--theme_color);
 }

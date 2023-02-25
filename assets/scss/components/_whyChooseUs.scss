@@ -239,7 +239,7 @@
               .right {
                 h2 {
                   margin-top: 10px;
-                  font-size: 22px;
+                  font-size: 20px;
                   font-weight: 700;
                   color: var(--heading_color);
                   text-transform: capitalize;
@@ -266,18 +266,18 @@
       position: relative;
       padding-left: 40px;
       h2 {
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 700;
         color: var(--heading_color);
         text-transform: capitalize;
-        line-height: 30px;
+        line-height: 38px;
       }
       h3 {
         position: absolute;
         transform: rotate(-90deg);
-        left: -46px;
-        bottom: -2px;
-        font-size: 22px;
+        left: -34px;
+        bottom: 33px;
+        font-size: 18px;
         font-weight: 700;
         color: var(--theme_color);
       }
