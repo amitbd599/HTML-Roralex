@@ -330,6 +330,31 @@
 
   // =========== Client-Review Slider End =========== Js //
 
+  // =========== Blog Slider Start =========== Js //
+  // Client-review-version-one-slider
+  var BlogSliderOne = new Swiper(".blog-version-three", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    slidesPerGroup: 2,
+    speed: 1000,
+    loop: true,
+
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".blog-version-three-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // =========== Blog Slider End =========== Js //
+
   // =========== Marquee Slider=========== //
   // Top Header
   $("#topHeader").scrollbox();
