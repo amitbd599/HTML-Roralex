@@ -4644,6 +4644,85 @@ input[type=color] {
   bottom: -115px;
 }
 
+/* News Letter version Three Start */
+.newsletter-section-version-three {
+  position: relative;
+  z-index: 9;
+  background: url("/assets/img//bg-overlay/bg-overlay-6.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.newsletter-section-version-three::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.4588235294);
+  z-index: -1;
+}
+.newsletter-section-version-three .right-side .heading-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--bg_white);
+}
+.newsletter-section-version-three .right-side .heading-text h2 {
+  margin-top: 20px;
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--bg_white);
+}
+.newsletter-section-version-three .right-side .profile-hold {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.newsletter-section-version-three .right-side .profile-hold .img-file {
+  overflow: hidden;
+}
+.newsletter-section-version-three .right-side .profile-hold .img-file img {
+  border-radius: 100px;
+  border: 5px solid #fff;
+  width: 80px;
+}
+.newsletter-section-version-three .right-side .profile-hold .text-file h3 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--bg_white);
+}
+.newsletter-section-version-three .right-side .profile-hold .text-file p {
+  margin: 0;
+  color: var(--bg_white);
+}
+.newsletter-section-version-three .left-side .input-section {
+  margin-top: 40px;
+}
+.newsletter-section-version-three .left-side .input-section input {
+  width: 100%;
+  height: 55px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #ddd;
+}
+.newsletter-section-version-three .left-side .input-section .btn-shape-normal-outline {
+  padding: 12px;
+  width: 130px;
+  margin: 0;
+  margin-top: 15px;
+}
+
 /*----------------------------------------*/
 /*  02. Our Client START
 /*----------------------------------------*/
