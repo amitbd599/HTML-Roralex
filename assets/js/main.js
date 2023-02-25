@@ -331,7 +331,7 @@
   // =========== Client-Review Slider End =========== Js //
 
   // =========== Blog Slider Start =========== Js //
-  // Client-review-version-one-slider
+
   var BlogSliderOne = new Swiper(".blog-version-three", {
     slidesPerView: 3,
     spaceBetween: 0,
