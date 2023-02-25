@@ -2226,6 +2226,39 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
+/* Bread Crumb
+/*----------------------------------------*/
+/* Bread Crumb version One */
+.bread-crumb {
+  position: relative;
+  z-index: 9;
+  background: url("/assets/img/bg-overlay/bg-overlay-7.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.bread-crumb .wrapper {
+  padding: 60px 0;
+  text-align: center;
+}
+.bread-crumb .wrapper h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--bg_white);
+}
+.bread-crumb .wrapper p {
+  color: var(--bg_white);
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.bread-crumb .wrapper p span {
+  color: var(--theme_color);
+}
+
+/*----------------------------------------*/
 /*  02. About-Section START
 /*----------------------------------------*/
 /* About-section-version-one */
@@ -4750,7 +4783,7 @@ input[type=color] {
 .newsletter-section-version-two {
   position: relative;
   z-index: 9;
-  background: url("/assets/img//bg-overlay/bg-overlay-4.png");
+  background: url("/assets/img/bg-overlay/bg-overlay-4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4813,7 +4846,7 @@ input[type=color] {
 .newsletter-section-version-three {
   position: relative;
   z-index: 9;
-  background: url("/assets/img//bg-overlay/bg-overlay-6.png");
+  background: url("/assets/img/bg-overlay/bg-overlay-6.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
