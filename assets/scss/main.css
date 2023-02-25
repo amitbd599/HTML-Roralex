@@ -4457,6 +4457,69 @@ input[type=color] {
   padding: 14px;
 }
 
+/* Our Plan Price  version Three Start */
+.price-section-version-three .price-card-version-three {
+  margin-top: 60px;
+}
+.price-section-version-three .price-card-version-three .wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner {
+  background: var(--bg_white);
+  padding: 20px 30px;
+}
+.price-section-version-three .price-card-version-three .wrapper .icon-file {
+  text-align: center;
+  margin: 20px 0;
+}
+.price-section-version-three .price-card-version-three .wrapper .heading-intro {
+  text-align: center;
+}
+.price-section-version-three .price-card-version-three .wrapper .heading-intro h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.price-section-version-three .price-card-version-three .wrapper .heading-intro h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--theme_color);
+}
+.price-section-version-three .price-card-version-three .wrapper .heading-intro h3 span {
+  font-size: 15px;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list {
+  margin-top: 15px;
+  text-align: center;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list ul li {
+  padding: 5px 0;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list ul li i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list ul li i.fa-check {
+  color: #22c55e;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list ul li i.fa-xmark {
+  color: #dc2626;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list .btn-section {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.price-section-version-three .price-card-version-three .wrapper .inner-list .btn-section .btn-shape-normal-outline {
+  padding: 10px;
+  width: 126px;
+}
+.price-section-version-three .price-card-version-three .wrapper:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 /*----------------------------------------*/
 /*  02. Our Plan Price START
 /*----------------------------------------*/
