@@ -361,6 +361,16 @@
   // Top Header
   $("#clientBrand").scrollbox();
 
+  // =================== Jquery Tabs Start =================== //
+
+  $(".tabs-inner").jQueryTab({
+    activeClass: "active",
+    responsive: true,
+    collapsible: true,
+  });
+
+  // =================== Jquery Tabs End =================== //
+
   ///////////////////////////////////////////////////
   // 13. Masonary Js
   $(".package__slider").owlCarousel({

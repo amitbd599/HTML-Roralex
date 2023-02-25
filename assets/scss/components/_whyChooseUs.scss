@@ -166,3 +166,121 @@
     }
   }
 }
+
+/* Why Choose Us Section version Four start */
+.whyChooseUs-section-version-four {
+  .inner-card-items {
+    margin-top: 40px;
+    .left-side {
+      .tabs-inner {
+        .tabs {
+          border: 1px solid var(--border_color);
+          display: inline-block;
+          li {
+            position: relative;
+            a {
+              font-size: 16px;
+              font-weight: 700;
+              color: var(--heading_color);
+              transition: all 0.2s linear;
+            }
+            &::after {
+              position: absolute;
+              content: "";
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 0;
+              background: var(--theme_color);
+              transition: all 0.2s ease;
+            }
+            &::before {
+              position: absolute;
+              content: "";
+              left: 0;
+              bottom: 0;
+              width: 20px;
+              height: 0;
+              -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+              clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+              background: var(--theme_color);
+              left: 50%;
+              transform: translateX(-50%);
+              transition: all 0.2s ease;
+            }
+            &.active {
+              a {
+                color: var(--theme_color);
+              }
+              &::after {
+                height: 5px;
+              }
+              &::before {
+                height: 16px;
+              }
+            }
+          }
+        }
+        .tab_content_wrapper {
+          border: 1px solid var(--border_color);
+          height: auto;
+          .tab_content {
+            .wrapper {
+              display: flex;
+              gap: 20px;
+              .left {
+                .img-file {
+                  img {
+                    border-radius: 8px;
+                    overflow: hidden;
+                  }
+                }
+              }
+              .right {
+                h2 {
+                  margin-top: 10px;
+                  font-size: 22px;
+                  font-weight: 700;
+                  color: var(--heading_color);
+                  text-transform: capitalize;
+                }
+                ul {
+                  margin-top: 10px;
+                  li {
+                    padding: 3px 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    i {
+                      color: var(--theme_color);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right-side {
+      position: relative;
+      padding-left: 40px;
+      h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--heading_color);
+        text-transform: capitalize;
+        line-height: 30px;
+      }
+      h3 {
+        position: absolute;
+        transform: rotate(-90deg);
+        left: -46px;
+        bottom: -2px;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--theme_color);
+      }
+    }
+  }
+}
