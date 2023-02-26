@@ -293,6 +293,9 @@
           align-items: center;
           padding: 15px 0;
           border-bottom: 1px solid var(--border_color);
+          img {
+            width: 60px;
+          }
           span {
             display: block;
             &:first-child {

@@ -3131,6 +3131,9 @@ input[type=color] {
   padding: 15px 0;
   border-bottom: 1px solid var(--border_color);
 }
+.whyChooseUs-section-version-four .inner-card-items .right-side ul li img {
+  width: 60px;
+}
 .whyChooseUs-section-version-four .inner-card-items .right-side ul li span {
   display: block;
 }
@@ -3507,6 +3510,9 @@ input[type=color] {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+}
+.projectBackgroundOverlay-version-four .wrapper .box-text .icon-file img {
+  width: 50px;
 }
 .projectBackgroundOverlay-version-four .wrapper .box-text p {
   color: var(--bg_white);
