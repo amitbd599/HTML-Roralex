@@ -5,51 +5,6 @@
 * http://www.gnu.org/licenses/gpl-3.0.html
 */
 
-/* == quick_reset */
-* {
-  border: none;
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
-
-/*  == common styles */
-body {
-  background: #f6f6f6;
-  min-height: 100%;
-  font: normal 13px/1.5 Arial, Helvetica, sans-serif;
-  margin-bottom: 30px;
-}
-ul,
-ol {
-  list-style: none outside none;
-}
-h1 {
-  font-size: 25px;
-  color: #000;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-h3 {
-  margin: 30px 0 10px;
-}
-p {
-  margin: 0 0 20px;
-}
-pre {
-  border: 1px solid #ddd;
-  box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
-  margin: 10px 0;
-  padding: 10px;
-  background: #fcfcfc;
-}
-
-#container {
-  width: 80%;
-  padding: 0px 50px;
-  margin: 0 auto;
-}
-
 /*  == tab heading */
 .tabs {
   border: 1px solid #ccc;
