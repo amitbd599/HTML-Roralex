@@ -3872,9 +3872,10 @@ input[type=color] {
   position: relative;
   color: var(--bg_white);
   background-color: var(--theme_color);
+  border: 1px solid var(--theme_color);
 }
 .single-team-details-version-one .activities .left-side .wrapper .accordion .accordion-item .accordion-header .accordion-button:focus {
-  border-color: transparent;
+  border: 1px solid var(--theme_color);
   outline: 0;
   box-shadow: none;
 }
