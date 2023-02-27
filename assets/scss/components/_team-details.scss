@@ -1,0 +1,89 @@
+/*----------------------------------------*/
+/* Single Team Details Section
+/*----------------------------------------*/
+
+/* Single Team Details Section version One start */
+
+.single-team-details-version-one {
+  margin-top: 80px;
+  .person-details {
+    .left-side {
+      .img-file {
+        img {
+          border-radius: 8px;
+          overflow: hidden;
+        }
+      }
+    }
+    .right-side {
+      padding-left: 30px;
+      .wrapper {
+        .name {
+          h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--heading_color);
+            margin: 0;
+          }
+          p {
+            font-size: 20px;
+            margin: 0;
+            margin-top: 5px;
+          }
+        }
+        .data {
+          margin-top: 20px;
+          ul {
+            li {
+              padding: 4px 0;
+              span {
+                &:first-child {
+                  font-weight: 700;
+                  color: var(--heading_color);
+                }
+              }
+            }
+          }
+        }
+        .review {
+          margin-top: 20px;
+          display: flex;
+          align-items: start;
+          gap: 20px;
+          justify-content: space-between;
+          span {
+            i {
+              font-size: 50px;
+              color: var(--border_color);
+            }
+          }
+        }
+        .btn-shape-normal-outline {
+          width: 156px;
+          margin: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .history-skill {
+    .wrapper {
+      padding-top: 50px;
+      hr {
+        color: var(--border_color);
+      }
+      h2 {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--heading_color);
+      }
+      p {
+        margin-top: 20px;
+        padding: 0 60px;
+        text-align: center;
+      }
+    }
+  }
+}
