@@ -1078,55 +1078,55 @@
   }
 
   //===== Progress Bar
-  if ($(".progress_line").length) {
-    $(".progress_line").appear(
-      function () {
-        var el = $(this);
-        var percent = el.data("width");
-        $(el).css("width", percent + "%");
-      },
-      {
-        accY: 0,
-      }
-    );
-  }
+  // if ($(".progress_line").length) {
+  //   $(".progress_line").appear(
+  //     function () {
+  //       var el = $(this);
+  //       var percent = el.data("width");
+  //       $(el).css("width", percent + "%");
+  //     },
+  //     {
+  //       accY: 0,
+  //     }
+  //   );
+  // }
 
   // Jquery Appear raidal
-  if (typeof $.fn.knob != "undefined") {
-    $(".knob").each(function () {
-      var $this = $(this),
-        knobVal = $this.attr("data-rel");
+  // if (typeof $.fn.knob != "undefined") {
+  //   $(".knob").each(function () {
+  //     var $this = $(this),
+  //       knobVal = $this.attr("data-rel");
 
-      $this.knob({
-        draw: function () {
-          $(this.i).val(this.cv + "%");
-        },
-      });
+  //     $this.knob({
+  //       draw: function () {
+  //         $(this.i).val(this.cv + "%");
+  //       },
+  //     });
 
-      $this.appear(
-        function () {
-          $({
-            value: 0,
-          }).animate(
-            {
-              value: knobVal,
-            },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function () {
-                $this.val(Math.ceil(this.value)).trigger("change");
-              },
-            }
-          );
-        },
-        {
-          accX: 0,
-          accY: -150,
-        }
-      );
-    });
-  }
+  //     $this.appear(
+  //       function () {
+  //         $({
+  //           value: 0,
+  //         }).animate(
+  //           {
+  //             value: knobVal,
+  //           },
+  //           {
+  //             duration: 2000,
+  //             easing: "swing",
+  //             step: function () {
+  //               $this.val(Math.ceil(this.value)).trigger("change");
+  //             },
+  //           }
+  //         );
+  //       },
+  //       {
+  //         accX: 0,
+  //         accY: -150,
+  //       }
+  //     );
+  //   });
+  // }
 
   // ===================== 15. Project Js Start ==================== //
 

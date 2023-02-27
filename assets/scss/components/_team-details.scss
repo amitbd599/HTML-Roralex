@@ -86,4 +86,98 @@
       }
     }
   }
+  .activities {
+    padding-top: 50px;
+    .left-side {
+      padding-right: 20px;
+      .wrapper {
+        .heading-text {
+          h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--heading_color);
+          }
+        }
+        .accordion {
+          margin-top: 20px;
+          .accordion-item {
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            .accordion-header {
+              .accordion-button {
+                padding-left: 40px;
+                position: relative;
+                color: var(--bg_white);
+                background-color: var(--theme_color);
+                &:focus {
+                  border-color: transparent;
+                  outline: 0;
+                  box-shadow: none;
+                }
+                &::after {
+                  content: "\f101";
+                  background-image: none;
+                  font-family: "Font Awesome 6 Pro";
+                  position: absolute;
+                  left: 15px;
+                  color: var(--bg_white);
+                  transition: all 0.2s linear;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+                &:not(.collapsed) {
+                  &::after {
+                    transition: all 0.2s linear;
+                    background-image: none;
+                    content: "\f103";
+                    color: var(--bg_white);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right-side {
+      .heading-text {
+        h2 {
+          font-size: 22px;
+          font-weight: 700;
+          color: var(--heading_color);
+        }
+        p {
+          margin-top: 20px;
+        }
+      }
+      .skill-bar {
+        margin-top: 30px;
+        .skill-list {
+          padding-bottom: 25px;
+          .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+              font-size: 18px;
+              font-weight: 700;
+              color: var(--heading_color);
+              &:last-child {
+                font-size: 26px;
+                color: var(--theme_color);
+              }
+            }
+          }
+          .progress {
+            height: 10px;
+            .progress-bar {
+              background: var(--theme_color);
+            }
+          }
+        }
+      }
+    }
+  }
 }

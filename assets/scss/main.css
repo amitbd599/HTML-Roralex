@@ -3848,6 +3848,87 @@ input[type=color] {
   padding: 0 60px;
   text-align: center;
 }
+.single-team-details-version-one .activities {
+  padding-top: 50px;
+}
+.single-team-details-version-one .activities .left-side {
+  padding-right: 20px;
+}
+.single-team-details-version-one .activities .left-side .wrapper .heading-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.single-team-details-version-one .activities .left-side .wrapper .accordion {
+  margin-top: 20px;
+}
+.single-team-details-version-one .activities .left-side .wrapper .accordion .accordion-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.single-team-details-version-one .activities .left-side .wrapper .accordion .accordion-item .accordion-header .accordion-button {
+  padding-left: 40px;
+  position: relative;
+  color: var(--bg_white);
+  background-color: var(--theme_color);
+}
+.single-team-details-version-one .activities .left-side .wrapper .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+.single-team-details-version-one .activities .left-side .wrapper .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: "\f101";
+  background-image: none;
+  font-family: "Font Awesome 6 Pro";
+  position: absolute;
+  left: 15px;
+  color: var(--bg_white);
+  transition: all 0.2s linear;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.single-team-details-version-one .activities .left-side .wrapper .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  transition: all 0.2s linear;
+  background-image: none;
+  content: "\f103";
+  color: var(--bg_white);
+}
+.single-team-details-version-one .activities .right-side .heading-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.single-team-details-version-one .activities .right-side .heading-text p {
+  margin-top: 20px;
+}
+.single-team-details-version-one .activities .right-side .skill-bar {
+  margin-top: 30px;
+}
+.single-team-details-version-one .activities .right-side .skill-bar .skill-list {
+  padding-bottom: 25px;
+}
+.single-team-details-version-one .activities .right-side .skill-bar .skill-list .intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-team-details-version-one .activities .right-side .skill-bar .skill-list .intro h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.single-team-details-version-one .activities .right-side .skill-bar .skill-list .intro h2:last-child {
+  font-size: 26px;
+  color: var(--theme_color);
+}
+.single-team-details-version-one .activities .right-side .skill-bar .skill-list .progress {
+  height: 10px;
+}
+.single-team-details-version-one .activities .right-side .skill-bar .skill-list .progress .progress-bar {
+  background: var(--theme_color);
+}
 
 /*----------------------------------------*/
 /*  02. Latest Projects Section
