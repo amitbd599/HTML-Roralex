@@ -5649,6 +5649,49 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
+/*  Contact Section
+/*----------------------------------------*/
+/* Contact version one start */
+.contact-version-one .contact-inner .input-field .field {
+  margin-top: 80px;
+}
+.contact-version-one .contact-inner .input-field .field h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.contact-version-one .contact-inner .input-field .field p {
+  text-transform: capitalize;
+}
+.contact-version-one .contact-inner .input-field .field .input-inner input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid var(--border_color);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+.contact-version-one .contact-inner .input-field .field .input-inner textarea {
+  width: 100%;
+  border: 1px solid var(--border_color);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+.contact-version-one .contact-inner .input-field .field .input-inner textarea .main-btn {
+  margin-top: 10px;
+}
+.contact-version-one .contact-inner .input-field .field .input-inner textarea .main-btn .btn-shape-normal-outline {
+  margin: 0;
+  width: 172px;
+}
+.contact-version-one .contact-inner .input-field .field .input-inner .main-btn {
+  margin-top: 20px;
+}
+.contact-version-one .contact-inner .input-field .field .input-inner .main-btn .btn-shape-normal-outline {
+  margin: 0;
+  width: 192px;
+}
+
+/*----------------------------------------*/
 /*  Widget Section
 /*----------------------------------------*/
 .widget {
