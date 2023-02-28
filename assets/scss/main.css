@@ -4927,6 +4927,68 @@ input[type=color] {
   transform: translateX(0px);
 }
 
+/* Blog Section version Three Start */
+.blog-section-version-three .blog-card-version-three {
+  margin-top: 40px;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper {
+  padding-bottom: 30px;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper {
+  margin: 0 15px;
+  background: var(--bg_white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .img-file {
+  position: relative;
+  overflow: hidden;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .img-file img {
+  transition: all 0.4s linear;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file h2:hover {
+  color: var(--theme_color);
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file p {
+  margin-top: 10px;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file .footer-icons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper:hover .img-file img {
+  transform: scale(110%);
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  gap: 12px;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+}
+.blog-section-version-three .blog-card-version-three .blog-version-three-pagination .swiper-pagination-bullet-active {
+  background: var(--theme_color);
+  opacity: 1;
+}
+
 /* Blog Group version one start */
 .blog-group-version-one .container .left-side .wrapper .blog-items {
   margin-bottom: 50px;
@@ -5652,8 +5714,11 @@ input[type=color] {
 /*  Contact Section
 /*----------------------------------------*/
 /* Contact version one start */
+.contact-version-one .contact-inner .input-field {
+  padding-right: 30px;
+}
 .contact-version-one .contact-inner .input-field .field {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 .contact-version-one .contact-inner .input-field .field h4 {
   font-size: 22px;
@@ -5688,7 +5753,39 @@ input[type=color] {
 }
 .contact-version-one .contact-inner .input-field .field .input-inner .main-btn .btn-shape-normal-outline {
   margin: 0;
-  width: 192px;
+  width: 172px;
+}
+.contact-version-one .contact-inner .right-side .intro h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--heading_color);
+}
+.contact-version-one .contact-inner .right-side .list-data ul {
+  margin-top: 20px;
+}
+.contact-version-one .contact-inner .right-side .list-data ul li {
+  display: flex;
+  gap: 15px;
+  padding: 8px 0;
+}
+.contact-version-one .contact-inner .right-side .list-data ul li i {
+  font-size: 46px;
+  color: var(--theme_color);
+}
+.contact-version-one .contact-inner .right-side .list-data ul li h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading_color);
+  margin: 0;
+}
+.contact-version-one .contact-g-map {
+  margin-top: 80px;
+  width: 100%;
+}
+.contact-version-one .contact-g-map iframe {
+  width: 100%;
+  height: 500px;
 }
 
 /*----------------------------------------*/
