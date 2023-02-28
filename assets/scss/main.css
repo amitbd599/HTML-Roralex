@@ -5447,6 +5447,70 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
+/*  FAQ Section
+/*----------------------------------------*/
+/* FAQ Section version one */
+.faq-section-version-one .left-side .wrapper h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.faq-section-version-one .left-side .wrapper img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.faq-section-version-one .left-side .wrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-transform: capitalize;
+}
+.faq-section-version-one .left-side .intro h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading_color);
+}
+.faq-section-version-one .left-side .accordion {
+  margin-top: 20px;
+}
+.faq-section-version-one .left-side .accordion .accordion-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-section-version-one .left-side .accordion .accordion-item .accordion-header .accordion-button {
+  padding-left: 40px;
+  position: relative;
+  color: var(--bg_white);
+  background-color: var(--theme_color);
+  border: 1px solid var(--theme_color);
+  font-weight: 600;
+}
+.faq-section-version-one .left-side .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border: 1px solid var(--theme_color);
+  outline: 0;
+  box-shadow: none;
+}
+.faq-section-version-one .left-side .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: "+";
+  background-image: none;
+  font-family: "Font Awesome 6 Pro";
+  position: absolute;
+  left: 15px;
+  color: var(--bg_white);
+  transition: all 0.2s linear;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq-section-version-one .left-side .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  transition: all 0.2s linear;
+  background-image: none;
+  content: "\f068";
+  color: var(--bg_white);
+}
+
+/*----------------------------------------*/
 /*  Widget Section
 /*----------------------------------------*/
 .widget {
