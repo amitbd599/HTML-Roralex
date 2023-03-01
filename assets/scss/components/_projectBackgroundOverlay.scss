@@ -14,6 +14,17 @@
   position: relative;
   height: 450px;
   z-index: 0;
+  @media #{$xl} {
+    height: 410px;
+  }
+  @media #{$md, $sm, $xs} {
+    height: 445px;
+  }
+  @media #{$sm, $xs, $xxs} {
+    height: auto;
+    padding: 50px 0;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -27,8 +38,18 @@
 
   .wrapper {
     position: relative;
+    @media #{$xs} {
+      display: flex;
+      align-items: center;
+    }
     .main-text {
       padding-left: 100px;
+      @media #{ $sm, $xs} {
+        padding-left: 50px;
+      }
+      @media #{ $xxs} {
+        padding-left: 0;
+      }
       h3 {
         font-size: 18px;
         font-weight: 600;
@@ -40,10 +61,19 @@
         font-weight: 700;
         color: var(--bg_white);
         letter-spacing: 5px;
+        @media #{ $sm, $xs} {
+          font-size: 26px;
+        }
+        @media #{$xxs} {
+          font-size: 24px;
+        }
       }
       p {
         padding-right: 100px;
         color: var(--bg_white);
+        @media #{ $sm, $xs} {
+          padding-right: 0;
+        }
       }
     }
     .shape-text {
@@ -51,6 +81,12 @@
       left: -25px;
       top: 40%;
       transform: rotate(-90deg);
+      @media #{ $sm, $xs} {
+        left: -70px;
+      }
+      @media #{$xxs} {
+        display: none;
+      }
       h2 {
         font-size: 20px;
         font-weight: 700;
@@ -64,6 +100,10 @@
     left: 50%;
     display: flex;
     transform: translateX(-50%);
+
+    @media #{$xl,$lg,$md, $sm, $xs} {
+      display: none;
+    }
 
     .wrapper-left {
       background: var(--primary_color);

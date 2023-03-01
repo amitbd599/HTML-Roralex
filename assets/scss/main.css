@@ -3426,6 +3426,22 @@ input[type=color] {
   height: 450px;
   z-index: 0;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .projectBackgroundOverlay {
+    height: 410px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay {
+    height: 445px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px), only screen and (max-width: 380px) {
+  .projectBackgroundOverlay {
+    height: auto;
+    padding: 50px 0;
+  }
+}
 .projectBackgroundOverlay::after {
   position: absolute;
   content: "";
@@ -3439,8 +3455,24 @@ input[type=color] {
 .projectBackgroundOverlay .wrapper {
   position: relative;
 }
+@media only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
 .projectBackgroundOverlay .wrapper .main-text {
   padding-left: 100px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .main-text {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .projectBackgroundOverlay .wrapper .main-text {
+    padding-left: 0;
+  }
 }
 .projectBackgroundOverlay .wrapper .main-text h3 {
   font-size: 18px;
@@ -3454,15 +3486,40 @@ input[type=color] {
   color: var(--bg_white);
   letter-spacing: 5px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .main-text h2 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .projectBackgroundOverlay .wrapper .main-text h2 {
+    font-size: 24px;
+  }
+}
 .projectBackgroundOverlay .wrapper .main-text p {
   padding-right: 100px;
   color: var(--bg_white);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .main-text p {
+    padding-right: 0;
+  }
 }
 .projectBackgroundOverlay .wrapper .shape-text {
   position: absolute;
   left: -25px;
   top: 40%;
   transform: rotate(-90deg);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .shape-text {
+    left: -70px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .projectBackgroundOverlay .wrapper .shape-text {
+    display: none;
+  }
 }
 .projectBackgroundOverlay .wrapper .shape-text h2 {
   font-size: 20px;
@@ -3475,6 +3532,11 @@ input[type=color] {
   left: 50%;
   display: flex;
   transform: translateX(-50%);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .box-text {
+    display: none;
+  }
 }
 .projectBackgroundOverlay .box-text .wrapper-left {
   background: var(--primary_color);
