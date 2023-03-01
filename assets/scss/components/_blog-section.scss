@@ -12,6 +12,9 @@
     }
     .wrapper {
       margin-bottom: 30px;
+      @media #{$xs} {
+        padding: 0 20px;
+      }
 
       .img-file {
         border-radius: 10px;

@@ -5148,6 +5148,11 @@ input[type=color] {
 .blog-section-version-one .blog-card-version-one .wrapper {
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 576px) {
+  .blog-section-version-one .blog-card-version-one .wrapper {
+    padding: 0 20px;
+  }
+}
 .blog-section-version-one .blog-card-version-one .wrapper .img-file {
   border-radius: 10px;
   overflow: hidden;
