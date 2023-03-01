@@ -30,30 +30,7 @@
           // background: #333333af;
           z-index: 0;
         }
-        .overlay-date {
-          z-index: 9;
-          position: absolute;
-          bottom: 8px;
-          left: 20px;
-          display: flex;
-          gap: 18px;
-          .date {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--bg_white);
-            font-size: 14px;
-            font-weight: 600;
-          }
-          .admin {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--bg_white);
-            font-size: 14px;
-            font-weight: 600;
-          }
-        }
+
         .badge-file {
           position: absolute;
           top: 12px;
@@ -61,7 +38,7 @@
           z-index: 9;
           span {
             padding: 6px 12px;
-            background: var(--primary_color);
+            background: var(--theme_color);
             border-radius: 5px;
             color: var(--bg_white);
             font-size: 14px;
@@ -70,8 +47,27 @@
       }
       .inner-text {
         padding-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 15px;
+        .overlay-date {
+          display: flex;
+          gap: 18px;
+          .date {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .admin {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
         h2 {
+          margin-top: 10px;
           font-size: 26px;
           font-weight: 700;
           color: var(--heading_color);
@@ -497,6 +493,9 @@
             border: 1px solid var(--border_color);
             border-radius: 8px;
             padding: 10px 15px;
+            &:focus-visible {
+              outline: transparent;
+            }
 
             .main-btn {
               margin-top: 10px;

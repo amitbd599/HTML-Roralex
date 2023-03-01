@@ -3608,9 +3608,9 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
-/*  02. Project Background Overlay Section
+/*  Our Team Section
 /*----------------------------------------*/
-/* Project Background Overlay Section version one */
+/* Our Team Section version one */
 .ourTeam-section-version-one .slider-card-team {
   margin-top: 40px;
 }
@@ -3684,7 +3684,7 @@ input[type=color] {
   background: var(--theme_color);
 }
 
-/* Project Background Overlay Section version Two */
+/* Our Team Section version Two */
 .ourTeam-section-version-two .inner-card-items-slider {
   position: relative;
   margin-top: 40px;
@@ -3759,7 +3759,7 @@ input[type=color] {
   opacity: 1;
 }
 
-/* Project Background Overlay Section version Three */
+/* Our Team Section version Three */
 .ourTeam-section-version-three .inner-card-items-slider {
   position: relative;
   margin-top: 40px;
@@ -4570,7 +4570,7 @@ input[type=color] {
   margin-top: 40px;
 }
 .client-review-version-one .slider-client-review .review-version-one {
-  padding: 60px 0;
+  padding: 60px 0 30px 0;
 }
 .client-review-version-one .slider-client-review .review-version-one .swiper-wrapper .swiper-slide .inner-wrapper {
   position: relative;
@@ -4700,7 +4700,7 @@ input[type=color] {
 }
 
 /* Client Review Section version three */
-.client-review-version-three .container {
+.client-review-version-three .left-side {
   margin-top: 30px;
 }
 .client-review-version-three .left-side .review-filter .no-inner {
@@ -4774,6 +4774,7 @@ input[type=color] {
   height: 50px;
 }
 .client-review-version-three .right-side {
+  margin-top: 30px;
   padding-left: 50px;
 }
 .client-review-version-three .right-side .intro-section {
@@ -4842,30 +4843,6 @@ input[type=color] {
   top: 0;
   z-index: 0;
 }
-.blog-section-version-one .blog-card-version-one .wrapper .img-file .overlay-date {
-  z-index: 9;
-  position: absolute;
-  bottom: 8px;
-  left: 20px;
-  display: flex;
-  gap: 18px;
-}
-.blog-section-version-one .blog-card-version-one .wrapper .img-file .overlay-date .date {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--bg_white);
-  font-size: 14px;
-  font-weight: 600;
-}
-.blog-section-version-one .blog-card-version-one .wrapper .img-file .overlay-date .admin {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--bg_white);
-  font-size: 14px;
-  font-weight: 600;
-}
 .blog-section-version-one .blog-card-version-one .wrapper .img-file .badge-file {
   position: absolute;
   top: 12px;
@@ -4874,16 +4851,35 @@ input[type=color] {
 }
 .blog-section-version-one .blog-card-version-one .wrapper .img-file .badge-file span {
   padding: 6px 12px;
-  background: var(--primary_color);
+  background: var(--theme_color);
   border-radius: 5px;
   color: var(--bg_white);
   font-size: 14px;
 }
 .blog-section-version-one .blog-card-version-one .wrapper .inner-text {
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text .overlay-date {
+  display: flex;
+  gap: 18px;
+}
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text .overlay-date .date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text .overlay-date .admin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .blog-section-version-one .blog-card-version-one .wrapper .inner-text h2 {
+  margin-top: 10px;
   font-size: 26px;
   font-weight: 700;
   color: var(--heading_color);
@@ -5262,6 +5258,9 @@ input[type=color] {
   border-radius: 8px;
   padding: 10px 15px;
 }
+.blog-details-version-one .left-side .wrapper .leave-comment .input-inner textarea:focus-visible {
+  outline: transparent;
+}
 .blog-details-version-one .left-side .wrapper .leave-comment .input-inner textarea .main-btn {
   margin-top: 10px;
 }
@@ -5547,9 +5546,15 @@ input[type=color] {
   height: 50px;
   border-radius: 8px;
   padding: 5px 15px;
-  border: 2px solid #fff;
+  border: 2px solid var(--bg_white);
   background: transparent;
-  color: #ddd;
+  color: var(--bg_white);
+}
+.newsletter-section-version-one .wrapper .input input::-moz-placeholder {
+  color: var(--bg_white);
+}
+.newsletter-section-version-one .wrapper .input input::placeholder {
+  color: var(--bg_white);
 }
 .newsletter-section-version-one .wrapper .btn-section {
   margin-top: 20px;

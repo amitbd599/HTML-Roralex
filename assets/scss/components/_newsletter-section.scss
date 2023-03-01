@@ -47,9 +47,12 @@
         height: 50px;
         border-radius: 8px;
         padding: 5px 15px;
-        border: 2px solid #fff;
+        border: 2px solid var(--bg_white);
         background: transparent;
-        color: #ddd;
+        color: var(--bg_white);
+        &::placeholder {
+          color: var(--bg_white);
+        }
       }
     }
     .btn-section {
