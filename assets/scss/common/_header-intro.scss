@@ -30,6 +30,10 @@
         font-weight: 700;
         color: var(--heading_color);
         text-transform: capitalize;
+        @media #{$sm, $xs} {
+          padding-right: 50px;
+          font-size: 26px;
+        }
       }
       p {
         margin-top: 10px;

@@ -110,6 +110,9 @@
           color: #fff;
           font-weight: 700;
           margin-bottom: 0;
+          @media #{$xs} {
+            font-size: 30px;
+          }
           @media #{$xxs} {
             font-size: 26px;
           }
@@ -123,7 +126,7 @@
   }
   .right-side {
     padding-left: 35px;
-    @media #{$lg, $md, $sm, $xs} {
+    @media #{$md, $sm, $xs} {
       margin-top: 180px;
       padding-left: 0;
     }
@@ -177,9 +180,19 @@
           margin-top: 20px;
           display: flex;
           gap: 25px;
+          @media #{$xs} {
+            display: block;
+          }
+
           .inner-hub {
             display: flex;
             gap: 15px;
+            &:first-child {
+              @media #{$xs} {
+                margin-bottom: 20px;
+              }
+            }
+
             p {
               margin-bottom: 0;
               font-weight: 600;

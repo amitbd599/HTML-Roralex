@@ -525,6 +525,12 @@ input[type=color] {
   color: var(--heading_color);
   text-transform: capitalize;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .header-intro-version-one .wrapper .inner-text h2 {
+    padding-right: 50px;
+    font-size: 26px;
+  }
+}
 .header-intro-version-one .wrapper .inner-text p {
   margin-top: 10px;
 }
@@ -2550,6 +2556,11 @@ input[type=color] {
   font-weight: 700;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 576px) {
+  .about-section-version-one .left-side .wrapper .team-count h2 {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 380px) {
   .about-section-version-one .left-side .wrapper .team-count h2 {
     font-size: 26px;
@@ -2562,7 +2573,7 @@ input[type=color] {
 .about-section-version-one .right-side {
   padding-left: 35px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .about-section-version-one .right-side {
     margin-top: 180px;
     padding-left: 0;
@@ -2623,9 +2634,19 @@ input[type=color] {
   display: flex;
   gap: 25px;
 }
+@media only screen and (max-width: 576px) {
+  .about-section-version-one .right-side .wrapper .inner-intro .hub-show {
+    display: block;
+  }
+}
 .about-section-version-one .right-side .wrapper .inner-intro .hub-show .inner-hub {
   display: flex;
   gap: 15px;
+}
+@media only screen and (max-width: 576px) {
+  .about-section-version-one .right-side .wrapper .inner-intro .hub-show .inner-hub:first-child {
+    margin-bottom: 20px;
+  }
 }
 .about-section-version-one .right-side .wrapper .inner-intro .hub-show .inner-hub p {
   margin-bottom: 0;
@@ -2867,6 +2888,12 @@ input[type=color] {
   padding: 28px 18px;
   border-radius: 8px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .serviceList-section-version-one .inner-card-items .wrapper {
+    margin-bottom: 40px;
+    padding: 30px;
+  }
+}
 .serviceList-section-version-one .inner-card-items .wrapper .icon-file {
   display: flex;
   align-items: center;
@@ -2879,6 +2906,12 @@ input[type=color] {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 12px;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .serviceList-section-version-one .inner-card-items .wrapper .text-file h3 {
+    font-size: 22px;
+  }
 }
 .serviceList-section-version-one .inner-card-items .wrapper .text-file p {
   font-size: 15px;
@@ -2897,6 +2930,11 @@ input[type=color] {
 }
 .serviceList-section-version-one .btn-section {
   padding-top: 60px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .serviceList-section-version-one .btn-section {
+    padding-top: 30px;
+  }
 }
 .serviceList-section-version-one .btn-section button {
   width: 165px;

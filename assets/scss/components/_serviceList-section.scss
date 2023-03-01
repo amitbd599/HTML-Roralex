@@ -10,6 +10,11 @@
       background: var(--bg_white);
       padding: 28px 18px;
       border-radius: 8px;
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+        padding: 30px;
+      }
+
       .icon-file {
         display: flex;
         align-items: center;
@@ -23,6 +28,10 @@
           font-weight: 700;
           font-size: 18px;
           margin-bottom: 12px;
+          text-transform: capitalize;
+          @media #{$md, $sm, $xs} {
+            font-size: 22px;
+          }
         }
         p {
           font-size: 15px;
@@ -46,6 +55,9 @@
   }
   .btn-section {
     padding-top: 60px;
+    @media #{$md, $sm, $xs} {
+      padding-top: 30px;
+    }
     button {
       width: 165px;
     }
