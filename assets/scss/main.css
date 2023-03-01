@@ -528,7 +528,7 @@ input[type=color] {
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .header-intro-version-one .wrapper .inner-text h2 {
     padding-right: 50px;
-    font-size: 26px;
+    font-size: 32px;
   }
 }
 .header-intro-version-one .wrapper .inner-text p {
@@ -2585,6 +2585,11 @@ input[type=color] {
     padding-left: 0;
   }
 }
+@media only screen and (max-width: 380px) {
+  .about-section-version-one .right-side {
+    margin-top: 220px;
+  }
+}
 .about-section-version-one .right-side .wrapper .intro-header h3 {
   font-size: 20px;
   font-weight: 600;
@@ -3426,11 +3431,6 @@ input[type=color] {
   height: 450px;
   z-index: 0;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .projectBackgroundOverlay {
-    height: 410px;
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .projectBackgroundOverlay {
     height: 445px;
@@ -3533,7 +3533,7 @@ input[type=color] {
   display: flex;
   transform: translateX(-50%);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .projectBackgroundOverlay .box-text {
     display: none;
   }
@@ -3849,6 +3849,12 @@ input[type=color] {
 /*  Our Team Section
 /*----------------------------------------*/
 /* Our Team Section version one */
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .ourTeam-section-version-one {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+}
 .ourTeam-section-version-one .inner-card-items-slider {
   position: relative;
   margin-top: 30px;
@@ -3858,6 +3864,11 @@ input[type=color] {
   overflow: hidden;
   margin: 20px 10px;
   border: 2px solid var(--border_color);
+}
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper {
+    margin: 20px 26px;
+  }
 }
 .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .intro {
   padding: 18px 10px;
@@ -3886,12 +3897,20 @@ input[type=color] {
   align-items: center;
   gap: 10px;
 }
-.ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li a {
-  font-size: 18px;
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li a {
+    padding: 3px;
+    margin-bottom: 10px;
+  }
 }
 .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li i {
   font-size: 18px;
   transition: all 0.2s linear;
+}
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li i {
+    font-size: 26px;
+  }
 }
 .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li:hover .fa-facebook-f {
   color: var(--facebook);

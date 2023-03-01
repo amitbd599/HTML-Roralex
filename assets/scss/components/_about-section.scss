@@ -134,6 +134,9 @@
       margin-top: 160px;
       padding-left: 0;
     }
+    @media #{$xxs} {
+      margin-top: 220px;
+    }
     .wrapper {
       .intro-header {
         h3 {

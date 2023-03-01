@@ -14,9 +14,7 @@
   position: relative;
   height: 450px;
   z-index: 0;
-  @media #{$xl} {
-    height: 410px;
-  }
+
   @media #{$md, $sm, $xs} {
     height: 445px;
   }
@@ -101,7 +99,7 @@
     display: flex;
     transform: translateX(-50%);
 
-    @media #{$xl,$lg,$md, $sm, $xs} {
+    @media #{$lg,$md, $sm, $xs} {
       display: none;
     }
 

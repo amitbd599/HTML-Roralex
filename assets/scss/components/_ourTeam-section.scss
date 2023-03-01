@@ -5,6 +5,10 @@
 /* Our Team Section version one */
 
 .ourTeam-section-version-one {
+  @media #{$lg, $md, $sm, $xs} {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
   .inner-card-items-slider {
     position: relative;
     margin-top: 30px;
@@ -16,6 +20,9 @@
             overflow: hidden;
             margin: 20px 10px;
             border: 2px solid var(--border_color);
+            @media #{$xs} {
+              margin: 20px 26px;
+            }
             .intro {
               padding: 18px 10px;
               text-align: center;
@@ -44,11 +51,17 @@
                   gap: 10px;
                   li {
                     a {
-                      font-size: 18px;
+                      @media #{$xs} {
+                        padding: 3px;
+                        margin-bottom: 10px;
+                      }
                     }
                     i {
                       font-size: 18px;
                       transition: all 0.2s linear;
+                      @media #{$xs} {
+                        font-size: 26px;
+                      }
                     }
                     &:hover .fa-facebook-f {
                       color: var(--facebook);
