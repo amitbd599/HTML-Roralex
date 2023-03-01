@@ -5607,6 +5607,11 @@ input[type=color] {
 /*  02. Our Plan Price START
 /*----------------------------------------*/
 /* Our Plan Price  version one Start */
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .price-section-version-one {
+    padding-bottom: 60px;
+  }
+}
 .price-section-version-one .price-card-version-one .row {
   --bs-gutter-x: 40px !important;
   margin-top: 60px;
@@ -5615,6 +5620,18 @@ input[type=color] {
   position: relative;
   z-index: 9;
   transition: all 0.2s linear;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .price-section-version-one .price-card-version-one .row .wrapper {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .price-section-version-one .price-card-version-one .row .wrapper {
+    margin: 0 10px;
+    margin-bottom: 40px;
+  }
 }
 .price-section-version-one .price-card-version-one .row .wrapper .inner {
   background: var(--bg_white);

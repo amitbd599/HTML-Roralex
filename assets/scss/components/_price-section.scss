@@ -5,6 +5,9 @@
 /* Our Plan Price  version one Start */
 
 .price-section-version-one {
+  @media #{$sm, $xs} {
+    padding-bottom: 60px;
+  }
   .price-card-version-one {
     .row {
       --bs-gutter-x: 40px !important;
@@ -13,6 +16,14 @@
         position: relative;
         z-index: 9;
         transition: all 0.2s linear;
+        @media #{$md, $sm, $xs} {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+        @media #{$sm, $xs} {
+          margin: 0 10px;
+          margin-bottom: 40px;
+        }
         .inner {
           background: var(--bg_white);
           border-radius: 10px;
