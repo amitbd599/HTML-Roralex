@@ -12,10 +12,21 @@
       display: flex;
       justify-content: center;
       gap: 15px;
+      @media #{$xs} {
+        display: block;
+      }
       button {
         position: relative;
         font-size: 18px;
         font-weight: 600;
+        @media #{$xs} {
+          padding: 10px 20px;
+          border-radius: 5px;
+          background: var(--border_color);
+          margin: 0 3px;
+          margin-bottom: 14px;
+          transition: all 0.2s linear;
+        }
 
         &::after {
           position: absolute;
@@ -28,17 +39,29 @@
           -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           transform: translateX(-50%);
-
           transition: all 0.2s linear;
+          @media #{$xs} {
+            display: none;
+          }
         }
         &.active {
           color: var(--theme_color);
+          @media #{$xs} {
+            &.active {
+              background: var(--theme_color);
+              color: var(--bg_white);
+            }
+          }
           &::after {
             height: 16px;
           }
         }
         &:hover {
           color: var(--theme_color);
+          @media #{$xs} {
+            background: var(--theme_color);
+            color: var(--bg_white);
+          }
           &::after {
             height: 16px;
           }
@@ -54,13 +77,25 @@
         bottom: -22px;
         transform: translateX(-50%);
         border-radius: 5px;
+        @media #{$xs} {
+          display: none;
+        }
       }
     }
     .project-version-one {
       margin-top: 40px;
+      @media #{$xs} {
+        margin-top: 0;
+      }
       .project-item {
         margin-bottom: 30px;
+        @media #{$xs} {
+          margin-bottom: 0;
+        }
         .project-wrapper {
+          @media #{$xs} {
+            margin-bottom: 0;
+          }
           .img-file {
             border-radius: 10px;
             overflow: hidden;
@@ -105,6 +140,9 @@
               bottom: 8px;
               left: 10px;
               z-index: 9;
+              @media #{$sm, $xs} {
+                bottom: 26px;
+              }
               button {
                 padding: 10px 10px;
                 width: 130px;
@@ -146,6 +184,9 @@
                 opacity: 1;
               }
             }
+          }
+          @media #{$xs} {
+            margin: 20px;
           }
         }
       }
