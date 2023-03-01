@@ -5,76 +5,65 @@
 /* Our Team Section version one */
 
 .ourTeam-section-version-one {
-  .slider-card-team {
-    margin-top: 40px;
+  .inner-card-items-slider {
+    position: relative;
+    margin-top: 30px;
     .team-version-one {
       .swiper-wrapper {
         .swiper-slide {
           .inner-wrapper {
-            .img-file {
-              position: relative;
-              border-radius: 10px;
-              overflow: hidden;
-              img {
-              }
-              &::after {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 50px;
-                left: 0;
-                bottom: 0;
-                background: var(--primary_color);
-
-                z-index: 0;
-                transform: translateY(100%);
-                transition: all 0.2s linear;
-              }
-              .icon-file {
-                position: absolute;
-                bottom: 0;
-                z-index: 9;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 6px;
-                visibility: hidden;
-                opacity: 0;
-                transition: all 0.2s linear !important;
-                a {
-                  padding: 2px 3px;
-                  font-size: 24px;
-                  color: var(--bg_white);
-                  transition: all 0.3s ease-in !important;
-
-                  &:hover {
-                    color: var(--theme_color);
-                  }
-                }
-              }
-              &:hover {
-                &::after {
-                  transform: translateY(0);
-                }
-                .icon-file {
-                  visibility: visible;
-                  opacity: 1;
-                }
-              }
-            }
-            .text-file {
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 10px;
+            border: 2px solid var(--border_color);
+            .intro {
+              padding: 18px 10px;
               text-align: center;
-              h2 {
+
+              .name {
+                margin-top: 0;
                 font-size: 20px;
                 font-weight: 700;
-                color: var(--heading_color);
-                margin-top: 15px;
-                margin-bottom: 5px;
-              }
-              h4 {
-                font-size: 16px;
-                font-weight: 700;
                 color: var(--theme_color);
+                margin-bottom: 0;
+              }
+              .position {
+                margin: 0;
+                margin-top: 5px;
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--heading_color);
+              }
+
+              .social-icon {
+                margin-top: 8px;
+                ul {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  li {
+                    a {
+                      font-size: 18px;
+                    }
+                    i {
+                      font-size: 18px;
+                      transition: all 0.2s linear;
+                    }
+                    &:hover .fa-facebook-f {
+                      color: var(--facebook);
+                    }
+                    &:hover .fa-twitter {
+                      color: var(--twitter);
+                    }
+                    &:hover .fa-youtube {
+                      color: var(--youtube);
+                    }
+                    &:hover .fa-linkedin {
+                      color: var(--linkedin);
+                    }
+                  }
+                }
               }
             }
           }
@@ -195,7 +184,7 @@
       .inner-wrapper {
         position: relative;
         border-radius: 8px;
-        margin: 20px 15px;
+        margin: 20px 10px;
         .img-file {
           position: relative;
           z-index: 9;
@@ -288,6 +277,7 @@
     }
   }
 }
+
 .team-version-three-pagination {
   margin-top: 20px;
   display: flex;

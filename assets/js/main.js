@@ -170,7 +170,8 @@
 
   var TeamVersionOne = new Swiper(".team-version-one", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 0,
+    slidesPerGroup: 2,
     loop: true,
     speed: 1000,
     autoplay: {
