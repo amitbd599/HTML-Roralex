@@ -6,6 +6,9 @@
 .about-section-version-one {
   position: relative;
   .left-side {
+    @media #{$md, $sm, $xs} {
+      margin-top: 30px;
+    }
     .wrapper {
       position: relative;
       .img-shape {
@@ -22,6 +25,21 @@
         bottom: -119px;
         border: 15px solid #fff;
         border-radius: 10px;
+        @media #{$lg} {
+          bottom: -180px;
+        }
+        @media #{$xs} {
+          bottom: -120px;
+        }
+        @media #{$xxs} {
+          bottom: -190px;
+        }
+        img {
+          @media #{$xs, $xxs} {
+            width: 250px;
+          }
+        }
+
         .inner {
           position: relative;
           .vide-button {
@@ -92,6 +110,9 @@
           color: #fff;
           font-weight: 700;
           margin-bottom: 0;
+          @media #{$xxs} {
+            font-size: 26px;
+          }
         }
         p {
           color: #fff;
@@ -102,6 +123,14 @@
   }
   .right-side {
     padding-left: 35px;
+    @media #{$lg, $md, $sm, $xs} {
+      margin-top: 180px;
+      padding-left: 0;
+    }
+    @media #{$sm, $xs} {
+      margin-top: 160px;
+      padding-left: 0;
+    }
     .wrapper {
       .intro-header {
         h3 {
@@ -117,6 +146,12 @@
           font-weight: 700;
           color: var(--heading_color);
           text-transform: capitalize;
+          @media #{$lg,$md, $sm, $xs} {
+            font-size: 30px;
+          }
+          @media #{$md, $sm, $xs} {
+            font-size: 36px;
+          }
         }
         p {
           margin-top: 10px;

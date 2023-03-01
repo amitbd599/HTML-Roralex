@@ -11,8 +11,18 @@
     .swiper-wrapper {
       position: relative;
       .inner-item {
-        min-height: 608px;
+        height: 608px;
         position: relative;
+        @media #{$lg,$md, $sm, $xs} {
+          height: 500px;
+        }
+        @media #{$xs} {
+          height: 450px;
+        }
+        @media #{$xxs} {
+          height: 440px;
+        }
+
         .slide-bg {
           position: absolute;
           left: 0;
@@ -41,8 +51,16 @@
           z-index: 9 !important;
           .left-content {
             padding: 100px 0;
+            @media #{$sm, $xs} {
+              padding: 80px 0;
+            }
             .intro-box {
               display: inline-block;
+              @media #{$lg,$md, $sm, $xs} {
+                display: flex;
+                justify-content: center;
+              }
+
               span {
                 background: var(--theme_color);
                 display: flex;
@@ -56,17 +74,50 @@
             .heading-text {
               position: relative;
               margin-top: 30px;
+              @media #{$lg,$md, $sm, $xs} {
+                text-align: center;
+              }
+
               h2 {
                 font-size: 66px;
                 color: var(--bg_white);
                 font-weight: 700;
                 line-height: 75px;
                 text-transform: capitalize;
+                @media #{$md} {
+                  font-size: 55px;
+                  line-height: 65px;
+                }
+                @media #{$sm} {
+                  font-size: 45px;
+                  line-height: 55px;
+                }
+                @media #{$xs} {
+                  font-size: 36px;
+                  line-height: 46px;
+                }
+                @media #{$xs} {
+                  font-size: 30px;
+                  line-height: 40px;
+                }
+                @media #{$xxs} {
+                  font-size: 26px;
+                  line-height: 36px;
+                }
               }
               p {
                 margin-top: 20px;
                 font-size: 16px;
                 color: var(--bg_white);
+                @media #{$lg,$md, $sm, $xs} {
+                  padding: 0 50px;
+                }
+                @media #{$xs} {
+                  padding: 0 15px;
+                }
+                @media #{$xxs} {
+                  padding: 0;
+                }
               }
             }
             .shape-hip {
@@ -78,6 +129,9 @@
           }
           .right-content {
             position: relative;
+            @media #{$lg,$md, $sm, $xs} {
+              display: none;
+            }
             .img-file {
               position: absolute;
               left: -200px;
@@ -173,6 +227,10 @@
 .hero-slider-arrow {
   position: relative;
   top: -75px;
+  @media #{$lg, $md, $sm, $xs} {
+    display: none;
+  }
+
   .hero-slider-nav {
     .swiper-slide {
       .inner-item {
