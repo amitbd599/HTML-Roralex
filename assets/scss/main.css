@@ -4878,6 +4878,11 @@ input[type=color] {
 /*  02. Latest Projects Section
 /*----------------------------------------*/
 /* Client Review Section version one */
+@media only screen and (max-width: 576px) {
+  .client-review-version-one {
+    padding-bottom: 30px;
+  }
+}
 .client-review-version-one .slider-client-review {
   margin-top: 40px;
 }
@@ -4889,6 +4894,11 @@ input[type=color] {
   border-radius: 10px;
   padding: 25px 20px;
   background: var(--bg_white);
+}
+@media only screen and (max-width: 576px) {
+  .client-review-version-one .slider-client-review .review-version-one .swiper-wrapper .swiper-slide .inner-wrapper {
+    margin: 0 30px;
+  }
 }
 .client-review-version-one .slider-client-review .review-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file {
   border-radius: 50%;

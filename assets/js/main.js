@@ -298,6 +298,7 @@
   var ReviewVersionOne = new Swiper(".review-version-one", {
     slidesPerView: 3,
     spaceBetween: 45,
+    slidesPerGroup: 2,
     loop: true,
 
     autoplay: {
@@ -311,6 +312,30 @@
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        pagination: false,
+        slidesPerGroup: 1,
+      },
+      500: {
+        slidesPerView: 1,
+        pagination: false,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+      1400: {
+        slidesPerView: 4,
+      },
     },
   });
 

@@ -5,6 +5,9 @@
 /* Client Review Section version one */
 
 .client-review-version-one {
+  @media #{$xs} {
+    padding-bottom: 30px;
+  }
   .slider-client-review {
     margin-top: 40px;
     .review-version-one {
@@ -16,6 +19,9 @@
             border-radius: 10px;
             padding: 25px 20px;
             background: var(--bg_white);
+            @media #{$xs} {
+              margin: 0 30px;
+            }
             .img-file {
               border-radius: 50%;
               overflow: hidden;
