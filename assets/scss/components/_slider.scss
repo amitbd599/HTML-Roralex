@@ -13,8 +13,8 @@
       .inner-item {
         height: 608px;
         position: relative;
-        @media #{$lg,$md, $sm} {
-          height: 500px;
+        @media #{$lg,$md} {
+          height: 550px;
         }
         @media #{$xs} {
           height: 500px;
@@ -82,7 +82,7 @@
                 font-size: 66px;
                 color: var(--bg_white);
                 font-weight: 700;
-                line-height: 75px;
+                line-height: 82px;
                 text-transform: capitalize;
                 @media #{$md} {
                   font-size: 55px;

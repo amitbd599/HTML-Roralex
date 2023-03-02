@@ -1850,9 +1850,9 @@ input[type=color] {
   height: 608px;
   position: relative;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item {
-    height: 500px;
+    height: 550px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1931,7 +1931,7 @@ input[type=color] {
   font-size: 66px;
   color: var(--bg_white);
   font-weight: 700;
-  line-height: 75px;
+  line-height: 82px;
   text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2531,6 +2531,11 @@ input[type=color] {
 .about-section-version-one {
   position: relative;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-section-version-one {
+    padding-top: 80px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .about-section-version-one .left-side {
     margin-top: 30px;
@@ -2769,8 +2774,19 @@ input[type=color] {
   align-items: center;
   height: 100%;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .about-section-version-two .left-side {
+    justify-content: center;
+  }
+}
 .about-section-version-two .right-side {
   padding-left: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .about-section-version-two .right-side {
+    margin-top: 40px;
+    padding-left: 0;
+  }
 }
 .about-section-version-two .right-side .wrapper .intro h3 {
   font-size: 20px;
@@ -2794,6 +2810,11 @@ input[type=color] {
   font-weight: 700;
   color: var(--heading_color);
   text-transform: capitalize;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-section-version-two .right-side .wrapper .intro h2 {
+    font-size: 30px;
+  }
 }
 .about-section-version-two .right-side .wrapper .intro p {
   margin-top: 16px;

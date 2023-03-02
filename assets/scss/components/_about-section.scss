@@ -4,6 +4,9 @@
 
 /* About-section-version-one */
 .about-section-version-one {
+  @media #{$lg} {
+    padding-top: 80px;
+  }
   position: relative;
   .left-side {
     @media #{$md, $sm, $xs} {
@@ -230,13 +233,16 @@
     display: flex;
     align-items: center;
     height: 100%;
-    .wrapper {
-      .img-file {
-      }
+    @media #{$md, $sm, $xs} {
+      justify-content: center;
     }
   }
   .right-side {
     padding-left: 10px;
+    @media #{$md, $sm, $xs} {
+      margin-top: 40px;
+      padding-left: 0;
+    }
     .wrapper {
       .intro {
         h3 {
@@ -261,6 +267,9 @@
           font-weight: 700;
           color: var(--heading_color);
           text-transform: capitalize;
+          @media #{$lg} {
+            font-size: 30px;
+          }
         }
         p {
           margin-top: 16px;
