@@ -7,6 +7,9 @@
 .footer-section-version-one {
   background: var(--primary_color);
   position: relative;
+  @media #{$md, $sm, $xs} {
+    padding-top: 40px;
+  }
   .footer-top {
     position: absolute;
     top: -90px;
@@ -18,6 +21,9 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    @media #{$md, $sm, $xs} {
+      display: none;
+    }
     .wrapper-left {
       display: flex;
       align-items: center;
@@ -48,6 +54,9 @@
     margin-top: 60px;
     .wrapper-one {
       padding-right: 30px;
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .img-file {
       }
       .text-file {
@@ -85,6 +94,10 @@
             a {
               padding: 2px;
               font-size: 20px;
+              @media #{$sm, $xs} {
+                padding: 4px;
+                font-size: 30px;
+              }
 
               i {
                 transition: all 0.2s linear;
@@ -107,6 +120,9 @@
       }
     }
     .wrapper-two {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
@@ -140,6 +156,9 @@
       }
     }
     .wrapper-three {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
@@ -166,6 +185,9 @@
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 8px;
         grid-row-gap: 8px;
+        @media #{$md, $sm, $xs} {
+          grid-template-rows: repeat(2, 1fr);
+        }
         img {
           border-radius: 5px;
         }
@@ -226,6 +248,7 @@
   padding-top: 30px;
   .footer-top {
     margin-top: 60px;
+
     .wrapper-one {
       padding-right: 30px;
       .text-file {

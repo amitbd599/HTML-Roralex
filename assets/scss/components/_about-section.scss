@@ -218,6 +218,9 @@
     top: -53px;
     z-index: -1;
     opacity: 0.5;
+    @media #{$md, $sm, $xs} {
+      display: none;
+    }
   }
 }
 

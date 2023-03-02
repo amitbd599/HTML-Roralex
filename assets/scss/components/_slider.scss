@@ -13,11 +13,11 @@
       .inner-item {
         height: 608px;
         position: relative;
-        @media #{$lg,$md, $sm, $xs} {
+        @media #{$lg,$md, $sm} {
           height: 500px;
         }
         @media #{$xs} {
-          height: 450px;
+          height: 500px;
         }
         @media #{$xxs} {
           height: 440px;
@@ -56,7 +56,7 @@
             }
             .intro-box {
               display: inline-block;
-              @media #{$lg,$md, $sm, $xs} {
+              @media #{$lg,$md} {
                 display: flex;
                 justify-content: center;
               }
@@ -74,7 +74,7 @@
             .heading-text {
               position: relative;
               margin-top: 30px;
-              @media #{$lg,$md, $sm, $xs} {
+              @media #{$lg,$md} {
                 text-align: center;
               }
 
@@ -92,13 +92,10 @@
                   font-size: 45px;
                   line-height: 55px;
                 }
+
                 @media #{$xs} {
-                  font-size: 36px;
-                  line-height: 46px;
-                }
-                @media #{$xs} {
-                  font-size: 30px;
-                  line-height: 40px;
+                  font-size: 40px;
+                  line-height: 50px;
                 }
                 @media #{$xxs} {
                   font-size: 26px;
@@ -113,7 +110,7 @@
                   padding: 0 50px;
                 }
                 @media #{$xs} {
-                  padding: 0 15px;
+                  padding: 0;
                 }
                 @media #{$xxs} {
                   padding: 0;

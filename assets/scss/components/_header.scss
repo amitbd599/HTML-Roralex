@@ -19,6 +19,15 @@
 
 .header-intro-version-one-area {
   background: var(--primary_color);
+
+  @media #{$md, $sm, $xs} {
+    padding: 25px 0;
+  }
+  &.header__sticky {
+    @media #{$md, $sm, $xs} {
+      padding: 20px 0;
+    }
+  }
 }
 .header-intro-version-two-area {
   background: var(--primary_color);
