@@ -76,6 +76,9 @@
           .inner-wrapper {
             border-radius: 8px;
             padding: 20px 20px;
+            @media #{$md, $sm, $xs} {
+              margin: 0 20px;
+            }
             &.bg-theme {
               background: var(--theme_color);
             }

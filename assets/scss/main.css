@@ -3066,6 +3066,11 @@ input[type=color] {
   border-radius: 8px;
   padding: 20px 20px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper {
+    margin: 0 20px;
+  }
+}
 .serviceList-section-version-two .inner-card-items-slider .serviceList-version-two .swiper-wrapper .swiper-slide .inner-wrapper.bg-theme {
   background: var(--theme_color);
 }
