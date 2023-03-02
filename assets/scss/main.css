@@ -5873,12 +5873,22 @@ input[type=color] {
   font-weight: 700;
   color: var(--bg_white);
 }
+@media only screen and (max-width: 576px) {
+  .newsletter-section-version-one .wrapper h2 {
+    font-size: 36px;
+  }
+}
 .newsletter-section-version-one .wrapper p {
   text-align: center;
   padding: 0 200px;
   font-size: 16px;
   color: var(--bg_white);
   text-transform: capitalize;
+}
+@media only screen and (max-width: 576px) {
+  .newsletter-section-version-one .wrapper p {
+    padding: 0;
+  }
 }
 .newsletter-section-version-one .wrapper .input {
   display: flex;

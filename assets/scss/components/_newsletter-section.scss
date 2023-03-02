@@ -30,6 +30,9 @@
       font-size: 60px;
       font-weight: 700;
       color: var(--bg_white);
+      @media #{$xs} {
+        font-size: 36px;
+      }
     }
     p {
       text-align: center;
@@ -37,6 +40,9 @@
       font-size: 16px;
       color: var(--bg_white);
       text-transform: capitalize;
+      @media #{$xs} {
+        padding: 0;
+      }
     }
     .input {
       display: flex;
