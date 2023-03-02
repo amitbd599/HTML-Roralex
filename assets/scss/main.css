@@ -3304,6 +3304,12 @@ input[type=color] {
   z-index: 9;
   cursor: pointer;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-two .inner-card-items .wrapper {
+    margin: 0 20px;
+    margin-bottom: 35px;
+  }
+}
 .whyChooseUs-section-version-two .inner-card-items .wrapper .inner {
   padding: 20px 20px;
   border-radius: 8px;
@@ -3747,12 +3753,22 @@ input[type=color] {
   color: var(--bg_white);
   text-transform: uppercase;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay-version-two .wrapper h2 {
+    font-size: 30px;
+  }
+}
 .projectBackgroundOverlay-version-two .wrapper p {
   margin-top: 15px;
   text-align: center;
   padding: 0 150px;
   font-size: 16px;
   color: var(--bg_white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay-version-two .wrapper p {
+    padding: 0;
+  }
 }
 .projectBackgroundOverlay-version-two .wrapper .btn-section {
   margin-top: 15px;

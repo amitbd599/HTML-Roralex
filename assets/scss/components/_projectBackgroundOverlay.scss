@@ -197,6 +197,9 @@
       font-weight: 700;
       color: var(--bg_white);
       text-transform: uppercase;
+      @media #{$sm, $xs} {
+        font-size: 30px;
+      }
     }
     p {
       margin-top: 15px;
@@ -204,6 +207,9 @@
       padding: 0 150px;
       font-size: 16px;
       color: var(--bg_white);
+      @media #{$md, $sm, $xs} {
+        padding: 0;
+      }
     }
     .btn-section {
       margin-top: 15px;

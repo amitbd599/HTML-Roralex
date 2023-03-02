@@ -56,6 +56,10 @@
       position: relative;
       z-index: 9;
       cursor: pointer;
+      @media #{$sm, $xs} {
+        margin: 0 20px;
+        margin-bottom: 35px;
+      }
       .inner {
         padding: 20px 20px;
         border-radius: 8px;
