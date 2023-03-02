@@ -160,6 +160,9 @@
       &.theme {
         margin-top: 40px;
         background: var(--primary_color);
+        @media #{$md,$sm, $xs} {
+          margin-top: 70px;
+        }
         .inner {
           .heading-intro {
             .left {

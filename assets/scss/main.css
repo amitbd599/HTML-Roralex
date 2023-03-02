@@ -5936,6 +5936,11 @@ input[type=color] {
   margin-top: 40px;
   background: var(--primary_color);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .price-section-version-two .price-card-version-two .wrapper.theme {
+    margin-top: 70px;
+  }
+}
 .price-section-version-two .price-card-version-two .wrapper.theme .inner .heading-intro .left h2 {
   color: var(--bg_white);
 }
@@ -6130,6 +6135,11 @@ input[type=color] {
   text-transform: capitalize;
   font-weight: 700;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .newsletter-section-version-two .wrapper h2 {
+    font-size: 30px;
+  }
+}
 .newsletter-section-version-two .wrapper p {
   margin-top: 20px;
   font-size: 16px;
@@ -6163,6 +6173,11 @@ input[type=color] {
   position: absolute;
   width: 400px;
   bottom: -115px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .newsletter-section-version-two .img-file img {
+    display: none;
+  }
 }
 
 /* News Letter version Three Start */

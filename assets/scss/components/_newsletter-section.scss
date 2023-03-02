@@ -102,6 +102,9 @@
       color: var(--bg_white);
       text-transform: capitalize;
       font-weight: 700;
+      @media #{$sm, $xs} {
+        font-size: 30px;
+      }
     }
     p {
       margin-top: 20px;
@@ -136,6 +139,9 @@
       position: absolute;
       width: 400px;
       bottom: -115px;
+      @media #{$md, $sm, $xs} {
+        display: none;
+      }
     }
   }
 }
