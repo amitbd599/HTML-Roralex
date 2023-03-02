@@ -4077,6 +4077,11 @@ input[type=color] {
   overflow: hidden;
   margin: 20px 15px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper {
+    margin: 20px 30px;
+  }
+}
 .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro {
   padding: 18px 10px;
   text-align: center;
@@ -4107,9 +4112,19 @@ input[type=color] {
 .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li a {
   font-size: 18px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li a {
+    padding: 2px;
+  }
+}
 .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li i {
   font-size: 18px;
   transition: all 0.2s linear;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li i {
+    font-size: 26px;
+  }
 }
 .ourTeam-section-version-two .inner-card-items-slider .team-version-two .swiper-wrapper .swiper-slide .inner-wrapper .intro .social-icon ul li:hover .fa-facebook-f {
   color: var(--facebook);
@@ -4615,6 +4630,12 @@ input[type=color] {
   justify-content: center;
   gap: 15px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-two .project-body .project-filter {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 .latest-project-version-two .project-body .project-filter button {
   padding: 8px 14px;
   border-radius: 5px;
@@ -4626,6 +4647,14 @@ input[type=color] {
   background: transparent;
   border: 1px solid var(--border_color);
   transition: all 0.2s linear;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-two .project-body .project-filter button {
+    padding: 12px 20px;
+    display: inline-block;
+    margin: 0 4px;
+    margin-bottom: 10px;
+  }
 }
 .latest-project-version-two .project-body .project-filter button:hover {
   background: var(--theme_color);
@@ -4642,6 +4671,16 @@ input[type=color] {
 }
 .latest-project-version-two .project-body .project-version-two .project-item {
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-two .project-body .project-version-two .project-item {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-two .project-body .project-version-two .project-item .project-wrapper {
+    padding: 0 15px;
+  }
 }
 .latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file {
   border-radius: 10px;
@@ -4704,6 +4743,11 @@ input[type=color] {
   z-index: 9;
   transform: translateX(-50%);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .btn-section {
+    bottom: 30px;
+  }
+}
 .latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .btn-section button {
   padding: 10px 10px;
   width: 130px;
@@ -4711,6 +4755,11 @@ input[type=color] {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.3s linear;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file .btn-section button {
+    padding: 16px;
+  }
 }
 .latest-project-version-two .project-body .project-version-two .project-item .project-wrapper .img-file::after {
   position: absolute;

@@ -204,6 +204,10 @@
       display: flex;
       justify-content: center;
       gap: 15px;
+      @media #{$sm, $xs} {
+        display: block;
+        margin-bottom: 20px;
+      }
       button {
         padding: 8px 14px;
         border-radius: 5px;
@@ -215,6 +219,12 @@
         background: transparent;
         border: 1px solid var(--border_color);
         transition: all 0.2s linear;
+        @media #{$sm, $xs} {
+          padding: 12px 20px;
+          display: inline-block;
+          margin: 0 4px;
+          margin-bottom: 10px;
+        }
         &:hover {
           background: var(--theme_color);
           color: var(--bg_white);
@@ -231,7 +241,13 @@
       margin-top: 40px;
       .project-item {
         margin-bottom: 30px;
+        @media #{$sm, $xs} {
+          margin-bottom: 30px;
+        }
         .project-wrapper {
+          @media #{$sm, $xs} {
+            padding: 0 15px;
+          }
           .img-file {
             border-radius: 10px;
             overflow: hidden;
@@ -291,6 +307,9 @@
               left: 50%;
               z-index: 9;
               transform: translateX(-50%);
+              @media #{$sm, $xs} {
+                bottom: 30px;
+              }
               button {
                 padding: 10px 10px;
                 width: 130px;
@@ -298,6 +317,9 @@
                 opacity: 0;
                 transform: translateY(20px);
                 transition: all 0.3s linear;
+                @media #{$sm, $xs} {
+                  padding: 16px;
+                }
               }
             }
             &::after {
