@@ -31,6 +31,18 @@
 }
 .header-intro-version-two-area {
   background: var(--primary_color);
+  .menu-body .main-menu {
+    display: flex;
+    justify-content: end;
+  }
+  @media #{$md, $sm, $xs} {
+    padding: 25px 0;
+  }
+  &.header__sticky {
+    @media #{$md, $sm, $xs} {
+      padding: 20px 0;
+    }
+  }
 }
 .header-intro-version-three-area {
   background: transparent;
@@ -62,6 +74,9 @@
   align-items: center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  @media #{$sm, $xs} {
+    padding-left: 15px;
+  }
 }
 
 //main-menu

@@ -628,6 +628,20 @@ input[type=color] {
 .header-intro-version-two-area {
   background: var(--primary_color);
 }
+.header-intro-version-two-area .menu-body .main-menu {
+  display: flex;
+  justify-content: end;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .header-intro-version-two-area {
+    padding: 25px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .header-intro-version-two-area.header__sticky {
+    padding: 20px 0;
+  }
+}
 
 .header-intro-version-three-area {
   background: transparent;
@@ -650,6 +664,11 @@ input[type=color] {
   align-items: center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .logo {
+    padding-left: 15px;
+  }
 }
 
 .menu-body .main-menu {
@@ -2157,12 +2176,34 @@ input[type=color] {
   line-height: 75px;
   text-transform: capitalize;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .hero-slider-version-two .hero-slider-two .swiper-wrapper .inner-item .body-data .content .heading-text h2 {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .hero-slider-version-two .hero-slider-two .swiper-wrapper .inner-item .body-data .content .heading-text h2 {
+    text-align: start;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
 .hero-slider-version-two .hero-slider-two .swiper-wrapper .inner-item .body-data .content .heading-text p {
   padding: 0 100px;
   text-align: center;
   margin-top: 20px;
   font-size: 16px;
   color: var(--bg_white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .hero-slider-version-two .hero-slider-two .swiper-wrapper .inner-item .body-data .content .heading-text p {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .hero-slider-version-two .hero-slider-two .swiper-wrapper .inner-item .body-data .content .heading-text p {
+    text-align: start;
+  }
 }
 .hero-slider-version-two .hero-slider-two .swiper-wrapper .inner-item .body-data .content .heading-text .btn-section {
   margin-top: 30px;

@@ -342,6 +342,14 @@
                 font-weight: 700;
                 line-height: 75px;
                 text-transform: capitalize;
+                @media #{$md, $sm, $xs} {
+                  padding: 0;
+                }
+                @media #{$sm, $xs} {
+                  text-align: start;
+                  font-size: 50px;
+                  line-height: 60px;
+                }
               }
               p {
                 padding: 0 100px;
@@ -349,6 +357,12 @@
                 margin-top: 20px;
                 font-size: 16px;
                 color: var(--bg_white);
+                @media #{$md, $sm, $xs} {
+                  padding: 0;
+                }
+                @media #{$sm, $xs} {
+                  text-align: start;
+                }
               }
               .btn-section {
                 margin-top: 30px;

@@ -144,6 +144,17 @@
       type: "bullets",
       clickable: true,
     },
+    breakpoints: {
+      0: {
+        pagination: false,
+      },
+      500: {
+        pagination: false,
+      },
+      768: {
+        pagination: false,
+      },
+    },
   });
 
   var heroSliderThree = new Swiper(".hero-slider-three", {
@@ -300,7 +311,7 @@
     spaceBetween: 45,
     slidesPerGroup: 2,
     loop: true,
-
+    speed: 2000,
     autoplay: {
       delay: 6000,
     },
@@ -331,10 +342,10 @@
         slidesPerView: 3,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1400: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
   });
