@@ -33,6 +33,13 @@
 .ourclient-section-version-two {
   .data-inner-version-two {
     margin-top: 40px;
+    .wrapper {
+      @media #{$md, $sm, $xs} {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 /* Our Client version two Start */

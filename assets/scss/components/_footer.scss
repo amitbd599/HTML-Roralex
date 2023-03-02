@@ -246,11 +246,17 @@
   background: var(--primary_color);
   position: relative;
   padding-top: 30px;
+  @media #{$md, $sm, $xs} {
+    margin-top: 0;
+  }
   .footer-top {
     margin-top: 60px;
 
     .wrapper-one {
       padding-right: 30px;
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         margin-top: 16px;
         h3 {
@@ -308,6 +314,9 @@
       }
     }
     .wrapper-two {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
@@ -357,6 +366,9 @@
       }
     }
     .wrapper-three {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
@@ -475,15 +487,25 @@
       justify-content: space-between;
       align-items: center;
       padding-bottom: 5px;
+      @media #{$sm, $xs} {
+        display: block;
+      }
       p {
         font-size: 14px;
         color: var(--bg_white);
         margin: 0;
+        @media #{$sm, $xs} {
+          text-align: start;
+        }
       }
       ul {
         display: flex;
         align-items: center;
         gap: 10px;
+        @media #{$sm, $xs} {
+          margin-top: 8px;
+          text-align: start;
+        }
         li {
           a {
             padding: 2px;
