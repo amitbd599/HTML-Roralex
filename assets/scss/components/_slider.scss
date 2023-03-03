@@ -550,8 +550,27 @@
                 font-size: 66px;
                 color: var(--bg_white);
                 font-weight: 700;
-                line-height: 75px;
+                line-height: 80px;
                 text-transform: capitalize;
+                @media #{$lg} {
+                  font-size: 55px;
+                }
+                @media #{$md} {
+                  font-size: 60px;
+                  line-height: 75px;
+                }
+                @media #{$sm} {
+                  font-size: 50px;
+                  line-height: 65px;
+                }
+                @media #{$xs} {
+                  font-size: 38px;
+                  line-height: 48px;
+                }
+                @media #{$xxs} {
+                  font-size: 30px;
+                  line-height: 40px;
+                }
               }
               p {
                 margin-top: 20px;
@@ -682,6 +701,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media #{$md, $sm, $xs} {
+      bottom: -320px;
+    }
+    @media #{ $xs} {
+      width: calc(100% - 30px);
+    }
     h2 {
       font-size: 22px;
       font-weight: 700;

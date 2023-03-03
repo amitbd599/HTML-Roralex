@@ -49,9 +49,16 @@
   position: fixed;
   width: 100%;
   z-index: 99;
+  @media #{$md, $sm, $xs} {
+    padding: 30px 0;
+  }
   &.header__sticky {
     background: var(--primary_color);
+    @media #{$md, $sm, $xs} {
+      padding: 20px 0;
+    }
   }
+
   .menu-body {
     .main-menu {
       .mobile-menu {
