@@ -3519,6 +3519,12 @@ input[type=color] {
   z-index: 9;
   cursor: pointer;
 }
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-three .inner-card-items .wrapper {
+    margin: 0 20px;
+    margin-bottom: 35px;
+  }
+}
 .whyChooseUs-section-version-three .inner-card-items .wrapper .inner {
   padding: 20px 26px;
   border-radius: 8px;

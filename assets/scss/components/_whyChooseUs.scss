@@ -117,6 +117,10 @@
       position: relative;
       z-index: 9;
       cursor: pointer;
+      @media #{$xs} {
+        margin: 0 20px;
+        margin-bottom: 35px;
+      }
       .inner {
         padding: 20px 26px;
         border-radius: 8px;
