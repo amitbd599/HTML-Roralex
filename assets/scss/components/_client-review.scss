@@ -162,6 +162,13 @@
   .left-side {
     margin-top: 30px;
     .review-filter {
+      .have-inner {
+        @media #{$xs} {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
       .no-inner {
         display: flex;
         align-items: center;
@@ -226,12 +233,20 @@
             opacity: 1;
             width: 50px;
             height: 50px;
+            @media #{$md} {
+              width: 30px;
+              height: 30px;
+            }
           }
           &::before {
             visibility: visible;
             opacity: 1;
             width: 50px;
             height: 50px;
+            @media #{$md} {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
       }
@@ -240,6 +255,12 @@
   .right-side {
     margin-top: 30px;
     padding-left: 50px;
+    @media #{$md} {
+      padding-left: 30px;
+    }
+    @media #{$xs} {
+      padding-left: 10px;
+    }
     .intro-section {
       margin-top: 20px;
       h3 {

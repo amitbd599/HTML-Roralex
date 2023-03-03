@@ -5431,6 +5431,13 @@ input[type=color] {
 .client-review-version-three .left-side {
   margin-top: 30px;
 }
+@media only screen and (max-width: 576px) {
+  .client-review-version-three .left-side .review-filter .have-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .client-review-version-three .left-side .review-filter .no-inner {
   display: flex;
   align-items: center;
@@ -5495,15 +5502,37 @@ input[type=color] {
   width: 50px;
   height: 50px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-review-version-three .left-side .review-filter .img-file.active::after, .client-review-version-three .left-side .review-filter .img-file:hover::after {
+    width: 30px;
+    height: 30px;
+  }
+}
 .client-review-version-three .left-side .review-filter .img-file.active::before, .client-review-version-three .left-side .review-filter .img-file:hover::before {
   visibility: visible;
   opacity: 1;
   width: 50px;
   height: 50px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-review-version-three .left-side .review-filter .img-file.active::before, .client-review-version-three .left-side .review-filter .img-file:hover::before {
+    width: 30px;
+    height: 30px;
+  }
+}
 .client-review-version-three .right-side {
   margin-top: 30px;
   padding-left: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-review-version-three .right-side {
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .client-review-version-three .right-side {
+    padding-left: 10px;
+  }
 }
 .client-review-version-three .right-side .intro-section {
   margin-top: 20px;
@@ -5757,12 +5786,22 @@ input[type=color] {
   border-radius: 8px;
   overflow: hidden;
 }
+@media only screen and (max-width: 576px) {
+  .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper {
+    margin: 0 25px;
+  }
+}
 .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .img-file {
   position: relative;
   overflow: hidden;
 }
 .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .img-file img {
   transition: all 0.4s linear;
+}
+@media only screen and (max-width: 576px) {
+  .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .img-file img {
+    width: 100%;
+  }
 }
 .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file {
   margin-top: 30px;
@@ -5785,6 +5824,11 @@ input[type=color] {
   margin-bottom: 20px;
   display: flex;
   gap: 12px;
+}
+@media only screen and (max-width: 576px) {
+  .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper .inner-file .footer-icons {
+    margin-bottom: 30px;
+  }
 }
 .blog-section-version-three .blog-card-version-three .blog-version-three .swiper-wrapper .swiper-slide .wrapper:hover .img-file img {
   transform: scale(110%);
