@@ -531,6 +531,9 @@
     margin-top: 60px;
     .wrapper-one {
       padding-right: 30px;
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         margin-top: 16px;
         h3 {
@@ -588,6 +591,9 @@
       }
     }
     .wrapper-two {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 40px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
@@ -625,6 +631,9 @@
       }
     }
     .wrapper-three {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 20px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
@@ -651,6 +660,9 @@
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 8px;
         grid-row-gap: 8px;
+        @media #{$md, $sm, $xs} {
+          grid-template-rows: repeat(2, 1fr);
+        }
         img {
           border-radius: 5px;
         }
@@ -658,6 +670,10 @@
     }
     .wrapper-four {
       padding-left: 10px;
+      @media #{$md, $sm, $xs} {
+        padding-left: 0;
+        margin-bottom: 40px;
+      }
       .text-file {
         h3 {
           font-size: 18px;
