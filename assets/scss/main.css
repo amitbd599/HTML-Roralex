@@ -6504,6 +6504,21 @@ input[type=color] {
   text-transform: capitalize;
   color: var(--bg_white);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .newsletter-section-version-three .right-side .heading-text h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .newsletter-section-version-three .right-side .heading-text h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .newsletter-section-version-three .right-side .heading-text h2 {
+    font-size: 26px;
+  }
+}
 .newsletter-section-version-three .right-side .profile-hold {
   margin-top: 30px;
   display: flex;
