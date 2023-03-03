@@ -96,6 +96,9 @@
         font-weight: 700;
         color: var(--heading_color);
         text-transform: capitalize;
+        @media #{$xs} {
+          font-size: 32px;
+        }
       }
     }
   }

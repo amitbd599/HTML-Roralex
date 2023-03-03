@@ -148,6 +148,13 @@
     margin-top: 40px;
     .wrapper {
       position: relative;
+      @media #{$lg, $md, $sm, $xs} {
+        margin-bottom: 50px;
+      }
+      @media #{$sm, $xs} {
+        margin: 0 20px;
+        margin-bottom: 60px;
+      }
       .inner {
         margin-top: 40px;
         border: 1px solid var(--border_color);
