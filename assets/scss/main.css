@@ -4361,6 +4361,11 @@ input[type=color] {
   border-radius: 8px;
   margin: 20px 10px;
 }
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper {
+    margin: 20px 20px;
+  }
+}
 .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .img-file {
   position: relative;
   z-index: 9;
@@ -4403,14 +4408,29 @@ input[type=color] {
   align-items: center;
   gap: 10px;
 }
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .intro .social-icon ul li {
+    margin-bottom: 6px;
+  }
+}
 .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .intro .social-icon ul li a {
   font-size: 18px;
   padding: 2px;
   color: var(--primary_color);
 }
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .intro .social-icon ul li a {
+    padding: 3px;
+  }
+}
 .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .intro .social-icon ul li a i {
   font-size: 18px;
   transition: all 0.2s linear;
+}
+@media only screen and (max-width: 576px) {
+  .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .intro .social-icon ul li a i {
+    font-size: 26px;
+  }
 }
 .ourTeam-section-version-three .inner-card-items-slider .team-version-three .inner-wrapper .intro .social-icon ul li a:hover {
   color: var(--theme_color);
@@ -4993,6 +5013,11 @@ input[type=color] {
 .latest-project-version-three .project-body .project-version-three .project-item {
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 576px) {
+  .latest-project-version-three .project-body .project-version-three .project-item {
+    padding: 0 15px;
+  }
+}
 .latest-project-version-three .project-body .project-version-three .project-item .project-wrapper {
   background: var(--bg_white);
   border-radius: 10px;
@@ -5003,6 +5028,11 @@ input[type=color] {
 .latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .img-file {
   overflow: hidden;
   position: relative;
+}
+@media only screen and (max-width: 576px) {
+  .latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .img-file img {
+    width: 100%;
+  }
 }
 .latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .img-file::after {
   position: absolute;

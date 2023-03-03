@@ -274,7 +274,7 @@
 
   var TeamVersionThree = new Swiper(".team-version-three", {
     slidesPerView: 4,
-    spaceBetween: 20,
+    spaceBetween: 0,
     slidesPerGroup: 2,
     speed: 1000,
     loop: true,
@@ -290,6 +290,32 @@
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      500: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      992: {
+        slidesPerView: 3,
+        slidesPerGroup: 2,
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 2,
+      },
+      1400: {
+        slidesPerView: 4,
+        slidesPerGroup: 2,
+      },
     },
   });
   ///////////////////////////////////////////////////

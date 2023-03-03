@@ -203,6 +203,9 @@
         position: relative;
         border-radius: 8px;
         margin: 20px 10px;
+        @media #{$xs} {
+          margin: 20px 20px;
+        }
         .img-file {
           position: relative;
           z-index: 9;
@@ -245,13 +248,22 @@
               align-items: center;
               gap: 10px;
               li {
+                @media #{$xs} {
+                  margin-bottom: 6px;
+                }
                 a {
                   font-size: 18px;
                   padding: 2px;
                   color: var(--primary_color);
+                  @media #{$xs} {
+                    padding: 3px;
+                  }
                   i {
                     font-size: 18px;
                     transition: all 0.2s linear;
+                    @media #{$xs} {
+                      font-size: 26px;
+                    }
                   }
                   &:hover {
                     color: var(--theme_color);
