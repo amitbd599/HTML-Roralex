@@ -224,15 +224,17 @@
 
 /* Project Background Overlay Section version Three */
 .projectBackgroundOverlay-version-three {
-  background: url("/assets/img/bg-overlay/bg-overlay-5.png");
+  background: url("/assets/img/bg-overlay/bg-overlay-4.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 170px;
   position: relative;
-
   z-index: 0;
+  @media #{$md, $sm, $xs} {
+    padding: 0;
+  }
   &::after {
     position: absolute;
     content: "";
@@ -252,11 +254,24 @@
       font-weight: 700;
       color: var(--bg_white);
       text-transform: capitalize;
+      @media #{$md, $sm, $xs} {
+        margin-top: 60px;
+        font-size: 46px;
+      }
+      @media #{$xs} {
+        font-size: 32px;
+      }
+      @media #{$xxs} {
+        font-size: 26px;
+      }
     }
     .btn-section {
       margin-top: 15px;
       display: flex;
       justify-content: center;
+      @media #{$md, $sm, $xs} {
+        padding-bottom: 60px;
+      }
       .btn-shape-normal-outline {
         width: 170px;
       }
@@ -273,6 +288,9 @@
       border-radius: 8px;
       display: flex;
       align-items: center;
+      @media #{$md, $sm, $xs} {
+        display: none;
+      }
       .text {
         h2 {
           text-align: start;
