@@ -144,8 +144,7 @@
 
         &.swiper-slide-active {
           .slide-bg {
-            -webkit-animation: bg-animation 5s ease-out both;
-            animation: bg-animation 5s ease-out both;
+            transform: scale(1.2);
           }
           .body-data {
             .intro-box {
@@ -378,8 +377,7 @@
 
         &.swiper-slide-active {
           .slide-bg {
-            -webkit-animation: bg-animation 5s ease-out both;
-            animation: bg-animation 5s ease-out both;
+            transform: scale(1.2);
           }
           .body-data {
             .intro-box {
@@ -601,8 +599,7 @@
 
         &.swiper-slide-active {
           .slide-bg {
-            -webkit-animation: bg-animation 5s ease-out both;
-            animation: bg-animation 5s ease-out both;
+            transform: scale(1.2);
           }
           .body-data {
             .intro-box {

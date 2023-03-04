@@ -565,10 +565,10 @@
         display: flex;
         gap: 10px;
         align-items: center;
-        padding-top: 2px;
+        height: 35px;
 
         li {
-          padding: 2px;
+          line-height: initial;
 
           i {
             font-size: 18px;
@@ -591,6 +591,7 @@
     }
     .news-intro {
       border-left: 3px solid var(--theme_color);
+      height: 35px;
       .scroll-text {
         padding-left: 8px;
         width: 100%;
@@ -612,6 +613,9 @@
       align-items: center;
       justify-content: end;
       height: 100%;
+      .inner {
+        line-height: initial;
+      }
       span {
         a {
           font-weight: 600;
