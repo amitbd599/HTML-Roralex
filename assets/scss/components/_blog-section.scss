@@ -298,6 +298,7 @@
 
 .blog-group-version-one {
   @media #{$md, $sm, $xs} {
+    padding-top: 60px;
     padding-bottom: 100px;
   }
   .container {
@@ -341,7 +342,7 @@
               color: var(--heading_color);
               text-transform: capitalize;
               @media #{$xs} {
-                font-size: 30px;
+                font-size: 26px;
               }
               @media #{$xxs} {
                 font-size: 26px;
@@ -396,6 +397,10 @@
 /* Blog Details version one start */
 
 .blog-details-version-one {
+  @media #{$md, $sm, $xs} {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
   .left-side {
     .wrapper {
       .main-heading {
@@ -405,6 +410,12 @@
           font-weight: 700;
           color: var(--heading_color);
           text-transform: capitalize;
+          @media #{$xs} {
+            font-size: 26px;
+          }
+          @media #{$xxs} {
+            font-size: 26px;
+          }
         }
       }
       .admin-intro {
@@ -412,6 +423,18 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        @media #{$sm, $xs} {
+          display: block;
+          .name,
+          .date,
+          .comment {
+            display: inline;
+            padding-right: 10px;
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
         span {
           &:first-child {
             color: var(--theme_color);
@@ -424,10 +447,18 @@
           font-size: 20px;
           font-weight: 700;
           color: var(--heading_color);
+          @media #{$xs} {
+            padding-top: 12px;
+            font-size: 15px;
+            width: 150px;
+          }
         }
         display: flex;
         align-items: center;
         gap: 15px;
+        @media #{$xs} {
+          align-items: start;
+        }
         a {
           display: inline-block;
           height: 36px;
@@ -505,6 +536,17 @@
       }
       .leave-comment {
         margin-top: 80px;
+        .input-inner {
+          .access {
+            input {
+              &:last-child {
+                @media #{$sm, $xs} {
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
         h4 {
           font-size: 22px;
           font-weight: 700;
