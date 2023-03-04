@@ -464,6 +464,7 @@
         text-align: center;
         background: #f1f1f1;
         @include border-radius(5px);
+        font-size: 20px;
         .fa-facebook-f {
           color: var(--facebook);
         }
@@ -541,11 +542,17 @@
     }
   }
   &.mobile {
-    margin-top: 15px;
+    margin-top: 20px;
     display: block;
     .text {
+      color: var(--heading-color);
+      font-size: 18px;
+      font-weight: 700;
+    }
+    h5.text {
       color: var(--text_color);
       font-size: 16px;
+      font-weight: normal;
     }
   }
 }
