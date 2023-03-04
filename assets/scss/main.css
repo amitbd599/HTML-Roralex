@@ -6980,6 +6980,9 @@ input[type=color] {
   border-radius: 8px;
   padding: 10px 15px;
 }
+.contact-version-one .contact-inner .input-field .field .input-inner textarea:focus-visible {
+  outline: transparent;
+}
 .contact-version-one .contact-inner .input-field .field .input-inner textarea .main-btn {
   margin-top: 10px;
 }
@@ -6987,12 +6990,22 @@ input[type=color] {
   margin: 0;
   width: 172px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .contact-version-one .contact-inner .input-field .field .input-inner .access input:last-child {
+    margin-top: 15px;
+  }
+}
 .contact-version-one .contact-inner .input-field .field .input-inner .main-btn {
   margin-top: 20px;
 }
 .contact-version-one .contact-inner .input-field .field .input-inner .main-btn .btn-shape-normal-outline {
   margin: 0;
   width: 172px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .contact-version-one .contact-inner .right-side {
+    margin-top: 70px;
+  }
 }
 .contact-version-one .contact-inner .right-side .intro h2 {
   font-size: 30px;
