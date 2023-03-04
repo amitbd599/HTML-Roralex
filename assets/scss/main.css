@@ -4965,6 +4965,11 @@ input[type=color] {
   transform: translateY(20px);
   transition: all 0.3s linear;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section button {
+    padding: 16px;
+  }
+}
 .latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file::after {
   position: absolute;
   background: rgba(52, 58, 64, 0.7568627451);
@@ -5613,6 +5618,11 @@ input[type=color] {
 }
 
 /* Client Review Section version three */
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .client-review-version-three {
+    padding-bottom: 0;
+  }
+}
 .client-review-version-three .left-side {
   margin-top: 30px;
 }
@@ -6061,8 +6071,10 @@ input[type=color] {
   .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .name,
   .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .date,
   .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .comment {
-    display: inline;
+    display: inline-block;
     padding-right: 10px;
+    padding-bottom: 6px;
+    font-weight: 600;
   }
   .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .name i,
   .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .date i,

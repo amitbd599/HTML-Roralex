@@ -150,6 +150,9 @@
                 opacity: 0;
                 transform: translateY(20px);
                 transition: all 0.3s linear;
+                @media #{$sm, $xs} {
+                  padding: 16px;
+                }
               }
             }
             &::after {
