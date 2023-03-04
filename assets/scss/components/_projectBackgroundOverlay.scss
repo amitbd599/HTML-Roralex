@@ -358,6 +358,9 @@
     position: relative;
     .main-text {
       padding-left: 100px;
+      @media #{$md,$sm,$xs} {
+        padding-left: 0;
+      }
 
       h2 {
         text-align: center;
@@ -365,6 +368,9 @@
         font-size: 42px;
         font-weight: 700;
         color: var(--bg_white);
+        @media #{$xs} {
+          font-size: 30px;
+        }
       }
       p {
         padding-right: 100px;
@@ -375,6 +381,10 @@
     .box-text {
       margin-top: 30px;
       display: flex;
+      justify-content: center;
+      @media #{$lg, $md,$sm,$xs} {
+        display: none;
+      }
       .wrapper-left {
         background: var(--bg_white);
         padding: 30px 25px;

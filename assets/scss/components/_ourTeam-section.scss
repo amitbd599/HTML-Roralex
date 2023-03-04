@@ -211,6 +211,11 @@
           z-index: 9;
           border-radius: 8px 8px 0 0;
           overflow: hidden;
+          @media #{$sm, $xs} {
+            img {
+              width: 100%;
+            }
+          }
         }
         .intro {
           position: relative;
@@ -248,20 +253,20 @@
               align-items: center;
               gap: 10px;
               li {
-                @media #{$xs} {
+                @media #{$sm, $xs} {
                   margin-bottom: 6px;
                 }
                 a {
                   font-size: 18px;
                   padding: 2px;
                   color: var(--primary_color);
-                  @media #{$xs} {
+                  @media #{$sm,$xs} {
                     padding: 3px;
                   }
                   i {
                     font-size: 18px;
                     transition: all 0.2s linear;
-                    @media #{$xs} {
+                    @media #{$sm, $xs} {
                       font-size: 26px;
                     }
                   }
