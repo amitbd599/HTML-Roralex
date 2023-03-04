@@ -4627,12 +4627,24 @@ input[type=color] {
 .single-team-details-version-one {
   margin-top: 80px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .single-team-details-version-one .person-details .left-side .img-file {
+    display: flex;
+    justify-content: center;
+  }
+}
 .single-team-details-version-one .person-details .left-side .img-file img {
   border-radius: 8px;
   overflow: hidden;
 }
 .single-team-details-version-one .person-details .right-side {
   padding-left: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .single-team-details-version-one .person-details .right-side {
+    padding-left: 0;
+    margin-top: 60px;
+  }
 }
 .single-team-details-version-one .person-details .right-side .wrapper .name h2 {
   font-size: 36px;
@@ -4689,6 +4701,12 @@ input[type=color] {
   padding: 0 60px;
   text-align: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .single-team-details-version-one .history-skill .wrapper p {
+    padding: 0;
+    margin-top: 40px;
+  }
+}
 .single-team-details-version-one .activities {
   padding-top: 50px;
 }
@@ -4736,6 +4754,11 @@ input[type=color] {
   background-image: none;
   content: "\f103";
   color: var(--bg_white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .single-team-details-version-one .activities .right-side {
+    margin-top: 60px;
+  }
 }
 .single-team-details-version-one .activities .right-side .heading-text h2 {
   font-size: 22px;

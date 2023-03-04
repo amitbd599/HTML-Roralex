@@ -9,6 +9,10 @@
   .person-details {
     .left-side {
       .img-file {
+        @media #{$md, $sm, $xs} {
+          display: flex;
+          justify-content: center;
+        }
         img {
           border-radius: 8px;
           overflow: hidden;
@@ -17,6 +21,10 @@
     }
     .right-side {
       padding-left: 30px;
+      @media #{$md, $sm, $xs} {
+        padding-left: 0;
+        margin-top: 60px;
+      }
       .wrapper {
         .name {
           h2 {
@@ -83,6 +91,10 @@
         margin-top: 20px;
         padding: 0 60px;
         text-align: center;
+        @media #{$md, $sm, $xs} {
+          padding: 0;
+          margin-top: 40px;
+        }
       }
     }
   }
@@ -142,6 +154,9 @@
       }
     }
     .right-side {
+      @media #{$md, $sm, $xs} {
+        margin-top: 60px;
+      }
       .heading-text {
         h2 {
           font-size: 22px;
