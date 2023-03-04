@@ -3618,6 +3618,11 @@ input[type=color] {
   border: 1px solid var(--border_color);
   display: inline-block;
 }
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tabs {
+    display: none;
+  }
+}
 .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tabs li {
   position: relative;
 }
@@ -3669,9 +3674,29 @@ input[type=color] {
   display: flex;
   gap: 20px;
 }
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .left {
+    padding-left: 10px;
+  }
+}
 .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .left .img-file img {
   border-radius: 8px;
   overflow: hidden;
+}
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .left .img-file img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .right {
+    padding-left: 10px;
+  }
 }
 .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .right h2 {
   margin-top: 10px;
@@ -3692,8 +3717,23 @@ input[type=color] {
 .whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .tab_content_wrapper .tab_content .wrapper .right ul li i {
   color: var(--theme_color);
 }
+.whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .accordion_tabs {
+  padding-left: 20px;
+  color: var(--heading_color);
+  font-size: 16px;
+}
+.whyChooseUs-section-version-four .inner-card-items .left-side .tabs-inner .accordion_tabs.active {
+  background: var(--theme_color);
+  color: var(--bg_white);
+}
 .whyChooseUs-section-version-four .inner-card-items .right-side {
   padding-left: 40px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side {
+    padding-left: 0;
+    margin-top: 80px;
+  }
 }
 .whyChooseUs-section-version-four .inner-card-items .right-side .intro {
   position: relative;
@@ -3706,6 +3746,35 @@ input[type=color] {
   line-height: 38px;
   padding-left: 32px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h2 {
+    padding-right: 450px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h2 {
+    padding-right: 250px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h2 {
+    padding-right: 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h2 {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h2 {
+    padding-right: 0;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
 .whyChooseUs-section-version-four .inner-card-items .right-side .intro h3 {
   position: absolute;
   transform: rotate(-90deg);
@@ -3714,6 +3783,21 @@ input[type=color] {
   font-size: 18px;
   font-weight: 700;
   color: var(--theme_color);
+}
+@media only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h3 {
+    bottom: 42px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side .intro h3 {
+    bottom: 42px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .right-side ul {
+    margin-top: 40px;
+  }
 }
 .whyChooseUs-section-version-four .inner-card-items .right-side ul li {
   display: flex;

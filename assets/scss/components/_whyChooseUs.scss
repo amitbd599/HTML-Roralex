@@ -184,6 +184,9 @@
         .tabs {
           border: 1px solid var(--border_color);
           display: inline-block;
+          @media #{$xs} {
+            display: none;
+          }
           li {
             position: relative;
             a {
@@ -237,15 +240,27 @@
             .wrapper {
               display: flex;
               gap: 20px;
+              @media #{$xs} {
+                display: block;
+              }
               .left {
+                @media #{$xs} {
+                  padding-left: 10px;
+                }
                 .img-file {
                   img {
                     border-radius: 8px;
                     overflow: hidden;
+                    @media #{$xs} {
+                      display: none;
+                    }
                   }
                 }
               }
               .right {
+                @media #{$xs} {
+                  padding-left: 10px;
+                }
                 h2 {
                   margin-top: 10px;
                   font-size: 20px;
@@ -269,10 +284,23 @@
             }
           }
         }
+        .accordion_tabs {
+          padding-left: 20px;
+          color: var(--heading_color);
+          font-size: 16px;
+          &.active {
+            background: var(--theme_color);
+            color: var(--bg_white);
+          }
+        }
       }
     }
     .right-side {
       padding-left: 40px;
+      @media #{$lg,$md, $sm, $xs} {
+        padding-left: 0;
+        margin-top: 80px;
+      }
       .intro {
         position: relative;
 
@@ -283,6 +311,25 @@
           text-transform: capitalize;
           line-height: 38px;
           padding-left: 32px;
+          @media #{$lg,$md, $sm, $xs} {
+            padding-right: 450px;
+          }
+          @media #{$md, $sm, $xs} {
+            padding-right: 250px;
+          }
+          @media #{ $sm} {
+            padding-right: 0;
+            font-size: 30px;
+            line-height: 40px;
+          }
+          @media #{ $xs} {
+            padding-right: 0;
+          }
+          @media #{ $xs} {
+            padding-right: 0;
+            font-size: 26px;
+            line-height: 36px;
+          }
         }
         h3 {
           position: absolute;
@@ -292,9 +339,18 @@
           font-size: 18px;
           font-weight: 700;
           color: var(--theme_color);
+          @media #{$xs} {
+            bottom: 42px;
+          }
+          @media #{$xxs} {
+            bottom: 42px;
+          }
         }
       }
       ul {
+        @media #{$lg,$md, $sm, $xs} {
+          margin-top: 40px;
+        }
         li {
           display: flex;
           gap: 15px;
