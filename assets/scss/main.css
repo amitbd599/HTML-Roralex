@@ -6036,6 +6036,11 @@ input[type=color] {
 }
 
 /* Blog Group version one start */
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .blog-group-version-one {
+    padding-bottom: 100px;
+  }
+}
 .blog-group-version-one .container .left-side .wrapper .blog-items {
   margin-bottom: 50px;
 }
@@ -6048,6 +6053,22 @@ input[type=color] {
   align-items: center;
   gap: 25px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro {
+    display: block;
+  }
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .name,
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .date,
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .comment {
+    display: inline;
+    padding-right: 10px;
+  }
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .name i,
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .date i,
+  .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro .comment i {
+    margin-right: 5px;
+  }
+}
 .blog-group-version-one .container .left-side .wrapper .blog-items .admin-intro span:first-child {
   color: var(--theme_color);
 }
@@ -6059,6 +6080,16 @@ input[type=color] {
   font-weight: 700;
   color: var(--heading_color);
   text-transform: capitalize;
+}
+@media only screen and (max-width: 576px) {
+  .blog-group-version-one .container .left-side .wrapper .blog-items .main-heading h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .blog-group-version-one .container .left-side .wrapper .blog-items .main-heading h2 {
+    font-size: 26px;
+  }
 }
 .blog-group-version-one .container .left-side .wrapper .blog-items .inner-section {
   margin-top: 10px;
@@ -7224,6 +7255,11 @@ input[type=color] {
   display: flex;
   gap: 5px;
   align-items: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .widget .widget-six .wrapper .blog-inner-items .item .text-file .footer-text {
+    display: block;
+  }
 }
 .widget .widget-six .wrapper .blog-inner-items .item .text-file .footer-text span {
   font-size: 12px;

@@ -279,6 +279,9 @@
               display: flex;
               gap: 5px;
               align-items: center;
+              @media #{$lg} {
+                display: block;
+              }
               span {
                 font-size: 12px;
               }
