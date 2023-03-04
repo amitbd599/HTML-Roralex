@@ -268,6 +268,9 @@
 /* Service Details Inner Section version One start */
 
 .service-details-inner-section-one {
+  @media #{$xs} {
+    padding: 60px 0;
+  }
   .left-side {
     .wrapper {
       h2 {
@@ -275,6 +278,9 @@
         font-weight: 700;
         color: var(--heading_color);
         text-transform: capitalize;
+        @media #{$xs} {
+          font-size: 26px;
+        }
       }
       img {
         border-radius: 8px;

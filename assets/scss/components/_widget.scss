@@ -4,9 +4,13 @@
 
 .widget {
   padding-left: 30px;
+  @media #{$md, $sm, $xs} {
+    padding-left: 0;
+    margin-top: 50px;
+  }
   .widget-one {
     .wrapper {
-      padding: 25px 20px;
+      padding: 30px 30px;
       border-radius: 10px;
       border: 2px solid var(--border_color);
       h3 {
@@ -61,6 +65,11 @@
           border-radius: 10px;
           .inner {
             position: relative;
+            img {
+              @media #{$md, $sm, $xs} {
+                width: 100%;
+              }
+            }
             .vide-button {
               position: absolute;
               left: 50%;
@@ -95,7 +104,7 @@
   .widget-three {
     position: relative;
     .wrapper {
-      padding: 25px 20px;
+      padding: 30px 30px;
       border-radius: 10px;
       background: var(--primary_color);
       h3 {
@@ -104,10 +113,15 @@
         color: var(--bg_white);
       }
       ul {
-        margin-top: 15px;
+        margin-top: 20px;
         li {
+          font-size: 16px;
           color: var(--bg_white);
-          padding: 4px 0;
+          display: block;
+          padding-bottom: 15px;
+          &:last-child {
+            padding-bottom: 0;
+          }
           span {
             font-weight: 600;
           }
@@ -121,7 +135,7 @@
   }
   .widget-four {
     .wrapper {
-      padding: 25px 20px;
+      padding: 30px 30px;
       border-radius: 10px;
       border: 2px solid var(--border_color);
       h3 {
@@ -224,7 +238,7 @@
   }
   .widget-six {
     .wrapper {
-      padding: 25px 20px;
+      padding: 30px 30px;
       border-radius: 10px;
       border: 2px solid var(--border_color);
       h3 {
@@ -328,7 +342,7 @@
   }
   .widget-eight {
     .wrapper {
-      padding: 25px 20px;
+      padding: 30px 30px;
       border-radius: 10px;
       border: 2px solid var(--border_color);
       h3 {
@@ -375,7 +389,7 @@
   }
   .widget-nine {
     .wrapper {
-      padding: 25px 20px;
+      padding: 30px 30px;
       border-radius: 10px;
       border: 2px solid var(--border_color);
       h3 {
