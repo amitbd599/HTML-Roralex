@@ -9,6 +9,7 @@
   position: relative;
   @media #{$md, $sm, $xs} {
     padding-top: 40px;
+    margin-top: 0;
   }
   .footer-top {
     position: absolute;
