@@ -5368,11 +5368,26 @@ input[type=color] {
 }
 
 /* Project Details Inner Section version One start */
+@media only screen and (max-width: 576px) {
+  .project-details-inner-section-one {
+    padding: 60px 0;
+  }
+}
 .project-details-inner-section-one .left-side .wrapper h2 {
   font-size: 36px;
   font-weight: 700;
   color: var(--heading_color);
   text-transform: capitalize;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .project-details-inner-section-one .left-side .wrapper h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .project-details-inner-section-one .left-side .wrapper h2 {
+    font-size: 30px;
+  }
 }
 .project-details-inner-section-one .left-side .wrapper img {
   border-radius: 8px;
@@ -5425,6 +5440,11 @@ input[type=color] {
 .project-details-inner-section-one .left-side .mission-vision {
   display: flex;
   gap: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .project-details-inner-section-one .left-side .mission-vision {
+    display: block;
+  }
 }
 .project-details-inner-section-one .left-side .mission-vision .mission h2,
 .project-details-inner-section-one .left-side .mission-vision .vision h2 {
