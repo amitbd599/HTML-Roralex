@@ -2102,6 +2102,9 @@ input[type=color] {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content.rtl .img-file img {
+  transform: scaleX(-1);
+}
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item.swiper-slide-active .slide-bg {
   transform: scale(1.2);
 }

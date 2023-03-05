@@ -139,6 +139,14 @@
                 object-fit: cover;
               }
             }
+            &.rtl {
+              .img-file {
+                img {
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                }
+              }
+            }
           }
         }
 
