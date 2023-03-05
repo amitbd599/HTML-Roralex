@@ -263,6 +263,21 @@
       }
     }
   }
+  &.rtl {
+    .main-menu ul {
+      li {
+        .sub-menu {
+          right: 0;
+          left: auto;
+          li {
+            a {
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* mean menu customize */
@@ -553,6 +568,13 @@
       color: var(--text_color);
       font-size: 16px;
       font-weight: normal;
+    }
+  }
+  &.rtl {
+    .inner-location-email-intro {
+      .inner {
+        justify-content: end;
+      }
     }
   }
 }
