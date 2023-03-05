@@ -3937,10 +3937,6 @@ input[type=color] {
 .projectBackgroundOverlay .wrapper .main-text {
   padding-left: 100px;
 }
-.projectBackgroundOverlay .wrapper .main-text.rtl {
-  padding-left: 0;
-  padding-right: 100px;
-}
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .projectBackgroundOverlay .wrapper .main-text {
     padding-left: 50px;
@@ -3949,6 +3945,20 @@ input[type=color] {
 @media only screen and (max-width: 380px) {
   .projectBackgroundOverlay .wrapper .main-text {
     padding-left: 0;
+  }
+}
+.projectBackgroundOverlay .wrapper .main-text.rtl {
+  padding-left: 0;
+  padding-right: 100px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .main-text.rtl {
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .projectBackgroundOverlay .wrapper .main-text.rtl {
+    padding-right: 0;
   }
 }
 .projectBackgroundOverlay .wrapper .main-text h3 {
@@ -3977,13 +3987,18 @@ input[type=color] {
   padding-right: 100px;
   color: var(--bg_white);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .main-text p {
+    padding-right: 0;
+  }
+}
 .projectBackgroundOverlay .wrapper .main-text p.rtl {
   padding-right: 0;
   padding-left: 100px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
-  .projectBackgroundOverlay .wrapper .main-text p {
-    padding-right: 0;
+  .projectBackgroundOverlay .wrapper .main-text p.rtl {
+    padding-left: 0;
   }
 }
 .projectBackgroundOverlay .wrapper .shape-text {
@@ -4011,6 +4026,17 @@ input[type=color] {
   left: auto;
   right: -25px;
   transform: rotate(90deg);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .projectBackgroundOverlay .wrapper .shape-text.rtl {
+    left: auto;
+    right: -70px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .projectBackgroundOverlay .wrapper .shape-text.rtl {
+    display: none;
+  }
 }
 .projectBackgroundOverlay .box-text {
   position: absolute;
