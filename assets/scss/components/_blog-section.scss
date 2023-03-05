@@ -68,6 +68,9 @@
             font-size: 14px;
             font-weight: 600;
           }
+          &.rtl {
+            justify-content: end;
+          }
         }
         h2 {
           margin-top: 10px;

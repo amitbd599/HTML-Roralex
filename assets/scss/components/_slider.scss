@@ -141,6 +141,7 @@
             }
             &.rtl {
               .img-file {
+                right: 200px;
                 img {
                   -webkit-transform: scaleX(-1);
                   transform: scaleX(-1);

@@ -522,6 +522,10 @@ input[type=color] {
   left: -27px;
   z-index: 0;
 }
+.header-intro-version-one .wrapper .pop-text .shape-img.rtl {
+  left: auto;
+  right: -27px;
+}
 .header-intro-version-one .wrapper .inner-text h2 {
   padding-right: 130px;
   margin-top: 15px;
@@ -529,6 +533,10 @@ input[type=color] {
   font-weight: 700;
   color: var(--heading_color);
   text-transform: capitalize;
+}
+.header-intro-version-one .wrapper .inner-text h2.rtl {
+  padding-right: 0;
+  padding-left: 130px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .header-intro-version-one .wrapper .inner-text h2 {
@@ -2101,6 +2109,9 @@ input[type=color] {
   width: 700px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content.rtl .img-file {
+  right: 200px;
 }
 .hero-slider-version-one .hero-slider .swiper-wrapper .inner-item .body-data .right-content.rtl .img-file img {
   transform: scaleX(-1);
@@ -3895,6 +3906,10 @@ input[type=color] {
 .projectBackgroundOverlay .wrapper .main-text {
   padding-left: 100px;
 }
+.projectBackgroundOverlay .wrapper .main-text.rtl {
+  padding-left: 0;
+  padding-right: 100px;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .projectBackgroundOverlay .wrapper .main-text {
     padding-left: 50px;
@@ -3931,6 +3946,10 @@ input[type=color] {
   padding-right: 100px;
   color: var(--bg_white);
 }
+.projectBackgroundOverlay .wrapper .main-text p.rtl {
+  padding-right: 0;
+  padding-left: 100px;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .projectBackgroundOverlay .wrapper .main-text p {
     padding-right: 0;
@@ -3956,6 +3975,11 @@ input[type=color] {
   font-size: 20px;
   font-weight: 700;
   color: var(--theme_color);
+}
+.projectBackgroundOverlay .wrapper .shape-text.rtl {
+  left: auto;
+  right: -25px;
+  transform: rotate(90deg);
 }
 .projectBackgroundOverlay .box-text {
   position: absolute;
@@ -4994,6 +5018,10 @@ input[type=color] {
     padding: 16px;
   }
 }
+.latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section.rtl {
+  left: auto;
+  right: 10px;
+}
 .latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file::after {
   position: absolute;
   background: rgba(52, 58, 64, 0.7568627451);
@@ -5858,6 +5886,9 @@ input[type=color] {
   gap: 8px;
   font-size: 14px;
   font-weight: 600;
+}
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text .overlay-date.rtl {
+  justify-content: end;
 }
 .blog-section-version-one .blog-card-version-one .wrapper .inner-text h2 {
   margin-top: 10px;

@@ -42,6 +42,10 @@
     }
     .main-text {
       padding-left: 100px;
+      &.rtl {
+        padding-left: 0;
+        padding-right: 100px;
+      }
       @media #{ $sm, $xs} {
         padding-left: 50px;
       }
@@ -69,6 +73,10 @@
       p {
         padding-right: 100px;
         color: var(--bg_white);
+        &.rtl {
+          padding-right: 0;
+          padding-left: 100px;
+        }
         @media #{ $sm, $xs} {
           padding-right: 0;
         }
@@ -89,6 +97,11 @@
         font-size: 20px;
         font-weight: 700;
         color: var(--theme_color);
+      }
+      &.rtl {
+        left: auto;
+        right: -25px;
+        transform: rotate(90deg);
       }
     }
   }

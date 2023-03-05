@@ -20,6 +20,10 @@
         top: -8px;
         left: -27px;
         z-index: 0;
+        &.rtl {
+          left: auto;
+          right: -27px;
+        }
       }
     }
     .inner-text {
@@ -30,6 +34,10 @@
         font-weight: 700;
         color: var(--heading_color);
         text-transform: capitalize;
+        &.rtl {
+          padding-right: 0;
+          padding-left: 130px;
+        }
         @media #{$sm, $xs} {
           padding-right: 50px;
           font-size: 32px;
