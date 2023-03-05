@@ -1,9 +1,5 @@
 /***************************************************
 ==================== JS INDEX ======================
-****************************************************
-01. PreLoader Js
-
-
 ****************************************************/
 
 (function ($) {
@@ -11,12 +7,11 @@
 
   var windowOn = $(window);
   ////////////////////////////////////////////////////
-  // 01. PreLoader Js //
+  // ============= PreLoader Js ============= //
   windowOn.on("load", function () {
     $(".preloader").fadeOut(500);
   });
 
-  ////////////////////////////////////////////////////
   // ============= Mobile Menu Js =============
   $("#mobile-menu").meanmenu({
     meanMenuContainer: ".mobile-menu",
@@ -24,7 +19,6 @@
     meanExpand: ['<i class="fal fa-plus"></i>'],
   });
 
-  ///////////////////////////////////////////////////
   // ============= Mobile Menu 2 =============
   $("#mobile-menu-2").meanmenu({
     meanMenuContainer: ".mobile-menu-2",
@@ -32,7 +26,6 @@
     meanExpand: ['<i class="fal fa-plus"></i>'],
   });
 
-  ////////////////////////////////////////////////////
   // ============= Sidebar Js  =============
   $(".sidebar-toggle-btn").on("click", function () {
     $(".mobile-sidebar-area").addClass("sidebar-opened");
@@ -49,8 +42,7 @@
     $(".body-overlay").removeClass("opened");
   });
 
-  ////////////////////////////////////////////////////
-  // 05. Search Js
+  // =============  Search Js ============= //
   $(".search-toggle").on("click", function () {
     $(".search__area").addClass("opened");
   });
