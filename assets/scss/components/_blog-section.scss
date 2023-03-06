@@ -207,6 +207,16 @@
                   transform: translateX(0px);
                 }
               }
+              &.rtl {
+                i {
+                  transform: translateX(8px);
+                }
+                &:hover {
+                  i {
+                    transform: translateX(0px);
+                  }
+                }
+              }
             }
           }
         }

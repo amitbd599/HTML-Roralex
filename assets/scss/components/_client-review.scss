@@ -109,6 +109,11 @@
             }
             .quta-img {
               margin-top: 40px;
+              &.rtl {
+                img {
+                  transform: scaleX(-1);
+                }
+              }
             }
             .text {
               margin-top: 15px;
