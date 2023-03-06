@@ -603,6 +603,15 @@
                 object-fit: cover;
               }
             }
+            &.rtl {
+              .img-file {
+                left: auto;
+                right: -200px;
+                img {
+                  transform: scaleX(-1);
+                }
+              }
+            }
           }
         }
 

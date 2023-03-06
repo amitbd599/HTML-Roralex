@@ -363,6 +363,18 @@
               }
             }
           }
+          &.rtl {
+            li {
+              &::after {
+                left: auto;
+                right: 0;
+              }
+              &:hover {
+                padding-left: 0;
+                padding-right: 17px;
+              }
+            }
+          }
         }
       }
     }
