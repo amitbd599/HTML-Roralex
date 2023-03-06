@@ -20,6 +20,11 @@
             overflow: hidden;
             margin: 20px 10px;
             border: 2px solid var(--border_color);
+            .img-file {
+              img {
+                width: 100%;
+              }
+            }
             @media #{$xs} {
               margin: 20px 26px;
             }

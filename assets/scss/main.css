@@ -4479,6 +4479,9 @@ input[type=color] {
   margin: 20px 10px;
   border: 2px solid var(--border_color);
 }
+.ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file img {
+  width: 100%;
+}
 @media only screen and (max-width: 576px) {
   .ourTeam-section-version-one .inner-card-items-slider .team-version-one .swiper-wrapper .swiper-slide .inner-wrapper {
     margin: 20px 26px;
