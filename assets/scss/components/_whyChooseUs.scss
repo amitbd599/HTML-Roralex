@@ -156,6 +156,10 @@
             font-size: 80px;
             color: var(--border_color);
           }
+          &.rtl {
+            left: auto;
+            right: 18px;
+          }
         }
         &:hover {
           background: var(--primary_color);

@@ -3482,6 +3482,13 @@ input[type=color] {
   opacity: 1;
   transform: translateX(0px);
 }
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold.rtl button i {
+  transition: all 0.2s linear;
+  transform: translateX(8px);
+}
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold.rtl button:hover i {
+  transform: translateX(0px);
+}
 .serviceList-section-version-three .inner-card-items .wrapper .overlay {
   position: absolute;
   border-radius: 8px;
@@ -3694,6 +3701,10 @@ input[type=color] {
 .whyChooseUs-section-version-three .inner-card-items .wrapper .inner .overlay-text h2 {
   font-size: 80px;
   color: var(--border_color);
+}
+.whyChooseUs-section-version-three .inner-card-items .wrapper .inner .overlay-text.rtl {
+  left: auto;
+  right: 18px;
 }
 .whyChooseUs-section-version-three .inner-card-items .wrapper .inner:hover {
   background: var(--primary_color);
@@ -5890,6 +5901,9 @@ input[type=color] {
 .client-review-version-three .right-side .review-version-three .icon-file i {
   font-size: 60px;
   color: var(--border_color);
+}
+.client-review-version-three .right-side .review-version-three .icon-file.rtl i {
+  transform: scaleX(-1);
 }
 .client-review-version-three .right-side .review-version-three .text-file {
   margin-top: 10px;

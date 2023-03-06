@@ -225,6 +225,17 @@
               }
             }
           }
+          &.rtl {
+            button {
+              i {
+                transition: all 0.2s linear;
+                transform: translateX(8px);
+              }
+              &:hover i {
+                transform: translateX(0px);
+              }
+            }
+          }
         }
       }
       .overlay {
