@@ -352,6 +352,12 @@
             border-radius: 5px;
             background: var(--theme_color);
           }
+          &.rtl {
+            &::after {
+              left: auto;
+              right: 0;
+            }
+          }
         }
       }
       .inner-intro {

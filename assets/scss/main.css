@@ -3098,6 +3098,10 @@ input[type=color] {
   border-radius: 5px;
   background: var(--theme_color);
 }
+.about-section-version-three .left-side .wrapper .intro-header h3.rtl::after {
+  left: auto;
+  right: 0;
+}
 .about-section-version-three .left-side .wrapper .inner-intro {
   margin-top: 20px;
 }
@@ -5496,6 +5500,12 @@ input[type=color] {
 .latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold button:hover i {
   visibility: visible;
   opacity: 1;
+  transform: translateX(0px);
+}
+.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold.rtl button i {
+  transform: translateX(8px);
+}
+.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold.rtl button:hover i {
   transform: translateX(0px);
 }
 .latest-project-version-three .project-body .project-version-three .project-item .project-wrapper:hover {
