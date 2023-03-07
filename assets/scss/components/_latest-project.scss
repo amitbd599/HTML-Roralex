@@ -307,6 +307,12 @@
                   }
                 }
               }
+              &.rtl {
+                @media #{$sm, $xs} {
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+              }
             }
             .btn-section {
               position: absolute;

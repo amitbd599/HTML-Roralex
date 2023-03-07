@@ -354,9 +354,19 @@
                   padding: 0;
                 }
                 @media #{$sm, $xs} {
-                  text-align: start;
+                  text-align: end;
                   font-size: 50px;
                   line-height: 60px;
+                }
+                &.rtl {
+                  @media #{$md, $sm, $xs} {
+                    padding: 0;
+                  }
+                  @media #{$sm, $xs} {
+                    text-align: end;
+                    font-size: 50px;
+                    line-height: 60px;
+                  }
                 }
               }
               p {
@@ -370,6 +380,14 @@
                 }
                 @media #{$sm, $xs} {
                   text-align: start;
+                }
+                &.rtl {
+                  @media #{$md, $sm, $xs} {
+                    padding: 0;
+                  }
+                  @media #{$sm, $xs} {
+                    text-align: end;
+                  }
                 }
               }
               .btn-section {
@@ -512,6 +530,17 @@
       .inner-item {
         height: 700px;
         position: relative;
+        height: 608px;
+        position: relative;
+        @media #{$lg,$md} {
+          height: 550px;
+        }
+        @media #{$xs} {
+          height: 500px;
+        }
+        @media #{$xxs} {
+          height: 440px;
+        }
         .slide-bg {
           position: absolute;
           left: 0;
@@ -543,6 +572,10 @@
             padding: 80px 0;
             .intro-box {
               display: inline-block;
+              @media #{$lg,$md} {
+                display: flex;
+                justify-content: center;
+              }
               span {
                 color: var(--theme_color);
                 font-weight: 600;
@@ -553,6 +586,9 @@
             .heading-text {
               position: relative;
               margin-top: 30px;
+              @media #{$lg,$md} {
+                text-align: center;
+              }
               h2 {
                 font-size: 66px;
                 color: var(--bg_white);
@@ -593,6 +629,9 @@
           }
           .right-content {
             position: relative;
+            @media #{$lg,$md, $sm, $xs} {
+              display: none;
+            }
             .img-file {
               position: absolute;
               left: -200px;
