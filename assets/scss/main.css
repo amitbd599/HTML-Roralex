@@ -2487,13 +2487,7 @@ input[type=color] {
 .hero-slider-version-three .hero-slider-three .swiper-wrapper .inner-item {
   height: 700px;
   position: relative;
-  height: 608px;
   position: relative;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-slider-version-three .hero-slider-three .swiper-wrapper .inner-item {
-    height: 550px;
-  }
 }
 @media only screen and (max-width: 576px) {
   .hero-slider-version-three .hero-slider-three .swiper-wrapper .inner-item {
@@ -7561,6 +7555,18 @@ input[type=color] {
   width: 100%;
   margin: 0;
   margin-top: 20px;
+}
+.widget .widget-four.rtl .wrapper .input-inner .input span {
+  left: auto;
+  right: 14px;
+}
+.widget .widget-four.rtl .wrapper .input-inner .input input {
+  padding-left: 0;
+  padding-right: 35px;
+}
+.widget .widget-four.rtl .wrapper .input-inner .text-area span {
+  left: auto;
+  right: 14px;
 }
 .widget .widget-five {
   position: relative;

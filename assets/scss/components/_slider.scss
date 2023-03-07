@@ -530,11 +530,9 @@
       .inner-item {
         height: 700px;
         position: relative;
-        height: 608px;
+
         position: relative;
-        @media #{$lg,$md} {
-          height: 550px;
-        }
+
         @media #{$xs} {
           height: 500px;
         }

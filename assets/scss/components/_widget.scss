@@ -211,6 +211,20 @@
         margin-top: 20px;
       }
     }
+    &.rtl {
+      .wrapper .input-inner .input span {
+        left: auto;
+        right: 14px;
+      }
+      .wrapper .input-inner .input input {
+        padding-left: 0;
+        padding-right: 35px;
+      }
+      .wrapper .input-inner .text-area span {
+        left: auto;
+        right: 14px;
+      }
+    }
   }
   .widget-five {
     position: relative;
