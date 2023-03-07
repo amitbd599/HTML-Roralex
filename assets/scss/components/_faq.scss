@@ -74,4 +74,41 @@
       }
     }
   }
+  &.rtl {
+    .accordion-button {
+      padding-left: 0;
+      padding-right: 45px;
+      &::after {
+        left: auto;
+        right: 15px;
+      }
+    }
+
+    .widget {
+      .widget-four {
+        .input-inner {
+          .input {
+            span {
+              left: auto;
+              right: 14px;
+            }
+            input {
+              padding-right: 35px;
+              padding-left: 0;
+            }
+          }
+          .text-area {
+            span {
+              left: auto;
+              right: 14px;
+            }
+            .text-end {
+              padding-right: 35px;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

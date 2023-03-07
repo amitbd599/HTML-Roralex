@@ -7238,6 +7238,30 @@ input[type=color] {
   content: "\f068";
   color: var(--bg_white);
 }
+.faq-section-version-one.rtl .accordion-button {
+  padding-left: 0;
+  padding-right: 45px;
+}
+.faq-section-version-one.rtl .accordion-button::after {
+  left: auto;
+  right: 15px;
+}
+.faq-section-version-one.rtl .widget .widget-four .input-inner .input span {
+  left: auto;
+  right: 14px;
+}
+.faq-section-version-one.rtl .widget .widget-four .input-inner .input input {
+  padding-right: 35px;
+  padding-left: 0;
+}
+.faq-section-version-one.rtl .widget .widget-four .input-inner .text-area span {
+  left: auto;
+  right: 14px;
+}
+.faq-section-version-one.rtl .widget .widget-four .input-inner .text-area .text-end {
+  padding-right: 35px;
+  padding-left: 0;
+}
 
 /*----------------------------------------*/
 /*  Contact Section
