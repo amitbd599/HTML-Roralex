@@ -4,6 +4,10 @@
 
 .widget {
   padding-left: 30px;
+  &.rtl {
+    padding-left: 0;
+    padding-right: 30px;
+  }
   @media #{$md, $sm, $xs} {
     padding-left: 0;
     margin-top: 50px;
