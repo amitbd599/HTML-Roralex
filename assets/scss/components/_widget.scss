@@ -334,6 +334,13 @@
               color: var(--bg_white);
             }
           }
+          &.rtl {
+            span {
+              right: auto;
+              left: 0;
+              border-radius: 5px 0px 0px 5px;
+            }
+          }
         }
       }
       .btn-shape-normal-outline {
@@ -380,6 +387,21 @@
             }
             &:hover {
               transform: translateX(8px);
+              i {
+                color: var(--theme_color);
+              }
+              color: var(--theme_color);
+            }
+          }
+        }
+      }
+    }
+    &.rtl {
+      .inner-list {
+        ul {
+          li {
+            &:hover {
+              transform: translateX(-8px);
               i {
                 color: var(--theme_color);
               }
