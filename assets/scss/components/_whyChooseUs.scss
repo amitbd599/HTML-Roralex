@@ -298,6 +298,15 @@
           }
         }
       }
+      &.rtl {
+        .tabs-inner {
+          text-align: end;
+        }
+        .tab_content_wrapper {
+          display: flex;
+          justify-content: end;
+        }
+      }
     }
     .right-side {
       padding-left: 40px;
@@ -349,6 +358,10 @@
           @media #{$xxs} {
             bottom: 42px;
           }
+          &.rtl {
+            left: auto;
+            right: -43px;
+          }
         }
       }
       ul {
@@ -377,6 +390,10 @@
             }
           }
         }
+      }
+      &.rtl {
+        padding-left: 0;
+        padding-right: 40px;
       }
     }
   }
