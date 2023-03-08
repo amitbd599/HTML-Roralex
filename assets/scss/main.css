@@ -2221,6 +2221,7 @@ input[type=color] {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 .hero-slider-arrow .hero-slider-nav .swiper-slide .inner-item .text-file span {
@@ -2745,7 +2746,6 @@ input[type=color] {
 .bread-crumb {
   position: relative;
   z-index: 9;
-  background: url("/assets/img/bg-overlay/bg-overlay-7.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3356,15 +3356,15 @@ input[type=color] {
   font-size: 15px;
   margin-top: 12x;
 }
-.serviceList-section-version-one .inner-card-items .wrapper .btn-hold button {
+.serviceList-section-version-one .inner-card-items .wrapper .btn-hold a {
   display: flex;
   gap: 8px;
   align-items: center;
-  justify-content: center;
   font-size: 16px;
   font-weight: 700;
+  transition: all 0.3s linear;
 }
-.serviceList-section-version-one .inner-card-items .wrapper .btn-hold button:hover {
+.serviceList-section-version-one .inner-card-items .wrapper .btn-hold a:hover {
   color: var(--theme_color);
 }
 .serviceList-section-version-one .btn-section {
@@ -3375,7 +3375,7 @@ input[type=color] {
     padding-top: 30px;
   }
 }
-.serviceList-section-version-one .btn-section button {
+.serviceList-section-version-one .btn-section .btn-shape-normal-outline {
   width: 165px;
 }
 
@@ -4003,7 +4003,6 @@ input[type=color] {
 /*----------------------------------------*/
 /* Project Background Overlay Section version one */
 .projectBackgroundOverlay {
-  background: url("/assets/img/bg-overlay/bg-overlay-1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4219,7 +4218,6 @@ input[type=color] {
 
 /* Project Background Overlay Section version Tow */
 .projectBackgroundOverlay-version-two {
-  background: url("/assets/img/bg-overlay/bg-overlay-3.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4279,7 +4277,6 @@ input[type=color] {
 
 /* Project Background Overlay Section version Three */
 .projectBackgroundOverlay-version-three {
-  background: url("/assets/img/bg-overlay/bg-overlay-4.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4395,7 +4392,6 @@ input[type=color] {
 
 /* Project Background Overlay Section version Four */
 .projectBackgroundOverlay-version-four {
-  background: url("/assets/img/bg-overlay/bg-overlay-8.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5177,7 +5173,7 @@ input[type=color] {
     bottom: 26px;
   }
 }
-.latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section button {
+.latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section .btn-shape-normal-outline {
   padding: 10px 10px;
   width: 130px;
   visibility: hidden;
@@ -5186,7 +5182,7 @@ input[type=color] {
   transition: all 0.3s linear;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
-  .latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section button {
+  .latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section .btn-shape-normal-outline {
     padding: 16px;
   }
 }
@@ -5215,7 +5211,7 @@ input[type=color] {
   visibility: visible;
   opacity: 1;
 }
-.latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file:hover .btn-section button {
+.latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file:hover .btn-section .btn-shape-normal-outline {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -6091,14 +6087,14 @@ input[type=color] {
 .blog-section-version-one .blog-card-version-one .wrapper .inner-text p {
   font-size: 16px;
 }
-.blog-section-version-one .blog-card-version-one .wrapper .inner-text a button {
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text a span {
   position: relative;
   font-size: 16px;
   font-weight: 700;
   transition: all 0.2s linear;
   padding-left: 0;
 }
-.blog-section-version-one .blog-card-version-one .wrapper .inner-text a button::after {
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text a span::after {
   position: absolute;
   content: "";
   width: 0;
@@ -6109,11 +6105,11 @@ input[type=color] {
   border-radius: 5px;
   transition: all 0.2s linear;
 }
-.blog-section-version-one .blog-card-version-one .wrapper .inner-text a button:hover {
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text a span:hover {
   color: var(--theme_color);
   padding-left: 36px;
 }
-.blog-section-version-one .blog-card-version-one .wrapper .inner-text a button:hover::after {
+.blog-section-version-one .blog-card-version-one .wrapper .inner-text a span:hover::after {
   width: 32px;
 }
 .blog-section-version-one .blog-card-version-one .btn-section {
@@ -6874,7 +6870,6 @@ input[type=color] {
 .newsletter-section-version-one {
   position: relative;
   z-index: 9;
-  background: url("/assets/img//bg-overlay/bg-overlay-2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6948,7 +6943,6 @@ input[type=color] {
 .newsletter-section-version-two {
   position: relative;
   z-index: 9;
-  background: url("/assets/img/bg-overlay/bg-overlay-4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7024,7 +7018,6 @@ input[type=color] {
 .newsletter-section-version-three {
   position: relative;
   z-index: 9;
-  background: url("/assets/img/bg-overlay/bg-overlay-6.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -39,13 +39,13 @@
         }
       }
       .btn-hold {
-        button {
+        a {
           display: flex;
           gap: 8px;
           align-items: center;
-          justify-content: center;
           font-size: 16px;
           font-weight: 700;
+          transition: all 0.3s linear;
           &:hover {
             color: var(--theme_color);
           }
@@ -58,7 +58,7 @@
     @media #{$md, $sm, $xs} {
       padding-top: 30px;
     }
-    button {
+    .btn-shape-normal-outline {
       width: 165px;
     }
   }
