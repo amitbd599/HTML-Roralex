@@ -2492,7 +2492,7 @@ input[type=color] {
 }
 @media only screen and (max-width: 576px) {
   .hero-slider-version-three .hero-slider-three .swiper-wrapper .inner-item {
-    height: 500px;
+    height: 680px;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -3512,25 +3512,25 @@ input[type=color] {
   font-size: 15px;
   margin-top: 12x;
 }
-.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold button {
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold a {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--theme_color);
   display: flex;
   align-items: center;
   gap: 8px;
   transition: all 0.2s linear;
 }
-.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold button i {
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold a i {
   visibility: hidden;
   opacity: 0;
   transform: translateX(-8px);
   transition: all 0.2s linear;
 }
-.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold button:hover {
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold a:hover {
   color: var(--theme_color);
 }
-.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold button:hover i {
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold a:hover i {
   visibility: visible;
   opacity: 1;
   transform: translateX(0px);
@@ -3569,7 +3569,7 @@ input[type=color] {
 .serviceList-section-version-three .btn-section {
   padding-top: 60px;
 }
-.serviceList-section-version-three .btn-section button {
+.serviceList-section-version-three .btn-section .btn-shape-normal-outline {
   width: 165px;
 }
 
@@ -5551,7 +5551,7 @@ input[type=color] {
   margin-top: 5px;
   display: inline-block;
 }
-.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold button {
+.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold .inner {
   font-size: 18px;
   font-weight: 700;
   color: var(--theme_color);
@@ -5560,16 +5560,16 @@ input[type=color] {
   gap: 8px;
   transition: all 0.2s linear;
 }
-.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold button i {
+.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold .inner i {
   visibility: hidden;
   opacity: 0;
   transform: translateX(-8px);
   transition: all 0.2s linear;
 }
-.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold button:hover {
+.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold .inner:hover {
   color: var(--theme_color);
 }
-.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold button:hover i {
+.latest-project-version-three .project-body .project-version-three .project-item .project-wrapper .text-file .btn-hold .inner:hover i {
   visibility: visible;
   opacity: 1;
   transform: translateX(0px);

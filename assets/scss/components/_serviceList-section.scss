@@ -202,9 +202,9 @@
           }
         }
         .btn-hold {
-          button {
+          a {
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 700;
             color: var(--theme_color);
             display: flex;
             align-items: center;
@@ -270,7 +270,7 @@
   }
   .btn-section {
     padding-top: 60px;
-    button {
+    .btn-shape-normal-outline {
       width: 165px;
     }
   }
