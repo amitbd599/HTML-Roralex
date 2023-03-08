@@ -5164,7 +5164,7 @@ input[type=color] {
 }
 .latest-project-version-one .project-body .project-version-one .project-item .project-wrapper .img-file .btn-section {
   position: absolute;
-  bottom: 8px;
+  bottom: 15px;
   left: 10px;
   z-index: 9;
 }
