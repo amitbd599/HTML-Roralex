@@ -323,7 +323,7 @@
               @media #{$sm, $xs} {
                 bottom: 30px;
               }
-              button {
+              .btn-shape-normal-outline {
                 padding: 10px 10px;
                 width: 130px;
                 visibility: hidden;
@@ -357,7 +357,7 @@
                 visibility: visible;
                 opacity: 1;
               }
-              .btn-section button {
+              .btn-section .btn-shape-normal-outline {
                 transform: translateY(0);
                 visibility: visible;
                 opacity: 1;
