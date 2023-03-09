@@ -121,13 +121,14 @@
       }
     }
     .items {
-      text-align: center;
-      margin-bottom: 40px;
-      padding: 0 20px;
-
+      margin-bottom: 50px;
       .img-file {
         position: relative;
-        border-radius: 10px;
+        text-align: center;
+        padding: 0 10px;
+        height: 450px;
+        overflow: hidden;
+
         margin-bottom: 20px;
 
         .btn-section {
@@ -151,12 +152,15 @@
           top: 0;
           width: 100%;
           height: 100%;
-          border-radius: 10px;
           z-index: 0;
           visibility: hidden;
           opacity: 0;
           transition: all 0.2s linear;
         }
+      }
+      h3 {
+        margin-top: 15px;
+        text-align: center;
       }
       &:hover {
         .img-file {

@@ -7896,13 +7896,14 @@ input[type=color] {
   color: var(--heading_color);
 }
 .demo-inner .inner-items .items {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 0 20px;
+  margin-bottom: 50px;
 }
 .demo-inner .inner-items .items .img-file {
   position: relative;
-  border-radius: 10px;
+  text-align: center;
+  padding: 0 10px;
+  height: 450px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 .demo-inner .inner-items .items .img-file .btn-section {
@@ -7926,11 +7927,14 @@ input[type=color] {
   top: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   z-index: 0;
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s linear;
+}
+.demo-inner .inner-items .items h3 {
+  margin-top: 15px;
+  text-align: center;
 }
 .demo-inner .inner-items .items:hover .img-file::after {
   visibility: visible;
