@@ -7803,7 +7803,7 @@ input[type=color] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(52, 58, 64, 0.4901960784);
+  background: rgba(52, 58, 64, 0.69);
   z-index: 0;
 }
 .demo-inner .banner-intro .right-side {
@@ -7898,6 +7898,47 @@ input[type=color] {
 .demo-inner .inner-items .items {
   text-align: center;
   margin-bottom: 40px;
+  padding: 0 20px;
+}
+.demo-inner .inner-items .items .img-file {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.demo-inner .inner-items .items .img-file .btn-section {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.demo-inner .inner-items .items .img-file .btn-section .btn-shape-normal-outline {
+  width: 172px;
+}
+.demo-inner .inner-items .items .img-file::after {
+  background: rgba(52, 58, 64, 0.45);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.demo-inner .inner-items .items:hover .img-file::after {
+  visibility: visible;
+  opacity: 1;
+}
+.demo-inner .inner-items .items:hover .btn-section {
+  visibility: visible;
+  opacity: 1;
 }
 .demo-inner .feature .header {
   margin-bottom: 10px;
