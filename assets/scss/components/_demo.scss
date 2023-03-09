@@ -1,0 +1,189 @@
+/*----------------------------------------*/
+/*  Demo Section
+/*----------------------------------------*/
+
+/* Demo Page start */
+
+.demo-inner {
+  .banner-intro {
+    padding: 60px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #343a407d;
+      z-index: 0;
+    }
+    .right-side {
+      position: relative;
+      z-index: 9;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .wrapper {
+        position: relative;
+        display: flex;
+        gap: 20px;
+      }
+    }
+    .left-side {
+      position: relative;
+      z-index: 9;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .wrapper {
+        h2 {
+          font-size: 60px;
+          font-weight: 700;
+          color: var(--bg_white);
+          line-height: 80px;
+        }
+        .intro-list {
+          margin-top: 20px;
+          h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--bg_white);
+          }
+          ul {
+            margin-top: 10px;
+            padding-left: 15px;
+            li {
+              font-size: 18px;
+              color: var(--bg_white);
+              padding-bottom: 10px;
+              display: flex;
+              gap: 8px;
+              align-items: center;
+            }
+            i {
+              color: var(--theme_color);
+            }
+          }
+          .button-intro {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+            .btn-shape-normal-outline.left {
+              width: 172px;
+              border: 2px solid var(--theme_color);
+            }
+            .btn-shape-normal-outline.right {
+              width: 208px;
+              background: transparent;
+              border: 2px solid var(--theme_color);
+            }
+          }
+        }
+      }
+    }
+  }
+  .counter-view {
+    .row {
+      margin-top: 60px;
+      background: var(--primary_color);
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      .inner {
+        text-align: center;
+        h2 {
+          font-size: 60px;
+          color: var(--bg_white);
+          font-weight: 700;
+        }
+        h3 {
+          font-size: 22px;
+          font-weight: 700;
+          color: var(--bg_white);
+        }
+      }
+    }
+  }
+  .inner-items {
+    .header {
+      h2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--heading_color);
+      }
+    }
+    .items {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+  .feature {
+    .header {
+      margin-bottom: 10px;
+      h2 {
+        text-align: center;
+        font-size: 60px;
+        color: var(--heading_color);
+        font-weight: 700;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    .item {
+      padding: 50px 20px;
+      box-shadow: 0 0 40px rgb(82 85 90 / 10%);
+      border-radius: 8px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all 0.2s linear;
+      img {
+        width: 80px;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--heading_color);
+      }
+      &:hover {
+        transform: translateY(-6px);
+      }
+    }
+  }
+}
+
+.footer-demo {
+  background: var(--primary_color);
+
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    .img-file {
+      text-align: center;
+      p {
+        padding: 30px 150px;
+        color: var(--bg_white);
+        font-size: 18px;
+      }
+    }
+    .btn-shape-normal-outline {
+      width: 186px;
+      margin: 0;
+    }
+  }
+}

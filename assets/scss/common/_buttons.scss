@@ -46,6 +46,11 @@
     opacity: 1;
     right: 0;
   }
+  &.purchase {
+    i {
+      color: var(--bg_white) !important;
+    }
+  }
 }
 .btn-shape-small-outline {
 }
