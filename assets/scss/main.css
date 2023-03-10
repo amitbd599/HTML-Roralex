@@ -3549,11 +3549,11 @@ input[type=color] {
   opacity: 1;
   transform: translateX(0px);
 }
-.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold.rtl button i {
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold.rtl span i {
   transition: all 0.2s linear;
   transform: translateX(8px);
 }
-.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold.rtl button:hover i {
+.serviceList-section-version-three .inner-card-items .wrapper .inner .btn-hold.rtl span:hover i {
   transform: translateX(0px);
 }
 .serviceList-section-version-three .inner-card-items .wrapper .overlay {
