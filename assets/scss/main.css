@@ -863,7 +863,7 @@ input[type=color] {
 .menu-body .main-menu.version-two ul li .mega-menu {
   left: -212%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .menu-body.rtl .main-menu ul li a {
     text-align: end;
   }
@@ -875,7 +875,7 @@ input[type=color] {
 .menu-body.rtl .main-menu ul li .sub-menu li a {
   text-align: end;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .menu-body.rtl .main-menu ul li .sub-menu li a {
     text-align: end;
   }
@@ -939,7 +939,7 @@ input[type=color] {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .mean-container .mean-nav .rtl-link li a.mean-expand {
     right: auto;
     left: 0;
@@ -3007,6 +3007,14 @@ input[type=color] {
 }
 .about-section-version-one .right-side .wrapper .inner-intro .btn-section .btn-shape-normal-outline {
   width: 175px;
+}
+.about-section-version-one .right-side.rtl {
+  padding-right: 35px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .about-section-version-one .right-side.rtl {
+    padding-right: 0;
+  }
 }
 .about-section-version-one .overlay-shape-img {
   position: absolute;
@@ -7788,11 +7796,10 @@ input[type=color] {
 /*----------------------------------------*/
 /* Demo Page start */
 .demo-inner .banner-intro {
-  padding: 60px 0;
+  padding: 80px 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
   overflow: hidden;
   position: relative;
 }

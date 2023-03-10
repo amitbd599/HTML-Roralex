@@ -267,7 +267,7 @@
     .main-menu ul {
       li {
         a {
-          @media #{$md, $sm, $xs} {
+          @media #{$lg, $md, $sm, $xs} {
             text-align: end;
           }
         }
@@ -277,7 +277,7 @@
           li {
             a {
               text-align: end;
-              @media #{$md, $sm, $xs} {
+              @media #{$lg, $md, $sm, $xs} {
                 text-align: end;
               }
             }
@@ -341,7 +341,7 @@
   font-weight: 400;
 }
 .mean-container .mean-nav .rtl-link li a.mean-expand {
-  @media #{$md, $sm, $xs} {
+  @media #{$lg, $md, $sm, $xs} {
     right: auto;
     left: 0;
   }
