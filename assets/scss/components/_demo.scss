@@ -228,6 +228,10 @@
       p {
         font-size: 20px;
         text-align: center;
+        padding: 0 80px;
+        @media #{$md, $sm, $xs} {
+          padding: 0 30px;
+        }
       }
     }
     .item {
@@ -267,9 +271,9 @@
     .img-file {
       text-align: center;
       p {
-        padding: 30px 150px;
+        padding: 30px 80px;
         color: var(--bg_white);
-        font-size: 18px;
+        font-size: 16px;
         @media #{$md, $sm, $xs} {
           padding: 30px 50px;
         }
