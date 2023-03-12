@@ -299,12 +299,20 @@
         }
       }
       &.rtl {
+        @media #{ $sm, $xs} {
+          margin-top: 30px;
+        }
         .tabs-inner {
           text-align: end;
         }
         .tab_content_wrapper {
           display: flex;
           justify-content: end;
+          height: 220px !important;
+          @media #{ $sm, $xs} {
+            display: block;
+            height: 100% !important;
+          }
         }
       }
     }

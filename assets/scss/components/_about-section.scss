@@ -7,6 +7,9 @@
   @media #{$lg} {
     padding-top: 80px;
   }
+  @media #{$sm, $xs} {
+    padding-top: 60px;
+  }
   position: relative;
   .left-side {
     @media #{$md, $sm, $xs} {

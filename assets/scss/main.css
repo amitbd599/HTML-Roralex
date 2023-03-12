@@ -2794,6 +2794,11 @@ input[type=color] {
     padding-top: 80px;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .about-section-version-one {
+    padding-top: 60px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .about-section-version-one .left-side {
     margin-top: 30px;
@@ -3906,12 +3911,24 @@ input[type=color] {
   background: var(--theme_color);
   color: var(--bg_white);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side.rtl {
+    margin-top: 30px;
+  }
+}
 .whyChooseUs-section-version-four .inner-card-items .left-side.rtl .tabs-inner {
   text-align: end;
 }
 .whyChooseUs-section-version-four .inner-card-items .left-side.rtl .tab_content_wrapper {
   display: flex;
   justify-content: end;
+  height: 220px !important;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .whyChooseUs-section-version-four .inner-card-items .left-side.rtl .tab_content_wrapper {
+    display: block;
+    height: 100% !important;
+  }
 }
 .whyChooseUs-section-version-four .inner-card-items .right-side {
   padding-left: 40px;
@@ -7794,6 +7811,10 @@ input[type=color] {
 .widget .widget-nine .wrapper .inner-list a:hover {
   color: var(--bg_white);
   background: var(--theme_color);
+}
+.widget.rtl {
+  padding-left: 0;
+  padding-right: 30px;
 }
 
 /*----------------------------------------*/
