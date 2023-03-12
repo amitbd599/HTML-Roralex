@@ -50,6 +50,16 @@
           font-weight: 700;
           color: var(--bg_white);
           line-height: 80px;
+          @media #{$sm, $xs} {
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 30px;
+          }
+          @media #{$xs} {
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 30px;
+          }
         }
         .intro-list {
           margin-top: 20px;
@@ -86,6 +96,9 @@
               background: transparent;
               border: 2px solid var(--theme_color);
             }
+            @media #{$xs} {
+              display: block;
+            }
           }
         }
       }
@@ -121,6 +134,14 @@
         font-size: 50px;
         font-weight: 700;
         color: var(--heading_color);
+        @media #{$sm, $xs} {
+          font-size: 45px;
+          line-height: 60px;
+        }
+        @media #{$xs} {
+          font-size: 36px;
+          line-height: 46px;
+        }
       }
     }
     .items {
@@ -195,6 +216,14 @@
         font-size: 60px;
         color: var(--heading_color);
         font-weight: 700;
+        @media #{$sm, $xs} {
+          font-size: 45px;
+          line-height: 60px;
+        }
+        @media #{$xs} {
+          font-size: 36px;
+          line-height: 46px;
+        }
       }
       p {
         font-size: 20px;
@@ -241,6 +270,12 @@
         padding: 30px 150px;
         color: var(--bg_white);
         font-size: 18px;
+        @media #{$md, $sm, $xs} {
+          padding: 30px 50px;
+        }
+        @media #{$sm, $xs} {
+          padding: 30px 10px;
+        }
       }
     }
     .btn-shape-normal-outline {

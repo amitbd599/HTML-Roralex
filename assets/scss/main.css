@@ -1210,6 +1210,11 @@ input[type=color] {
 .location-email-intro.rtl .inner-location-email-intro .inner {
   justify-content: end;
 }
+.location-email-intro.purchase {
+  margin-top: 270px;
+  margin-left: -7px;
+  justify-content: start;
+}
 
 /* Top Intro Section */
 .top-header {
@@ -7843,6 +7848,20 @@ input[type=color] {
   color: var(--bg_white);
   line-height: 80px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .demo-inner .banner-intro .left-side .wrapper h2 {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .demo-inner .banner-intro .left-side .wrapper h2 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+}
 .demo-inner .banner-intro .left-side .wrapper .intro-list {
   margin-top: 20px;
 }
@@ -7880,6 +7899,11 @@ input[type=color] {
   background: transparent;
   border: 2px solid var(--theme_color);
 }
+@media only screen and (max-width: 576px) {
+  .demo-inner .banner-intro .left-side .wrapper .intro-list .button-intro {
+    display: block;
+  }
+}
 .demo-inner .counter-view .row {
   margin-top: 60px;
   background: var(--primary_color);
@@ -7906,6 +7930,18 @@ input[type=color] {
   font-size: 50px;
   font-weight: 700;
   color: var(--heading_color);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .demo-inner .inner-items .header h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .demo-inner .inner-items .header h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
 }
 .demo-inner .inner-items .items {
   margin-bottom: 50px;
@@ -7971,6 +8007,18 @@ input[type=color] {
   color: var(--heading_color);
   font-weight: 700;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .demo-inner .feature .header h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .demo-inner .feature .header h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
 .demo-inner .feature .header p {
   font-size: 20px;
   text-align: center;
@@ -8013,6 +8061,16 @@ input[type=color] {
   padding: 30px 150px;
   color: var(--bg_white);
   font-size: 18px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .footer-demo .wrapper .img-file p {
+    padding: 30px 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .footer-demo .wrapper .img-file p {
+    padding: 30px 10px;
+  }
 }
 .footer-demo .wrapper .btn-shape-normal-outline {
   width: 186px;
