@@ -7820,6 +7820,11 @@ input[type=color] {
   display: flex;
   align-items: center;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .demo-inner .banner-intro .right-side {
+    margin-top: 40px;
+  }
+}
 .demo-inner .banner-intro .right-side .wrapper {
   position: relative;
   display: flex;
@@ -7913,6 +7918,9 @@ input[type=color] {
   overflow: hidden;
   margin-bottom: 20px;
 }
+.demo-inner .inner-items .items .img-file img.blur {
+  filter: blur(10px);
+}
 .demo-inner .inner-items .items .img-file .btn-section {
   position: absolute;
   bottom: 50%;
@@ -7938,6 +7946,9 @@ input[type=color] {
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s linear;
+}
+.demo-inner .inner-items .items .img-file.blur {
+  filter: blur(20px);
 }
 .demo-inner .inner-items .items h3 {
   margin-top: 15px;

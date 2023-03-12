@@ -29,6 +29,9 @@
       height: 100%;
       display: flex;
       align-items: center;
+      @media #{$lg, $md, $sm, $xs} {
+        margin-top: 40px;
+      }
       .wrapper {
         position: relative;
         display: flex;
@@ -130,6 +133,11 @@
         overflow: hidden;
 
         margin-bottom: 20px;
+        img {
+          &.blur {
+            filter: blur(10px);
+          }
+        }
 
         .btn-section {
           position: absolute;
@@ -156,6 +164,9 @@
           visibility: hidden;
           opacity: 0;
           transition: all 0.2s linear;
+        }
+        &.blur {
+          filter: blur(20px);
         }
       }
       h3 {
