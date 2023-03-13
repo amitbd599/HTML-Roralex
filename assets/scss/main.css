@@ -7825,6 +7825,11 @@ input[type=color] {
   padding-left: 0;
   padding-right: 30px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .widget.rtl {
+    padding-right: 0;
+  }
+}
 
 /*----------------------------------------*/
 /*  Demo Section

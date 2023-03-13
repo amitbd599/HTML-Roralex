@@ -471,5 +471,8 @@
   &.rtl {
     padding-left: 0;
     padding-right: 30px;
+    @media #{$md, $sm, $xs} {
+      padding-right: 0;
+    }
   }
 }
