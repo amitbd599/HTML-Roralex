@@ -7348,6 +7348,11 @@ input[type=color] {
   margin: 0;
   width: 172px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
+  .contact-version-one .contact-inner .input-field.rtl {
+    padding-right: 0;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 576px) {
   .contact-version-one .contact-inner .right-side {
     margin-top: 70px;

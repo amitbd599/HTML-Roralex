@@ -60,6 +60,11 @@
           }
         }
       }
+      &.rtl {
+        @media #{$sm, $xs} {
+          padding-right: 0;
+        }
+      }
     }
     .right-side {
       @media #{$md, $sm, $xs} {
