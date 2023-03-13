@@ -7995,7 +7995,7 @@ input[type=color] {
   margin-bottom: 20px;
 }
 .demo-inner .inner-items .items .img-file img.blur {
-  filter: blur(10px);
+  filter: blur(30px);
 }
 .demo-inner .inner-items .items .img-file .btn-section {
   position: absolute;
@@ -8024,7 +8024,7 @@ input[type=color] {
   transition: all 0.2s linear;
 }
 .demo-inner .inner-items .items .img-file.blur {
-  filter: blur(20px);
+  filter: blur(30px);
 }
 .demo-inner .inner-items .items h3 {
   margin-top: 15px;

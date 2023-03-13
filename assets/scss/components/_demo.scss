@@ -152,11 +152,10 @@
         padding: 0 10px;
         height: 450px;
         overflow: hidden;
-
         margin-bottom: 20px;
         img {
           &.blur {
-            filter: blur(10px);
+            filter: blur(30px);
           }
         }
 
@@ -187,7 +186,7 @@
           transition: all 0.2s linear;
         }
         &.blur {
-          filter: blur(20px);
+          filter: blur(30px);
         }
       }
       h3 {
