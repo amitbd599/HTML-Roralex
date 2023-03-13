@@ -60,7 +60,7 @@
     }
   });
 
-  // 07. Data CSS Js
+  // =============  Data CSS Js =============
   $("[data-background").each(function () {
     $(this).css(
       "background-image",
@@ -76,11 +76,9 @@
     $(this).css("background-color", $(this).attr("data-bg-color"));
   });
 
-  ////////////////////////////////////////////////////
-  // 07. Nice Select Js
+  // =============  Nice Select Js =============
   $("select").niceSelect();
 
-  ///////////////////////////////////////////////////
   // ============= Hero  Slider Js =============
   if (jQuery(".hero-slider-nav").length > 0) {
     var heroSliderNav = new Swiper(".hero-slider-nav", {
@@ -177,7 +175,6 @@
     });
   }
 
-  ///////////////////////////////////////////////////
   // ============= Team Slider Js =============
 
   if (jQuery(".team-version-one").length > 0) {
@@ -390,7 +387,6 @@
     });
   }
 
-  ///////////////////////////////////////////////////
   // =========== Client-Review  Start =========== Js //
 
   // Client-review-version-one-slider
