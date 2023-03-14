@@ -6,11 +6,14 @@
         $name = strip_tags(trim($_POST["name"]));
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $checkbox = trim($_POST["checkbox"]);
+        // $checkbox = trim($_POST["checkbox"]);
         $message = trim($_POST["message"]);
+        $country = trim($_POST["country"]);
+        $phone = trim($_POST["phone"]);
+        $website = trim($_POST["website"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($checkbox) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($checkbox) OR empty($message) OR empty($country) OR empty($phone) OR empty($website) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -19,7 +22,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "mdsalim400@gmail.com";
+        $recipient = "amitbd591@gmail.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -27,8 +30,11 @@
         // Build the email content.
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Condiotion: $checkbox\n\n";
+        // $email_content .= "Condiotion: $checkbox\n\n";
         $email_content .= "Message:\n$message\n";
+        $email_content .= "Country:\n$country\n";
+        $email_content .= "Phone:\n$phone\n";
+        $email_content .= "Website:\n$website\n";
 
         // Build the email headers.
         $email_headers = "From: $name <$email>";

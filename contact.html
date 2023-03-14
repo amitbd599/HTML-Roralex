@@ -257,35 +257,39 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="wrapper">
-                                <div class="input-field">
-                                    <div class="field">
-                                        <div class="wrapper">
+                                <form id="contact-form" action="mail.php" method="POST">
+                                    <div class="input-field">
+                                        <div class="field">
+                                            <div class="wrapper">
 
-                                            <div class="input-inner">
-                                                <div class="d-md-flex access gap-3">
-                                                    <input type="text" placeholder="Your Name : ">
-                                                    <input type="email" placeholder="Email ID :  ">
-                                                </div>
-                                                <div class="d-md-flex access gap-3 mt-15">
-                                                    <input type="text" placeholder="Country : ">
-                                                    <input type="text" placeholder="Phone No :  ">
-                                                </div>
-                                                <div class=" mt-15">
-                                                    <input type="text" placeholder="Website Link : ">
-                                                </div>
-                                                <div class="mt-15">
-                                                    <textarea id="test" rows="4" cols="50"
-                                                        placeholder="Enter Details..."></textarea>
-                                                </div>
-                                                <div class="main-btn">
-                                                    <button class="btn-shape-normal-outline">
-                                                        <span>Send Massage</span>
-                                                    </button>
+                                                <div class="input-inner">
+                                                    <div class="d-md-flex access gap-3">
+                                                        <input name="name" type="text" placeholder="Your Name : ">
+                                                        <input name="email" type="email" placeholder="Email ID :  ">
+                                                    </div>
+                                                    <div class="d-md-flex access gap-3 mt-15">
+                                                        <input name="country" type="text" placeholder="Country : ">
+                                                        <input name="phone" type="text" placeholder="Phone No :  ">
+                                                    </div>
+                                                    <div class=" mt-15">
+                                                        <input name="website" type="text" placeholder="Website Link : ">
+                                                    </div>
+                                                    <div class="mt-15">
+                                                        <textarea name="message" id="test" rows="4" cols="50"
+                                                            placeholder="Enter Details..."></textarea>
+                                                    </div>
+                                                    <div class="main-btn">
+                                                        <button type="submit" class="btn-shape-normal-outline">
+                                                            <span>Send Massage</span>
+                                                        </button>
+                                                    </div><br>
+                                                    <p class="ajax-response text-danger"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
+
                             </div>
                         </div>
                         <div class="col-lg-4">
