@@ -273,36 +273,44 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="wrapper">
-                                <div class="input-field rtl">
-                                    <div class="field">
-                                        <div class="wrapper">
+                                <form id="contact-form_rtl">
+                                    <div class="input-field rtl">
+                                        <div class="field">
+                                            <div class="wrapper">
 
-                                            <div class="input-inner">
-                                                <div class="d-md-flex access gap-3">
-                                                    <input class="text-end" type="email"
-                                                        placeholder="عنوان الايميل :  ">
-                                                    <input class="text-end" type="text" placeholder="اسمك : ">
-                                                </div>
-                                                <div class="d-md-flex access gap-3 mt-15">
-                                                    <input class="text-end" type="text" placeholder="رقم الهاتف : ">
-                                                    <input class="text-end" type="text" placeholder="دولة : ">
-                                                </div>
-                                                <div class=" mt-15">
-                                                    <input class="text-end" type="text" placeholder="رابط الموقع :">
-                                                </div>
-                                                <div class="mt-15">
-                                                    <textarea class="text-end" id="test" rows="4" cols="50"
-                                                        placeholder="أدخل التفاصيل"></textarea>
-                                                </div>
-                                                <div class="main-btn d-flex justify-content-end">
-                                                    <button class="btn-shape-normal-outline">
-                                                        <span>أرسل رسالة</span>
-                                                    </button>
+                                                <div class="input-inner">
+                                                    <div class="d-md-flex access gap-3">
+                                                        <input name="user_name" class="text-end" type="email"
+                                                            placeholder="عنوان الايميل :  ">
+                                                        <input name="user_email" class="text-end" type="text"
+                                                            placeholder="اسمك : ">
+                                                    </div>
+                                                    <div class="d-md-flex access gap-3 mt-15">
+                                                        <input name="country" class="text-end" type="text"
+                                                            placeholder="رقم الهاتف : ">
+                                                        <input name="phone" class="text-end" type="text"
+                                                            placeholder="دولة : ">
+                                                    </div>
+                                                    <div class=" mt-15">
+                                                        <input name="website" class="text-end" type="text"
+                                                            placeholder="رابط الموقع :">
+                                                    </div>
+                                                    <div class="mt-15">
+                                                        <textarea name="message" class="text-end" id="test" rows="4"
+                                                            cols="50" placeholder="أدخل التفاصيل"></textarea>
+                                                    </div>
+                                                    <div class="main-btn d-flex justify-content-end">
+                                                        <button class="btn-shape-normal-outline">
+                                                            <span>أرسل رسالة</span>
+                                                        </button>
+                                                    </div>
+                                                    <p id="emailjs-response_rtl" class=" text-danger"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
+
                             </div>
                         </div>
                         <div class="col-lg-4">

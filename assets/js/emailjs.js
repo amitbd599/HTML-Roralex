@@ -1,5 +1,5 @@
 $(function () {
-  $("#contact-form").on("submit", function (event) {
+  $("#contact-form, #contact-form_rtl").on("submit", function (event) {
     event.preventDefault(); // prevent reload
     // Please See Documentation for more information. Here I Will  use EmailJS
     var formData = new FormData(this);
@@ -14,12 +14,16 @@ $(function () {
       processData: false, // no need to parse formData to string
     })
       .done(function () {
-        $("#emailjs-response").text("Your Massage Send successful!");
+        $("#emailjs-response, #emailjs-response_rtl").text(
+          "Your Massage Send successful!"
+        );
         // Clear the form.
-        $("#contact-form input,#contact-form textarea").val("");
+        $(
+          "#contact-form input,#contact-form textarea,#contact-form_rtl input,#contact-form_rtl textarea"
+        ).val("");
       })
       .fail(function (error) {
-        $("#emailjs-response").text(
+        $("#emailjs-response, #emailjs-response_rtl").text(
           "Oops! An error occured and your message could not be sent."
         );
       });
