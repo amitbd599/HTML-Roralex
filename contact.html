@@ -257,27 +257,31 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="wrapper">
-                                <form id="contact-form">
+                                <form id="contact-form" action="#">
                                     <div class="input-field">
                                         <div class="field">
                                             <div class="wrapper">
 
                                                 <div class="input-inner">
                                                     <div class="d-md-flex access gap-3">
-                                                        <input name="user_name" type="text" placeholder="Your Name : ">
-                                                        <input name="user_email" type="email"
-                                                            placeholder="Email ID :  ">
+                                                        <input name="user_name" type="text" placeholder="Your Name : "
+                                                            required title="Field must be a number."
+                                                            aria-required="true">
+                                                        <input name="user_email" type="email" placeholder="Email ID :  "
+                                                            required>
                                                     </div>
                                                     <div class="d-md-flex access gap-3 mt-15">
-                                                        <input name="country" type="text" placeholder="Country : ">
-                                                        <input name="phone" type="text" placeholder="Phone No :  ">
+                                                        <input name="country" type="text" placeholder="Country : "
+                                                            required>
+                                                        <input name="phone" type="text" placeholder="Phone No :  "
+                                                            required>
                                                     </div>
                                                     <div class=" mt-15">
                                                         <input name="website" type="text" placeholder="Website Link : ">
                                                     </div>
                                                     <div class="mt-15">
                                                         <textarea name="message" id="test" rows="4" cols="50"
-                                                            placeholder="Enter Details..."></textarea>
+                                                            placeholder="Enter Details..." required></textarea>
                                                     </div>
                                                     <div class="main-btn">
                                                         <button type="submit" class="btn-shape-normal-outline">
